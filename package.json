@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "main": "src/index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -9,10 +10,12 @@
     "aos": "^2.3.4",
     "js-yaml": "^3.13.1",
     "querystringify": "^2.1.1",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.8"
+    "lerp": "1.0.3",
+    "react": "experimental",
+    "react-dom": "experimental",
+    "react-scripts": "3.2.0",
+    "react-three-fiber": "4.0.0-beta.12",
+    "three": "0.111.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -39,6 +42,7 @@
   },
   "homepage": "http://nverma31.github.io/my-app",
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "typescript": "3.3.3"
   }
 }
