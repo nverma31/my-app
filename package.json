@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "keywords": [],
+  "main": "src/index.js",
   "dependencies": {
     "lerp": "1.0.3",
     "react": "experimental",
