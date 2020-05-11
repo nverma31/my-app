@@ -4,7 +4,6 @@ import { Canvas, Dom, useLoader, useFrame } from "react-three-fiber"
 import { TextureLoader, LinearFilter } from "three"
 import lerp from "lerp"
 import { Text, MultilineText } from "./components/Text"
-import Diamonds from "./diamonds/Diamonds"
 import Plane from "./components/Plane"
 import { Block, useBlock } from "./blocks"
 import state from "./store"
@@ -57,11 +56,11 @@ function Content() {
       <Block factor={1} offset={0}>
         <Block factor={1.2}>
           <Text left size={w * 0.08} position={[-w / 3.2, 0.5, -1]} color="#d40749">
-            MOKSHA
+            NEERAJ
           </Text>
         </Block>
         <Block factor={1.0}>
-          <Dom position={[-w / 3.2, -w * 0.08 + 0.25, -1]}>It was the year 2076.{mobile ? <br /> : " "}The substance had arrived.</Dom>
+          <Dom position={[-w / 3.2, -w * 0.08 + 0.25, -1]}>Product Designer and Researcher{mobile ? <br /> : " "}</Dom>
         </Block>
       </Block>
       <Block factor={1.2} offset={5.7}>
@@ -93,7 +92,6 @@ function App() {
       <Canvas className="canvas" concurrent pixelRatio={1} orthographic camera={{ zoom: state.zoom, position: [0, 0, 500] }}>
         <Suspense fallback={<Dom center className="loading" children="Loading..." />}>
           <Content />
-          <Diamonds />
           <Startup />
         </Suspense>
       </Canvas>
@@ -103,9 +101,9 @@ function App() {
         ))}
       </div>
       <div className="frame">
-        <h1 className="frame__title">Scroll, Refraction and Shader Effects</h1>
+        {/* <h1 className="frame__title">Scroll, Refraction and Shader Effects</h1> */}
         <div className="frame__links">
-          <a className="frame__link" href="http://tympanus.net/Tutorials/PhysicsMenu/">
+          {/* <a className="frame__link" href="http://tympanus.net/Tutorials/PhysicsMenu/">
             Previous demo
           </a>
           <a className="frame__link" href="https://tympanus.net/codrops/?p=45441">
@@ -113,7 +111,7 @@ function App() {
           </a>
           <a className="frame__link" href="https://github.com/drcmda/the-substance">
             GitHub
-          </a>
+          </a> */}
         </div>
         <div className="frame__nav">
           <a className="frame__link" href="#00" children="intro" />

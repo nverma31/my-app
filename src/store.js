@@ -9,15 +9,15 @@ const state = {
     {
       offset: 1,
       factor: 1.75,
-      header: "District 4",
+      header: "Audi",
       image: "./photo-1515036551567-bf1198cccc35.jpeg",
       aspect: 1.51,
-      text: "Two thousand pharmacologists and bio-chemists were subsidized. Six years later it was being produced commercially."
+      // text: "Two thousand pharmacologists and bio-chemists were subsidized. Six years later it was being produced commercially."
     },
     {
       offset: 2,
       factor: 2.0,
-      header: "Diamond Road",
+      header: "Test",
       image: "./photo-1519608487953-e999c86e7455.jpeg",
       aspect: 1.5,
       text:
@@ -26,7 +26,7 @@ const state = {
     {
       offset: 3,
       factor: 2.25,
-      header: "Catalina",
+      header: "Test",
       image: "./ph1.jpg",
       aspect: 1.5037,
       text:
@@ -35,7 +35,7 @@ const state = {
     {
       offset: 4,
       factor: 2.0,
-      header: "Building 21",
+      header: "Test",
       image: "./ph3.jpg",
       aspect: 0.665,
       text:
@@ -50,7 +50,7 @@ const state = {
       text:
         "By cultivating the state of mind that makes it possible for the dazzling ecstatic insights to become permanent and habitual illuminations. By getting to know oneself to the point where one won’t be compelled by one’s unconscious to do all the ugly, absurd, self-stultifying things that one so often finds oneself doing."
     },
-    { offset: 7, factor: 1.05, header: "The Factory", image: "./photo-1548191265-cc70d3d45ba1.jpeg", aspect: 1.77, text: "Education and enlightenment." }
+    { offset: 7, factor: 1.05, header: "Test", image: "./photo-1548191265-cc70d3d45ba1.jpeg", aspect: 1.77, text: "Education and enlightenment." }
   ],
   stripes: [
     { offset: 0, color: "#000", height: 13 },
