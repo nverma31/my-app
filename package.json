@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "keywords": [],
-  "main": "src/index.js",
   "dependencies": {
     "lerp": "1.0.3",
     "react": "experimental",
@@ -24,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "http://nverma31.github.io/my-app",
+  "homepage": "https://nverma31.github.io/my-app",
   "browserslist": [
     ">0.2%",
     "not dead",
