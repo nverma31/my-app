@@ -1,15 +1,10 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "new",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "aos": "^2.3.4",
-    "js-yaml": "^3.13.1",
-    "querystringify": "^2.1.1",
     "lerp": "1.0.3",
     "react": "experimental",
     "react-dom": "experimental",
@@ -17,32 +12,23 @@
     "react-three-fiber": "4.0.0-beta.12",
     "three": "0.111.0"
   },
+  "devDependencies": {
+    "gh-pages": "^2.2.0",
+    "typescript": "3.3.3"
+  },
   "scripts": {
-    "start": "react-scripts start",
+     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "homepage": "http://nverma31.github.io/my-app",
-  "devDependencies": {
-    "gh-pages": "^2.2.0",
-    "typescript": "3.3.3"
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
