@@ -1,21 +1,27 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.db03f86e.chunk.css",
-    "main.js": "/my-app/static/js/main.7cc4e048.chunk.js",
-    "main.js.map": "/my-app/static/js/main.7cc4e048.chunk.js.map",
-    "runtime-main.js": "/my-app/static/js/runtime-main.18a67ed2.js",
-    "runtime-main.js.map": "/my-app/static/js/runtime-main.18a67ed2.js.map",
-    "static/js/2.82a67d02.chunk.js": "/my-app/static/js/2.82a67d02.chunk.js",
-    "static/js/2.82a67d02.chunk.js.map": "/my-app/static/js/2.82a67d02.chunk.js.map",
-    "index.html": "/my-app/index.html",
-    "precache-manifest.59dc85bc16da03ed61193a32b4f6b5bf.js": "/my-app/precache-manifest.59dc85bc16da03ed61193a32b4f6b5bf.js",
-    "service-worker.js": "/my-app/service-worker.js",
-    "static/css/main.db03f86e.chunk.css.map": "/my-app/static/css/main.db03f86e.chunk.css.map"
+    "main.css": "/static/css/main.4eb230e0.chunk.css",
+    "main.js": "/static/js/main.bbc2872a.chunk.js",
+    "main.js.map": "/static/js/main.bbc2872a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7c0ae09a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7c0ae09a.js.map",
+    "static/js/2.bfd26212.chunk.js": "/static/js/2.bfd26212.chunk.js",
+    "static/js/2.bfd26212.chunk.js.map": "/static/js/2.bfd26212.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4e75dea9e291d4c362a12130f0739695.js": "/precache-manifest.4e75dea9e291d4c362a12130f0739695.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.4eb230e0.chunk.css.map": "/static/css/main.4eb230e0.chunk.css.map",
+    "static/js/2.bfd26212.chunk.js.LICENSE.txt": "/static/js/2.bfd26212.chunk.js.LICENSE.txt",
+    "static/media/arrow-left.f9a44e1c.svg": "/static/media/arrow-left.f9a44e1c.svg",
+    "static/media/arrow-right.dc372a07.svg": "/static/media/arrow-right.dc372a07.svg",
+    "static/media/curology-min.png": "/static/media/curology-min.e84c2055.png",
+    "static/media/lumin-min.png": "/static/media/lumin-min.379bad94.png",
+    "static/media/yourspace-min.png": "/static/media/yourspace-min.5f9e3077.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.18a67ed2.js",
-    "static/js/2.82a67d02.chunk.js",
-    "static/css/main.db03f86e.chunk.css",
-    "static/js/main.7cc4e048.chunk.js"
+    "static/js/runtime-main.7c0ae09a.js",
+    "static/js/2.bfd26212.chunk.js",
+    "static/css/main.4eb230e0.chunk.css",
+    "static/js/main.bbc2872a.chunk.js"
   ]
 }
