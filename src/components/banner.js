@@ -16,7 +16,7 @@ const Banner = () => {
           </h2>
           <div className='btn-row'>
             <a href='/'>
-              More about us
+              Scroll Down
               <RightArrow />
             </a>
           </div>

@@ -38,22 +38,26 @@
       }
     }
     .btn-row {
-      width: 256px;
-      position: relative;
+      position: absolute;
+      bottom: 200px;
+      right: 0;
       z-index: 2;
+      transform-origin: 0 0;
+      transform: rotate(90deg);
       a {
         display: inline-block;
-        font-size: 1.6rem;
+        font-size: 1rem;
         color: $black;
         text-decoration: none;
         display: flex;
         align-items: center;
         font-weight: 600;
+       
         @include media("<=tablet") {
-          font-size: 1.3rem;
+          font-size: 0.8rem;
         }
         @include media("<=phone") {
-          font-size: 1.1rem;
+          font-size: 0.7rem;
         }
         svg {
           margin-left: 16px;

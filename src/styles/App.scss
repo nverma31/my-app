@@ -4,6 +4,8 @@
 @import "./components/header.scss";
 @import "./components/banner.scss";
 @import "./components/cases.scss";
+@import "./components/case.scss";
+
 
 body,
 html {
@@ -72,7 +74,7 @@ html {
     .overlay-top {
       position: absolute;
       height: 100%;
-      width: 33.3333vw;
+      width: 34.3333vw;
       background: $black;
       bottom: 0;
       left: 0;
@@ -95,42 +97,42 @@ html {
     }
   }
 
-  .bottom {
-    height: 0vh;
-    height: calc(var(--vh, 1vh) * 0);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    z-index: 8;
-    .overlay-bottom {
-      position: absolute;
-      height: 100%;
-      width: 33.3333vw;
-      background: $black;
-      bottom: 0;
-      right: 66.6666%;
-      &:nth-child(1) {
-        @include media("<=tablet") {
-          right: 0%;
-          width: 100vw;
-        }
-      }
-      &:nth-child(2) {
-        right: 33.3333%;
-        @include media("<=tablet") {
-          width: 100vw;
-          top: 100%;
-          right: 0%;
-        }
-      }
-      &:nth-child(3) {
-        right: 0%;
-        @include media("<=tablet") {
-          width: 100vw;
-          top: 200%;
-          right: 0%;
-        }
-      }
-    }
-  }
+  // .bottom {
+  //   height: 0vh;
+  //   height: calc(var(--vh, 1vh) * 0);
+  //   position: absolute;
+  //   bottom: 0;
+  //   width: 100%;
+  //   z-index: 8;
+  //   .overlay-bottom {
+  //     position: absolute;
+  //     height: 100%;
+  //     width: 33.3333vw;
+  //     background: $black;
+  //     bottom: 0;
+  //     right: 66.6666%;
+  //     &:nth-child(1) {
+  //       @include media("<=tablet") {
+  //         right: 0%;
+  //         width: 100vw;
+  //       }
+  //     }
+  //     &:nth-child(2) {
+  //       right: 33.3333%;
+  //       @include media("<=tablet") {
+  //         width: 100vw;
+  //         top: 100%;
+  //         right: 0%;
+  //       }
+  //     }
+  //     &:nth-child(3) {
+  //       right: 0%;
+  //       @include media("<=tablet") {
+  //         width: 100vw;
+  //         top: 200%;
+  //         right: 0%;
+  //       }
+  //     }
+  //   }
+  // }
 }
