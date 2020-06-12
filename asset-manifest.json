@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.2ec0b313.chunk.css",
-    "main.js": "/static/js/main.a6f96c73.chunk.js",
-    "main.js.map": "/static/js/main.a6f96c73.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7c0ae09a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7c0ae09a.js.map",
-    "static/js/2.bfd26212.chunk.js": "/static/js/2.bfd26212.chunk.js",
-    "static/js/2.bfd26212.chunk.js.map": "/static/js/2.bfd26212.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.58a21f2cbd72e6d46735e458e2c48dc0.js": "/precache-manifest.58a21f2cbd72e6d46735e458e2c48dc0.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.2ec0b313.chunk.css.map": "/static/css/main.2ec0b313.chunk.css.map",
-    "static/js/2.bfd26212.chunk.js.LICENSE.txt": "/static/js/2.bfd26212.chunk.js.LICENSE.txt",
-    "static/media/arrow-left.f9a44e1c.svg": "/static/media/arrow-left.f9a44e1c.svg",
-    "static/media/arrow-right.dc372a07.svg": "/static/media/arrow-right.dc372a07.svg",
-    "static/media/curology-min.png": "/static/media/curology-min.e84c2055.png",
-    "static/media/lumin-min.png": "/static/media/lumin-min.379bad94.png",
-    "static/media/yourspace-min.png": "/static/media/yourspace-min.5f9e3077.png"
+    "main.css": "/my-app/static/css/main.2ec0b313.chunk.css",
+    "main.js": "/my-app/static/js/main.ba9963a7.chunk.js",
+    "main.js.map": "/my-app/static/js/main.ba9963a7.chunk.js.map",
+    "runtime-main.js": "/my-app/static/js/runtime-main.5119dbb0.js",
+    "runtime-main.js.map": "/my-app/static/js/runtime-main.5119dbb0.js.map",
+    "static/js/2.bfd26212.chunk.js": "/my-app/static/js/2.bfd26212.chunk.js",
+    "static/js/2.bfd26212.chunk.js.map": "/my-app/static/js/2.bfd26212.chunk.js.map",
+    "index.html": "/my-app/index.html",
+    "precache-manifest.4d66fc5fd63e5aa996f64d95441a0b2d.js": "/my-app/precache-manifest.4d66fc5fd63e5aa996f64d95441a0b2d.js",
+    "service-worker.js": "/my-app/service-worker.js",
+    "static/css/main.2ec0b313.chunk.css.map": "/my-app/static/css/main.2ec0b313.chunk.css.map",
+    "static/js/2.bfd26212.chunk.js.LICENSE.txt": "/my-app/static/js/2.bfd26212.chunk.js.LICENSE.txt",
+    "static/media/arrow-left.f9a44e1c.svg": "/my-app/static/media/arrow-left.f9a44e1c.svg",
+    "static/media/arrow-right.dc372a07.svg": "/my-app/static/media/arrow-right.dc372a07.svg",
+    "static/media/curology-min.png": "/my-app/static/media/curology-min.e84c2055.png",
+    "static/media/lumin-min.png": "/my-app/static/media/lumin-min.379bad94.png",
+    "static/media/yourspace-min.png": "/my-app/static/media/yourspace-min.5f9e3077.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7c0ae09a.js",
+    "static/js/runtime-main.5119dbb0.js",
     "static/js/2.bfd26212.chunk.js",
     "static/css/main.2ec0b313.chunk.css",
-    "static/js/main.a6f96c73.chunk.js"
+    "static/js/main.ba9963a7.chunk.js"
   ]
 }
