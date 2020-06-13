@@ -1,5 +1,5 @@
 .main {
-  height: 100vh;
+  height: 100vh; //fallback option
   height: calc(var(--vh, 1vh) * 100);
   background-color: $white;
   .row {
@@ -38,26 +38,21 @@
       }
     }
     .btn-row {
-      position: absolute;
-      bottom: 200px;
-      right: 0;
+      width: 256px;
+      position: relative;
       z-index: 2;
-      transform-origin: 0 0;
-      transform: rotate(90deg);
       a {
-        display: inline-block;
-        font-size: 1rem;
+        font-size: 1.6rem;
         color: $black;
         text-decoration: none;
         display: flex;
         align-items: center;
         font-weight: 600;
-       
         @include media("<=tablet") {
-          font-size: 0.8rem;
+          font-size: 1.3rem;
         }
         @include media("<=phone") {
-          font-size: 0.7rem;
+          font-size: 1.1rem;
         }
         svg {
           margin-left: 16px;

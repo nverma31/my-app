@@ -31,6 +31,7 @@ const homeAnimation = completeAnimation => {
     })
     .to(".intro-overlay", 0, {
       css: { display: "none" }
+     
     })
     .from(".case-image img", 1.6, {
       scale: 1.4,
@@ -38,7 +39,7 @@ const homeAnimation = completeAnimation => {
       delay: -2,
       stagger: {
         amount: 0.4
-      },
+      } ,
       onComplete: completeAnimation
     });
 };
