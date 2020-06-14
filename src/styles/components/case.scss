@@ -1,0 +1,74 @@
+
+      .case {
+        position: relative;
+        cursor: pointer;
+        width: 25vw;
+        height: 50vh;
+        // background-color: $white;
+
+        &:hover {
+          .case-image {
+            opacity: 0.4 !important;
+          }
+        }
+        .case-details {
+          padding-top: 16px;
+  
+          box-sizing: border-box;
+          position: relative;
+          @include media("<=phone") {
+            padding: 16px;
+          }
+          @include media("<=tablet") {
+            width: 100vw;
+          }
+          span {
+            // margin-top: 156px;
+            font-size: 1.3rem;
+            opacity: 0.8;
+            color: $black;
+            @include media("<=desktop", ">tablet") {
+              font-size: 1.3rem;
+            }
+            @include media("<=phone") {
+              font-size: 1rem;
+              line-height: 1.9rem;
+            }
+          }
+          h2 {
+            font-size: 1.4rem;
+            // width: 85%;
+            margin-top: 16px;
+            color: $black;
+            font-weight: 600;
+  
+            @include media("<=desktop", ">tablet") {
+              font-size: 1.8rem;
+            }
+            @include media("<=phone") {
+              font-size: 1.4rem;
+              // line-height: 2.2rem;
+              margin-top: 8px;
+            }
+          }
+        }
+        
+        .case-image {
+          width: 25vw;
+          height: 50vh;
+          position: relative;
+          overflow: hidden;
+          
+          // overflow: hidden;
+          // // position: absolute;
+          // opacity: 0.65;
+          // transition: 0.4s cubic-bezier(0.6, -0.05, 0.1, 0.99);
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          }
+        }
+      }
+  

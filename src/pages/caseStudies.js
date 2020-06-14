@@ -1,7 +1,10 @@
 import React from "react";
+import PageHero from "../components/pageHero";
 
 const CaseStudies = () => {
   return (
+    <>
+    <PageHero />
     <div className='page'>
       <div className='container'>
         <div className='row'>
@@ -9,6 +12,7 @@ const CaseStudies = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

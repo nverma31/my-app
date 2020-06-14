@@ -1,7 +1,5 @@
 import React from "react";
-import { ReactComponent as CasesNext } from "../assets/arrow-right.svg";
-import { ReactComponent as CasesPrev } from "../assets/arrow-left.svg";
-import { NavLink } from "react-router-dom";
+import Case from "./case";
 
 const caseStudies = [
   {
@@ -15,47 +13,49 @@ const caseStudies = [
     subtitle: "Yourspace",
     title: "Open space floor plans for you next venture",
     img: "yourspace-min"
-  },
-  {
-    id: 3,
-    subtitle: "Lumin",
-    title: "For your best look ever",
-    img: "lumin-min"
   }
+ 
 ];
 
 const Cases = () => {
   return (
     <section className='cases'>
       <div className='container-fluid'>
-        <div className='cases-navigation'>
-          <div className='cases-arrow prev disabled'>
-            <CasesPrev />
+        <div className='row'>
+          <div className='spaceXXL'/>
+          <div className='upperoffset'>
+          <Case></Case>  
           </div>
-          <div className='cases-arrow next'>
-            <CasesNext />
-          </div>
+          <div className='spaceXXL'/>
+          <Case></Case>  
         </div>
         <div className='row'>
-          {caseStudies.map(caseItem => (
-            <div className='case' key={caseItem.id}>
-               <NavLink to='/about-us' exact>
-                  Case Studies
-               
-              <div className='case-details'>
-                <span>{caseItem.subtitle}</span>
-                <h2>{caseItem.title}</h2>
-              </div>
-              <div className='case-image'>
-                <img
-                  src={require(`../assets/${caseItem.img}.png`)}
-                  alt={caseItem.title}
-                />
-              </div>
-              </NavLink>
-            </div>
-          ))}
+          <div className='spaceXXL'/>
+          <div className='upperoffset'>
+          <Case></Case>  
+          </div>
+          <div className='spaceXL'/>
+          <Case></Case>  
         </div>
+        <div className='row'>
+          <div className='spaceXXL'/>
+          <div className='spaceL'/>
+
+          <div className='upperoffset'>
+          <Case></Case>  
+          </div>
+          <div className='spaceXL'/>
+          <Case></Case>  
+        </div>
+        <div className='row'>
+          <div className='spaceXXL'/>
+          <div className='upperoffset'>
+          <Case></Case>  
+          </div>
+          <div className='spaceXXL'/>
+          <Case></Case>  
+        </div>
+        
       </div>
     </section>
   );

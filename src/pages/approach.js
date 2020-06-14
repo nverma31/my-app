@@ -1,8 +1,12 @@
 import React, { useRef, useEffect, useState } from "react";
 import { useIntersection } from "react-use";
-import IntroOverlay from "../components/introOverlay"
+import IntroOverlay from "../components/introOverlay";
+import Banner from "../components/banner";
+
+import { NavLink } from "react-router-dom";
 
 import gsap from "gsap";
+import ImageReveal from "../components/imageReveal";
 
 let tl = gsap.timeline();
 
@@ -24,6 +28,7 @@ const homeAnimation = completeAnimation => {
 
 const Approach = ({ dimensions }) => {
 
+  //beginning animation
   const [animationComplete, setAnimationComplete] = useState(false);
 
   const completeAnimation = () => {
@@ -47,12 +52,31 @@ const Approach = ({ dimensions }) => {
     rootMargin: "0px",
     threshold: 0.2
   });
+  
+  // // Ref for our element
+  const sectionRef1 = useRef(null);
+  // All the ref to be observed
+  const intersection1 = useIntersection(sectionRef1, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.8
+  });
+  
+  // // Ref for our element
+  const sectionRef2 = useRef(null);
+  // All the ref to be observed
+  const intersection2 = useIntersection(sectionRef2, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.2
+  });
+  
 
   // Animation for fading in
   const fadeIn = element => {
-    gsap.to(element, 1, {
+    gsap.to(element, 3, {
       opacity: 1,
-      y: -60,
+      // y: -200,
       ease: "power4.out",
       stagger: {
         amount: 0.3
@@ -61,7 +85,7 @@ const Approach = ({ dimensions }) => {
   };
   // Animation for fading out
   const fadeOut = element => {
-    gsap.to(element, 1, {
+    gsap.to(element, 3, {
       opacity: 0,
       y: -20,
       ease: "power4.out"
@@ -73,9 +97,17 @@ const Approach = ({ dimensions }) => {
     ? fadeOut(".fadeIn")
     : fadeIn(".fadeIn");
 
+  if (intersection1 && intersection1.intersectionRatio > 0.8) {
+    fadeOut(".banner");
+  }
+  else 
+  {
+    fadeIn(".banner");
+  }
+
   return (
     <>
-      {animationComplete === false ? <IntroOverlay /> : ""}
+      {/* {animationComplete === false ? <IntroOverlay /> : ""} */}
 
       <div className='sectionFirst'>
         <div className='pic'>
@@ -118,6 +150,17 @@ const Approach = ({ dimensions }) => {
           </div>
         </div>
       </div>
+      <div ref={sectionRef1} className="banner">
+      <Banner />
+      </div>
+      <a href='/about-us' >
+      <ImageReveal />              
+        </a>
+      
+      <Banner />
+
+
+
     </>
   );
 };
