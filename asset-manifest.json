@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.4e5f7897.chunk.css",
-    "main.js": "/my-app/static/js/main.6acc5cd9.chunk.js",
-    "main.js.map": "/my-app/static/js/main.6acc5cd9.chunk.js.map",
-    "runtime-main.js": "/my-app/static/js/runtime-main.5119dbb0.js",
-    "runtime-main.js.map": "/my-app/static/js/runtime-main.5119dbb0.js.map",
-    "static/js/2.3cf41063.chunk.js": "/my-app/static/js/2.3cf41063.chunk.js",
-    "static/js/2.3cf41063.chunk.js.map": "/my-app/static/js/2.3cf41063.chunk.js.map",
-    "index.html": "/my-app/index.html",
-    "precache-manifest.5f072a66c755218a12a3902d75042621.js": "/my-app/precache-manifest.5f072a66c755218a12a3902d75042621.js",
-    "service-worker.js": "/my-app/service-worker.js",
-    "static/css/main.4e5f7897.chunk.css.map": "/my-app/static/css/main.4e5f7897.chunk.css.map",
-    "static/js/2.3cf41063.chunk.js.LICENSE.txt": "/my-app/static/js/2.3cf41063.chunk.js.LICENSE.txt",
-    "static/media/arrow-right.svg": "/my-app/static/media/arrow-right.dc372a07.svg",
-    "static/media/boy.webp": "/my-app/static/media/boy.39fed611.webp",
-    "static/media/people.webp": "/my-app/static/media/people.d0ada4b4.webp",
-    "static/media/up-arrow-circle.d6c4e78d.svg": "/my-app/static/media/up-arrow-circle.d6c4e78d.svg"
+    "main.css": "/static/css/main.4e5f7897.chunk.css",
+    "main.js": "/static/js/main.74fddcf5.chunk.js",
+    "main.js.map": "/static/js/main.74fddcf5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7c0ae09a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7c0ae09a.js.map",
+    "static/js/2.8ae26f52.chunk.js": "/static/js/2.8ae26f52.chunk.js",
+    "static/js/2.8ae26f52.chunk.js.map": "/static/js/2.8ae26f52.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9f14731d5fecc9939ecd8d95cc418c05.js": "/precache-manifest.9f14731d5fecc9939ecd8d95cc418c05.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.4e5f7897.chunk.css.map": "/static/css/main.4e5f7897.chunk.css.map",
+    "static/js/2.8ae26f52.chunk.js.LICENSE.txt": "/static/js/2.8ae26f52.chunk.js.LICENSE.txt",
+    "static/media/arrow-right.svg": "/static/media/arrow-right.dc372a07.svg",
+    "static/media/boy.webp": "/static/media/boy.39fed611.webp",
+    "static/media/people.webp": "/static/media/people.d0ada4b4.webp",
+    "static/media/up-arrow-circle.d6c4e78d.svg": "/static/media/up-arrow-circle.d6c4e78d.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5119dbb0.js",
-    "static/js/2.3cf41063.chunk.js",
+    "static/js/runtime-main.7c0ae09a.js",
+    "static/js/2.8ae26f52.chunk.js",
     "static/css/main.4e5f7897.chunk.css",
-    "static/js/main.6acc5cd9.chunk.js"
+    "static/js/main.74fddcf5.chunk.js"
   ]
 }
