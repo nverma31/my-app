@@ -24,11 +24,11 @@ const ImageReveal = () => {
         console.log(inView);
     tl.to(container, 0, { css: { visibility: "visible" } });
     tl.to(imageReveal, 3, { height: "0%", ease: Power2.easeInOut, delay: -0.6 });
-    // tl.from(image, 1.4, {
-    //   scale: 1.6,
-    //   ease: Power2.easeInOut,
-    //   delay: -1.4
-    // });
+    tl.from(image, 1.4, {
+      scale: 1.6,
+      ease: Power2.easeInOut,
+      delay: -1.4
+    });
         tl.to(imageReveal, { height: "100%" });
 
 }
@@ -45,6 +45,7 @@ else {
       <div className="container" ref={el => (container = el)}>
         <>
           <div className="img-container">
+            
             <img
               ref={el => {
                 image = el;

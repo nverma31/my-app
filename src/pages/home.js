@@ -52,7 +52,6 @@ const Home = ({ dimensions }) => {
       {animationComplete === false ? <IntroOverlay /> : ""}
       <Banner />
       <Cases />
-      <Contact />
     </>
   );
 };

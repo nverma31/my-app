@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,700i&display=swap");
+
+
+.hero {
+  visibility: hidden;
+  background: $white;
+  .hero-container {
+    width: 100vw;
+    min-width: 100vw;
+    .hero-inner {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+     
+      .hero-content {
+        // min-width: 100vw;
+        height: 70vh;
+        flex-basis: 100%;
+
+        .hero-content-inner {
+          color: #323232;
+          h1 {
+            font-weight: 500;
+            padding-left: 10vw;
+            padding-top: 30vh;
+            font-size: 32px;
+            margin-bottom: 24px;
+            .hero-content-line {
+              margin: 0;
+              height: 44px;
+              overflow: hidden;
+              .hero-content-line-inner {
+              }
+            }
+          }
+          
+          
+        }
+      }
+      .hero-images {
+        min-width: 100vw;
+        flex-basis: 100%;
+
+        .hero-images-inner {
+          .hero-image {
+            display: block;
+            overflow: hidden;
+            &.girl {
+            //   top: 0;
+            //   right: 0px;
+              width: 100vw;
+              height: 50vh;
+            }
+            
+            img {
+              position: absolute;
+            //   top: 0;
+            //   left: 0;
+            //   right: 0;
+            //   bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

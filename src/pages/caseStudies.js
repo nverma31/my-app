@@ -1,10 +1,10 @@
 import React from "react";
-import PageHero from "../components/pageHero";
-
+import Cases from "../components/case";
+import Case from "../components/case";
 const CaseStudies = () => {
   return (
     <>
-    <PageHero />
+  <Case />
     <div className='page'>
       <div className='container'>
         <div className='row'>

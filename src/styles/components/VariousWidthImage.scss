@@ -1,0 +1,21 @@
+.full-width-image{
+    img {
+    width: 100vw;
+    height: auto;
+  }
+}
+
+.wide-image{
+  padding-left: 10vw;
+  img {
+  width: 80vw;
+  height: auto;
+}
+}
+
+.tall-image{
+  img {
+  width: 40vw;
+  height: auto;
+}
+}

@@ -1,15 +1,16 @@
-import People from "../assets/people.webp";
+import People from "../assets/audi.webp";
 import React, { useRef, useEffect } from "react";
 import { useInView } from "react-intersection-observer"
 import { TimelineLite, Power2 } from "gsap";
+import { NavLink } from "react-router-dom";
 
 
 const caseStudies = [
   {
     id: 1,
-    subtitle: "Curology",
-    title: "A custom formula for your skin’s unique needs",
-    img: "curology-min"
+    subtitle: "Responsive Website — 2020",
+    title: "Audi Model Page Website. ",
+    img: "Audi-min"
   },
   {
     id: 2,
@@ -43,12 +44,15 @@ const Case = () => {
   return (
     <section className='case' ref={contentRef}>
         <div className="case-image">
+        <a href='/about-us' exact>
+           
         <img
               ref={el => {
                 image = el;
               }}
               src={People}
             />
+             </a>
             </div>       
               <div className='case-details'>
                 <span>{caseStudies[0].subtitle}</span>

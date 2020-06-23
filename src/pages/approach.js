@@ -107,7 +107,7 @@ const Approach = ({ dimensions }) => {
 
   return (
     <>
-      {/* {animationComplete === false ? <IntroOverlay /> : ""} */}
+      {animationComplete === false ? <IntroOverlay /> : ""}
 
       <div className='sectionFirst'>
         <div className='pic'>

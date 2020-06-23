@@ -6,8 +6,44 @@
 @import "./components/cases.scss";
 @import "./components/case.scss";
 @import "./components/navigation.scss";
-@import "./components/pageHero.scss";
 @import "./components/imageReveal.scss";
+@import "./components/projectTitle.scss";
+@import "./components/sectionPara.scss";
+@import "./components/projectIntro.scss";
+@import "./components/VariousWidthImage.scss";
+
+
+
+
+@font-face {
+  font-family: "TT Commons Bold";
+  src: url('../assets/TTCommons-Bold.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: "TT Commons Light";
+  src: url('../assets/TTCommons-Light.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: "TT Commons Medium";
+  src: url('../assets/TTCommons-Medium.ttf'); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: "TT Commons SemiBold";
+  src: url('../assets/TTCommons-DemiBold.ttf'); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: "TT Commons Regular";
+  src: url('../assets/TTCommons-Regular.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: "TT Commons Thin";
+  src: url('../assets/TTCommons-Thin.ttf'); /* IE9 Compat Modes */
+}
+
+
 
 
 
@@ -18,7 +54,7 @@ html {
   background: $white;
   overscroll-behavior: none;
   margin: 0;
-  font-family: "Josefin Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: "TT Commons", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -141,7 +177,7 @@ html {
   }
   h3 {
     font-size: 2rem;
-    font-weight: 900;
+    font-weight: Medium;
     margin: 8px 0;
   }
 }
@@ -171,7 +207,7 @@ html {
       margin: 8px 0;
       opacity: 0;
       font-size: 2rem;
-      font-weight: 900;
+      font-weight: Medium;
     }
     p {
       opacity: 0;

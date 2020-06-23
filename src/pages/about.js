@@ -7,17 +7,11 @@ let tl = gsap.timeline();
 
 const homeAnimation = completeAnimation => {
 
-  tl.to(".overlay-top", 2.5, {
+  tl.to(".overlay-top", 1.3, {
       height: 0,
       ease: "expo.inOut",
-      // stagger: 0.4
-    })
-  
-    .to(".intro-overlay", 0, {
-      css: { display: "none" }
-      ,
-      onComplete: completeAnimation
     });
+  
    
 };
 
@@ -32,10 +26,6 @@ const About = ({ dimensions }) => {
     homeAnimation(completeAnimation);
   }, []);
 
-  useEffect(() => {
-    let vh = dimensions.height * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-  }, [dimensions.width]);
 
   return (
     <>

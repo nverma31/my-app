@@ -1,0 +1,56 @@
+.some-page-wrapper {
+    margin: 5vw;
+    font-size:1.2rem;
+
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+  
+  .intro-section{
+    padding-bottom: 2rem;
+  }
+  .intro-section-heading {
+    padding-bottom: 0.5rem;
+    font-family: "TT Commons SemiBold";
+
+  }
+  
+  .brief-column {
+    padding-right: 20vw;
+    padding-bottom: 10vh;
+  }
+  .brief-column-heading {
+    font-size:1.5rem;
+    padding-bottom: 0.5rem;
+    font-family: "TT Commons SemiBold";
+  }
+  
+  
+  
+  .double-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+  
+  @media screen and (min-width: 800px) {
+    .column {
+      flex: 1
+    }
+  
+    .double-column {
+      flex: 2
+    }
+  }
+  
