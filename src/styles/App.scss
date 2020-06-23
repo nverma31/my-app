@@ -9,8 +9,13 @@
 @import "./components/imageReveal.scss";
 @import "./components/projectTitle.scss";
 @import "./components/sectionPara.scss";
+@import "./components/sectionParaLeft.scss";
 @import "./components/projectIntro.scss";
 @import "./components/VariousWidthImage.scss";
+@import "./components/footer.scss";
+@import "./components/video.scss";
+
+
 
 
 
@@ -23,6 +28,10 @@
 @font-face {
   font-family: "TT Commons Light";
   src: url('../assets/TTCommons-Light.ttf'); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: "TT Commons Thin";
+  src: url('../assets/TTCommons-Thin.ttf'); /* IE9 Compat Modes */
 }
 
 @font-face {

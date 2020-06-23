@@ -1,0 +1,90 @@
+.footer-wrapper {
+    font-size:1.2rem;
+    background: $black;
+    color: $white;
+    padding-top: 5vh;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+  
+  .footer-intro-section{
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+
+    padding-bottom: 2rem;
+    padding-left: 35vw;
+    font-family: "TT Commons Light";
+  }
+  .footer-text-section{
+    padding-left: 35vw;
+    font-family: "TT Commons Bold";
+    font-size: 5rem;
+    line-height: 2.5rem;
+  }
+  .footer-text-second-section{
+    padding-left: 45vw;
+    font-family: "TT Commons Bold";
+    font-size: 5rem;
+  }
+  .footer-mail-section{
+    padding-left: 46vw;
+    font-family: "TT Commons Light";
+    font-size: 1.2rem;
+    padding-bottom: 15vh;
+  }
+  
+  .footer-social-section{
+    float: right;
+  }
+  .footer-social-section{
+    text-align: right;
+    padding-right: 5vw;
+  }
+  .brief-column {
+    padding-right: 20vw;
+    padding-bottom: 10vh;
+  }
+  .brief-column-heading {
+    font-size:1.5rem;
+    padding-bottom: 0.5rem;
+    font-family: "TT Commons SemiBold";
+  }
+  
+  .footer-copyright-section {
+    font-family: "TT Commons Light";
+    font-size: 1rem;
+
+  }
+  .footer-social-section {
+    font-family: "TT Commons Light";
+    font-size: 1rem;
+
+  }
+  
+  .double-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+  
+  @media screen and (min-width: 800px) {
+    .column {
+      flex: 1
+    }
+  
+    .double-column {
+      flex: 2
+    }
+  }
+  

@@ -1,0 +1,64 @@
+.para-main-left {
+    height:100%;
+    background: $white;
+    padding-left: 15vw;
+    padding-right: 5vw;
+    width: 30vw;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    float: left;
+  
+    @include media("<=phone") {
+      width: 70vw;
+    }
+    @include media("<=tablet") {
+      width: 60vw;
+    }
+    .para-row {
+      // flex-direction: column;
+      // justify-content: center;
+  
+      h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0.04rem;
+        // line-height: 4.2rem;
+        // font-weight: medium;
+        @include media("<=tablet") {
+          font-size: 1.5rem;
+        }
+        @include media("<=phone") {
+          font-size: 1.5rem;
+        }
+        .para-line {
+          font-family: "TT Commons Regular";
+          height: 2rem;
+          position: relative;
+          overflow: hidden;
+          @include media("<=tablet") {
+            height: 2rem;
+          }
+          @include media("<=phone") {
+            height: 2rem;
+          }
+          span {
+            position: absolute;
+          }
+          .para-line-numbering{
+            font-size: 1rem;
+  
+          }
+        }
+      }
+      .description {
+        font-size: 1.1rem;
+        width: 25vw;
+        @include media("<=phone") {
+          width: 70vw;
+        }
+        @include media("<=tablet") {
+          width: 70vw;
+        }
+      }
+    }
+  }
+  

@@ -11,6 +11,7 @@ import Services from "./pages/services";
 import About from "./pages/about";
 import Home from "./pages/home";
 import Nubitalk from "./pages/nubitalk";
+import Trickle from "./pages/trickle";
 
 
 const routes = [
@@ -19,7 +20,9 @@ const routes = [
   { path: "/approach", name: "approach", Component: Approach },
   { path: "/services", name: "services", Component: Services },
   { path: "/about-us", name: "about", Component: About },
-  { path: "/nubitalk", name: "about", Component: Nubitalk }
+  { path: "/nubitalk", name: "about", Component: Nubitalk },
+  { path: "/trickle", name: "about", Component: Trickle }
+
 
 ];
 

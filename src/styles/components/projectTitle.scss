@@ -20,17 +20,27 @@
         .hero-content-inner {
           color: #323232;
           h1 {
-            font-weight: 500;
+            font-family: "TT Commons Bold";
             padding-left: 10vw;
             padding-top: 30vh;
-            font-size: 32px;
             margin-bottom: 24px;
             .hero-content-line {
               margin: 0;
-              height: 44px;
+              font-size: 4vw;
+              color: #000000;
+              line-height: 5vw;
               overflow: hidden;
               .hero-content-line-inner {
               }
+            }
+            .hero-content-description {
+              margin: 0;
+              font-size: 3vw;
+
+              overflow: hidden;
+              font-family: "TT Commons Thin";
+
+              
             }
           }
           

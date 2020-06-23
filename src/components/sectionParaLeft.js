@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer"
 
 import gsap from "gsap";
 
-const SectionPara = () => {
+const SectionParaLeft = () => {
   let tl = gsap.timeline();
   // let contentRef = useRef(null);
 
@@ -30,7 +30,7 @@ tl.from(".description", 1 , {
     }
  }, [inView] )
   return (
-    <section className='para-main'>
+    <section className='para-main-left'>
       <div className='para-container' ref={contentRef} >
         <div className='para-row'>
           <h2>
@@ -55,4 +55,4 @@ tl.from(".description", 1 , {
   );
 };
 
-export default SectionPara;
+export default SectionParaLeft;

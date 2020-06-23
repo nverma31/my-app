@@ -2,15 +2,17 @@ import React, {useEffect, useRef} from "react";
 import {TimelineLite ,TweenMax, Power3} from 'gsap';
 import arrow from '../assets/arrow-right.svg'
 
-import People from "../assets/Rectangle.png";
+import People from "../assets/trickle/hero.png";
 
 
-function ProjectTitle() {
+const ProjectTitle = ({intro}) => {
   let app = useRef(null)
   let images = useRef(null)
   let content = useRef(null)
   let tl = new TimelineLite();
-  
+  console.log("in" + intro);
+  const passedField = 'title';
+
   useEffect(() => {
     // Images Vars
     const girlImage = images.firstElementChild; // or children[0]
@@ -19,7 +21,6 @@ function ProjectTitle() {
     //content vars
     const headlineFirst = content.children[0].children[0];
     const headlineSecond = headlineFirst.nextSibling;
-    const headlineThird = headlineSecond.nextSibling;
    
     //Remove initial flash
     TweenMax.to(app, 0, {css: {visibility: 'visible'}})
@@ -29,8 +30,8 @@ function ProjectTitle() {
     .from(girlImage.firstElementChild, 2, {scale: 1.6, ease: Power3.easeOut}, .2)
     
     //Content Animation
-    tl.staggerFrom([headlineFirst.children, headlineSecond.children, headlineThird.children ], 1, {
-      y: 44,
+    tl.staggerFrom([headlineFirst.children, headlineSecond.children], 1, {
+      y: 100,
       ease:Power3.easeOut,
       delay: .8
     }, .15, 'Start')
@@ -48,21 +49,19 @@ function ProjectTitle() {
             <div className="hero-content-inner" ref={el => content = el}>
               <h1>
                 <div className="hero-content-line">
-                  <div className="hero-content-line-inner">Relieving the burden</div>
+                  <div className="hero-content-line-inner">{intro.title}</div>
                 </div>
-                <div className="hero-content-line">
-                  <div className="hero-content-line-inner">of disease caused</div>  
+                <div className="hero-content-description">
+                <div className="hero-content-line-inner">{intro.subtitle}</div>  
                 </div>
-                <div className="hero-content-line">
-                  <div className="hero-content-line-inner">by behaviors.</div>
-                </div>
+                
               </h1>
             </div>
           </div>
           <div className="hero-images">
             <div ref={el => images = el}  className="hero-images-inner">
               <div className="hero-image girl">
-                <img src={People} alt="girl" />
+                <img src={intro.imageurl} alt="girl" />
               </div>
               
             </div>

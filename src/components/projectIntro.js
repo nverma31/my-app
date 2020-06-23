@@ -3,47 +3,48 @@ import { useInView } from "react-intersection-observer"
 
 import gsap from "gsap";
 
-const ProjectIntro = () => {
+const ProjectIntro = ({introText}) => {
   let tl = gsap.timeline();
+  console.log(introText.title);
 
   return (
-    <div class='some-page-wrapper'>
-      <div class='row'>
-        <div class='column'>
-          <div class="intro-section">
-            <div class='intro-section-heading'>
+    <div className='some-page-wrapper'>
+      <div className='row'>
+        <div className='column'>
+          <div className="intro-section">
+            <div className='intro-section-heading'>
               What we did
             </div>
-            <div class='intro-section-description'>
+            <div className='intro-section-description'>
               I worked as a UX Designer
             </div>
           </div>
-          <div class="intro-section">
-            <div class='intro-section-heading'>
+          <div className="intro-section">
+            <div className='intro-section-heading'>
               Years
             </div>
-            <div class='intro-section-description'>
+            <div className='intro-section-description'>
               2016
             </div>
           </div>
-          <div class="intro-section">
-            <div class='intro-section-heading'>
+          <div className="intro-section">
+            <div className='intro-section-heading'>
               Company
             </div>
-            <div class='intro-section-description'>
+            <div className='intro-section-description'>
               Collab
             </div>
           </div>
         </div>
-        <div class='double-column'>
-          <div class='brief-column'>
-          Bed all in the expecting alphabet the time. Brothers withdraw at is to best date to on does ocean. Deceleration rippedup, I box it her, war, I there odd live any many she impasse. The still city feedback project finds links accompany said beginning produce phase to must few can two phase and the admittance.
+        <div className='double-column'>
+          <div className='brief-column'>
+            {introText.intro}
         </div>
-          <div class='brief-column'>
-            <div class='brief-column-heading'>
+          <div className='brief-column'>
+            <div className='brief-column-heading'>
               The Brief
             </div>
-Bed all in the expecting alphabet the time. Brothers withdraw at is to best date to on does ocean. Deceleration rippedup, I box it her, war, I there odd live any many she impasse. The still city feedback project finds links accompany said beginning produce phase to must few can two phase and the admittance.
+            {introText.brief}
         </div>
         </div>
 
