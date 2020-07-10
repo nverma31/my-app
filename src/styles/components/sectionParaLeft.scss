@@ -1,4 +1,4 @@
-.para-main-left {
+.leftpara-main-left {
     height:100%;
     background: $white;
     padding-left: 15vw;
@@ -14,7 +14,7 @@
     @include media("<=tablet") {
       width: 60vw;
     }
-    .para-row {
+    .leftpara-row {
       // flex-direction: column;
       // justify-content: center;
   
@@ -29,7 +29,7 @@
         @include media("<=phone") {
           font-size: 1.5rem;
         }
-        .para-line {
+        .leftpara-line {
           font-family: "TT Commons Regular";
           height: 2rem;
           position: relative;
@@ -43,14 +43,16 @@
           span {
             position: absolute;
           }
-          .para-line-numbering{
+          .leftpara-line-numbering{
             font-size: 1rem;
   
           }
         }
       }
-      .description {
+      .leftdescription {
         font-size: 1.1rem;
+        font-family: "TT Commons Light";
+
         width: 25vw;
         @include media("<=phone") {
           width: 70vw;

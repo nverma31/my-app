@@ -1,0 +1,25 @@
+.parentContainer {
+	width: 100%;
+	padding: 7% 70px;
+  max-width: 1430px;
+	margin: 0 auto; /* horizontally center parentContainer */
+	box-sizing: border-box;
+	
+	display: flex; /* put stickyContainer and imageContainer side by side */
+	align-items: flex-start; /* prevent stickyContainer from spanning the entire height of parentContainer */
+	justify-content: space-between; /* align stickyContainer and img to their respective left/right edges of the parentContainer */
+
+
+    .stickyContainer {
+  position: -webkit-sticky; /* http://caniuse.com/#feat=css-sticky */
+	position: sticky;
+	top: 0; /* tell this element where to stick */
+	width: 41.66667%;
+}
+
+    img {
+	width: 50%;
+  max-width: 645px;
+}
+
+}

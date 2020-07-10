@@ -1,12 +1,11 @@
 .para-main {
   height:100%;
   background: $white;
-  padding-left: 15vw;
   padding-right: 15vw;
   width: 30vw;
   float: right;
   padding-bottom: 10vh;
-  padding-top: 10vh;
+  padding-top: 20vh;
 
   @include media("<=phone") {
     float: left;
@@ -47,12 +46,16 @@
         }
         .para-line-numbering{
           font-size: 1rem;
+          font-family: "TT Commons Regular";
+
 
         }
       }
     }
     .description {
       font-size: 1.1rem;
+      font-family: "TT Commons Light";
+
       width: 25vw;
       @include media("<=phone") {
         width: 70vw;

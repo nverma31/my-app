@@ -5,23 +5,10 @@ import { TimelineLite, Power2 } from "gsap";
 import { NavLink } from "react-router-dom";
 
 
-const caseStudies = [
-  {
-    id: 1,
-    subtitle: "Responsive Website — 2020",
-    title: "Audi Model Page Website. ",
-    img: "Audi-min"
-  },
-  {
-    id: 2,
-    subtitle: "Yourspace",
-    title: "Open space floor plans for you next venture",
-    img: "yourspace-min"
-  }
-];
 
 
-const Case = () => {
+
+const Case = ({titles}) => {
     let image = useRef(null);
     let tl = new TimelineLite();
     const [contentRef, inView] = useInView({
@@ -44,19 +31,19 @@ const Case = () => {
   return (
     <section className='case' ref={contentRef}>
         <div className="case-image">
-        <a href='/about-us' exact>
+        <a href={titles.link} exact>
            
         <img
               ref={el => {
                 image = el;
               }}
-              src={People}
-            />
+              src={titles.img}
+              />
              </a>
             </div>       
               <div className='case-details'>
-                <span>{caseStudies[0].subtitle}</span>
-                <h2>{caseStudies[0].title}</h2>
+                <span>{titles.subtitle}</span>
+                <h2>{titles.title}</h2>
               </div>
               
     </section>

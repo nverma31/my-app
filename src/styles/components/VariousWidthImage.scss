@@ -14,10 +14,16 @@
 }
 
 .tall-image{
+
   max-width: 40vw;
   display: inline;
+  padding-left: 15vw;
+  // padding-right: 15vw;
+
   img {
-  width: 40vw;
+  padding-top: 10vh;
+
+  width: 30vw;
   height: auto;
 }
 }

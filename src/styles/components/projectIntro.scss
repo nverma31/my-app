@@ -24,14 +24,23 @@
   .intro-section-heading {
     padding-bottom: 0.5rem;
     font-family: "TT Commons SemiBold";
+    color: #AEAEAE;
+
+  }
+  .intro-section-description {
+    font-family: "TT Commons Light";
 
   }
   
   .brief-column {
     padding-right: 20vw;
+    padding-top: 7vh;
+        font-family: "TT Commons Light";
+
   }
   .brief-column-heading {
     font-size:1.5rem;
+
     padding-bottom: 0.5rem;
     font-family: "TT Commons SemiBold";
   }

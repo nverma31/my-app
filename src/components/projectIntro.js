@@ -13,18 +13,18 @@ const ProjectIntro = ({introText}) => {
         <div className='column'>
           <div className="intro-section">
             <div className='intro-section-heading'>
-              What we did
+              What I did
             </div>
             <div className='intro-section-description'>
-              I worked as a UX Designer
+              {introText.what}
             </div>
           </div>
           <div className="intro-section">
             <div className='intro-section-heading'>
-              Years
+              When
             </div>
             <div className='intro-section-description'>
-              2016
+            {introText.when}
             </div>
           </div>
           <div className="intro-section">
@@ -32,7 +32,7 @@ const ProjectIntro = ({introText}) => {
               Company
             </div>
             <div className='intro-section-description'>
-              Collab
+            {introText.client}
             </div>
           </div>
         </div>
@@ -40,12 +40,12 @@ const ProjectIntro = ({introText}) => {
           <div className='brief-column'>
             {introText.intro}
         </div>
-          <div className='brief-column'>
+          {/* <div className='brief-column'>
             <div className='brief-column-heading'>
               The Brief
             </div>
             {introText.brief}
-        </div>
+        </div> */}
         </div>
 
 

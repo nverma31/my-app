@@ -26,8 +26,8 @@ const ProjectTitle = ({intro}) => {
     TweenMax.to(app, 0, {css: {visibility: 'visible'}})
 
     //Images Animation
-    tl.from(girlImage, 1.5, {y: 500, ease: Power3.easeOut},'Start')
-    .from(girlImage.firstElementChild, 2, {scale: 1.6, ease: Power3.easeOut}, .2)
+    tl.from(girlImage, 1.5, {y: 100, ease: Power3.easeOut},'Start')
+    .from(girlImage.firstElementChild, 2, {scale: 1.1, ease: Power3.easeOut}, .2)
     
     //Content Animation
     tl.staggerFrom([headlineFirst.children, headlineSecond.children], 1, {

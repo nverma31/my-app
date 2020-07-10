@@ -5,6 +5,7 @@ import Cases from "../components/cases";
 import Contact from "../components/contact";
 
 import gsap from "gsap";
+import Footer from "../components/footer";
 
 let tl = gsap.timeline();
 
@@ -51,7 +52,8 @@ const Home = ({ dimensions }) => {
     <>
       {animationComplete === false ? <IntroOverlay /> : ""}
       <Banner />
-      <Cases />
+      <Cases/>
+      <Footer />
     </>
   );
 };

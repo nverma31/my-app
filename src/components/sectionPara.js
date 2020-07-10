@@ -3,17 +3,16 @@ import { useInView } from "react-intersection-observer"
 
 import gsap from "gsap";
 
-const SectionPara = () => {
+const SectionPara = ({section}) => {
   let tl = gsap.timeline();
   // let contentRef = useRef(null);
 
   const [contentRef, inView] = useInView({
-    rootMargin: "-10px", 
     triggerOnce:true
   });
   useEffect(() => {
     if (inView) {
-tl.from(".para-line span", 1, {
+  tl.from(".para-line span", 1, {
   y: 100,
   ease: "power4.out",
   delay: 0.1,
@@ -35,19 +34,14 @@ tl.from(".description", 1 , {
         <div className='para-row'>
           <h2>
             <div className='para-line'>
-              <span class= "para-line-numbering">01 </span>
+              <span class= "para-line-numbering">{section.num} </span>
             </div>
             <div className='para-line'>
-              <span>Discovery process.</span>
+              <span>{section.title}</span>
             </div>
           </h2>
           <p className="description">
-                Better treats serious cardiometabolic diseases to transform
-                lives and reduce healthcare utilization through the use of
-                digital therapeutics.
-                etter treats serious cardiometabolic diseases to transform
-                lives and reduce healthcare utilization through the use of
-                digital therapeutics.
+                {section.text}
               </p>
         </div>
       </div>

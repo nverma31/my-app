@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer"
 
 import gsap from "gsap";
 
-const SectionParaLeft = () => {
+const SectionParaLeft = ({section}) => {
   let tl = gsap.timeline();
   // let contentRef = useRef(null);
 
@@ -13,7 +13,7 @@ const SectionParaLeft = () => {
   });
   useEffect(() => {
     if (inView) {
-tl.from(".para-line span", 1, {
+tl.from(".leftpara-line span", 1, {
   y: 100,
   ease: "power4.out",
   delay: 0.1,
@@ -22,7 +22,7 @@ tl.from(".para-line span", 1, {
     amount: 0.3
   }
 });
-tl.from(".description", 1 , {
+tl.from(".leftdescription", 1 , {
   y: 20,
   opacity:0,
   ease: "power4.out"
@@ -30,24 +30,19 @@ tl.from(".description", 1 , {
     }
  }, [inView] )
   return (
-    <section className='para-main-left'>
-      <div className='para-container' ref={contentRef} >
-        <div className='para-row'>
+    <section className='leftpara-main-left'>
+      <div className='leftpara-container' ref={contentRef} >
+        <div className='leftpara-row'>
           <h2>
-            <div className='para-line'>
-              <span class= "para-line-numbering">01 </span>
+            <div className='leftpara-line'>
+              <span class= "leftpara-line-numbering">{section.num} </span>
             </div>
-            <div className='para-line'>
-              <span>Discovery process.</span>
+            <div className='leftpara-line'>
+              <span>{section.title}</span>
             </div>
           </h2>
-          <p className="description">
-                Better treats serious cardiometabolic diseases to transform
-                lives and reduce healthcare utilization through the use of
-                digital therapeutics.
-                etter treats serious cardiometabolic diseases to transform
-                lives and reduce healthcare utilization through the use of
-                digital therapeutics.
+          <p className="leftdescription">
+                {section.text}
               </p>
         </div>
       </div>
