@@ -1,20 +1,15 @@
 import React from "react";
-import Path from "../assets/Nemo/fullpage.png";
+import Path from "../assets/ewe/marketing.png";
 
-const Sticky = () => {
+const Sticky = ({content}) => {
   return (
-    <div class="parentContainer">
-	<div class="stickyContainer">
-		<h2>It’s a big world</h2>
-		<h3>Finding your way</h3>
-		<p>Many people’s vacation plans start with Lonely Planet. With so much content about so many destinations, we focused on helping users find what they’re looking for, even when they’re not sure what it is yet.</p>
-		<ul>
-			<li>Inspirational photography</li>
-			<li>Personal quotes from the editors</li>
-			<li>Most popular destinations</li>
-		</ul>
+    <div className="parentContainer">
+	<div className="stickyContainer">
+		<h2>{content.num}</h2>
+		<h3>{content.title}</h3>
+		<p>{content.text}</p>
 	</div>
-	<img src={Path} alt="Lonely Planet Asia screenshot"/>
+	<img src={content.imageurl}/>
 </div>
   );
 };

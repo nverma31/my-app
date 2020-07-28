@@ -15,7 +15,9 @@ import Trickle from "./pages/trickle";
 import PayPal from "./pages/paypal";
 import Nemo from "./pages/nemo";
 import Crowded from "./pages/crowded";
-
+import Ewe from "./pages/ewe";
+import Quinta from "./pages/quinta";
+import Uci from "./pages/Uci"
 
 const routes = [
   { path: "/my-app", name: "Home", Component: Home },
@@ -27,7 +29,12 @@ const routes = [
   { path: "/paypal", name: "paypal", Component: PayPal },
   { path: "/nemo", name: "nemo", Component: Nemo },
   { path: "/trickle", name: "about", Component: Trickle },
-  { path: "/crowded", name: "crowded", Component: Crowded }
+  { path: "/crowded", name: "crowded", Component: Crowded },
+  { path: "/ewe", name: "ewe", Component: Ewe },
+  { path: "/quinta", name: "quinta", Component: Quinta },
+  { path: "/uci", name: "uci", Component: Uci }
+
+
 
 
 

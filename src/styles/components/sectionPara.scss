@@ -45,16 +45,20 @@
           position: absolute;
         }
         .para-line-numbering{
-          font-size: 1rem;
+          font-size: 0.9rem;
+          letter-spacing: 0.09rem;
           font-family: "TT Commons Regular";
 
-
+        }
+        .para-line-title{
+          display: block;
         }
       }
     }
     .description {
       font-size: 1.1rem;
-      font-family: "TT Commons Light";
+      font-family: "TT Commons Regular";
+      color:#424242;
 
       width: 25vw;
       @include media("<=phone") {
@@ -66,3 +70,5 @@
     }
   }
 }
+
+

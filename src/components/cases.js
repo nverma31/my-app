@@ -17,7 +17,7 @@ const titles = [
     subtitle: "E-commerce",
     title: "Audi User Cars Platform.",
     img: Uci,
-    link: 'nemo'
+    link: 'uci'
 
   },
   {
@@ -33,7 +33,7 @@ const titles = [
     subtitle: "Internet of things",
     title: "EWE IOT concept App.",
     img: Paypal,
-    link: 'nemo'
+    link: 'ewe'
 
   },
   {
@@ -72,7 +72,7 @@ const titles = [
     subtitle: "App development",
     title: "Community Festival App",
     img: Paypal,
-    link: 'nemo'
+    link: 'quinta'
 
   }
 ];

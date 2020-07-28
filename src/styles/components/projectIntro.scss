@@ -16,27 +16,39 @@
     flex-direction: column;
     flex-basis: 100%;
     justify-self: start;
+    padding-top: 4vh;
+    padding-bottom: 5vh;;
+
   }
   
   .intro-section{
-    padding-bottom: 4vh;
+
+    padding-bottom: 3vh;
   }
   .intro-section-heading {
     padding-bottom: 0.5rem;
+    font-size: 1rem;
+
     font-family: "TT Commons SemiBold";
-    color: #AEAEAE;
+    color: #202020;
 
   }
   .intro-section-description {
     font-family: "TT Commons Light";
+    width: 50%;
+    font-size: 1rem;
 
   }
   
   .brief-column {
-    padding-right: 20vw;
-    padding-top: 7vh;
-        font-family: "TT Commons Light";
+     padding-right: 20vw;
+     padding-bottom: 7vh;
 
+        font-family: "TT Commons Regular";
+        font-size: 1.4rem;
+        letter-spacing: 0.015rem;
+        line-height: 2rem;
+        color: #0f0f0f;
   }
   .brief-column-heading {
     font-size:1.5rem;
@@ -51,6 +63,8 @@
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
+    padding-top: 4vh;
+
   }
   
   @media screen and (min-width: 800px) {

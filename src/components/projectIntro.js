@@ -29,10 +29,10 @@ const ProjectIntro = ({introText}) => {
           </div>
           <div className="intro-section">
             <div className='intro-section-heading'>
-              Company
+            {introText.client}
             </div>
             <div className='intro-section-description'>
-            {introText.client}
+            {introText.company}
             </div>
           </div>
         </div>
@@ -40,12 +40,12 @@ const ProjectIntro = ({introText}) => {
           <div className='brief-column'>
             {introText.intro}
         </div>
-          {/* <div className='brief-column'>
+          <div className='brief-column'>
             <div className='brief-column-heading'>
               The Brief
             </div>
             {introText.brief}
-        </div> */}
+        </div>
         </div>
 
 

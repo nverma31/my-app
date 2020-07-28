@@ -8,7 +8,9 @@ const SectionPara = ({section}) => {
   // let contentRef = useRef(null);
 
   const [contentRef, inView] = useInView({
-    triggerOnce:true
+    triggerOnce:true,
+    rootMargin: "-200px", 
+
   });
   useEffect(() => {
     if (inView) {
@@ -37,8 +39,14 @@ tl.from(".description", 1 , {
               <span class= "para-line-numbering">{section.num} </span>
             </div>
             <div className='para-line'>
-              <span>{section.title}</span>
+              <span class="para-line-title">{section.title}</span>
+
             </div>
+            <div className='para-line'>
+              <span class="para-line-title">{section.title1}</span>
+
+            </div>
+          
           </h2>
           <p className="description">
                 {section.text}

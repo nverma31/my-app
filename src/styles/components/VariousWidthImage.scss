@@ -17,12 +17,29 @@
 
   max-width: 40vw;
   display: inline;
-  padding-left: 15vw;
+  // padding-left: 15vw;
   // padding-right: 15vw;
 
   img {
   padding-top: 10vh;
 
+  width: 30vw;
+  height: auto;
+}
+}
+
+.ewe-wide-image{
+background-color: #FBFBFB;
+  display: inline;
+  // padding-right: 15vw;
+
+  .normal-image {
+  padding-top: 10vh;
+
+  width: 70vw;
+  height: auto;
+}
+.gif-image {
   width: 30vw;
   height: auto;
 }

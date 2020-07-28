@@ -1,12 +1,14 @@
 import React, { useRef, useEffect } from "react";
 import ReactPlayer from 'react-player'
+import Path from "../assets/ewe/home.mp4";
 
 const Video = ({ path}) => {
    
     return (
       <div className='player-wrapper'>
         <ReactPlayer
-          url='https://vimeo.com/191292269'
+          loop
+          url={Path}
           className='react-player'
           width='100%'
           height='100%'

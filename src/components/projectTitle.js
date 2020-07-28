@@ -61,7 +61,7 @@ const ProjectTitle = ({intro}) => {
           <div className="hero-images">
             <div ref={el => images = el}  className="hero-images-inner">
               <div className="hero-image girl">
-                <img src={intro.imageurl} alt="girl" />
+                <img src={intro.imageurl}  />
               </div>
               
             </div>

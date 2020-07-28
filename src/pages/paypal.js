@@ -3,32 +3,53 @@ import IntroOverlay from "../components/introOverlay";
 import SectionPara from "../components/sectionPara";
 import SectionParaLeft from "../components/sectionParaLeft";
 import Path from "../assets/audi.webp";
+import Ball from "../assets/paypal/8ball.jpg";
+import Space from "../assets/Nemo/space.png";
 
 import gsap from "gsap";
 import ProjectTitle from "../components/projectTitle";
 import ProjectIntro from "../components/projectIntro";
 import FullWidthImage from "../components/fullWidthImage";
+import Sticky from "../components/sticky";
+
 import Footer from "../components/footer";
 import Video from "../components/video";
 import Hero from "../assets/paypal/hero.png";
+import Web1 from "../assets/paypal/web1.png";
+import Web2 from "../assets/paypal/web2.png";
+import Web3 from "../assets/paypal/web3.png";
+import Web4 from "../assets/paypal/web4.png";
+import Web5 from "../assets/paypal/web5.png";
+import Web6 from "../assets/paypal/web6.png";
+import mob1 from "../assets/paypal/mob1.png";
+import mob2 from "../assets/paypal/mob2.png";
+import mob3 from "../assets/paypal/mob3.png";
+
+import Responsive from "../assets/paypal/responsive.png";
+
 
 import WideImage from "../components/wideImage";
 import TallImage from "../components/tallImage";
 
-const introtitle = { title: 'PayPal', subtitle: 'Reimagining finances', imageurl: Hero};
-const introText = { brief: 'Design a interactive installation which raises awareness about Privacy Issues', intro: 'Every day, mobile users can easily fall victim to another new method of tracking, stalking or privacy abuse. Stolen personal information has become a valuable product on the black market. It includes not just financial or medical information, but and kind of PII that can be used as a key to your other assets.', imageurl: Hero};
-const sectioin1 = { num: '01', title: 'The Concept.', text: ' To try it out, we included users in the development process, reaching to them in two key stages of the project: At the beginning, through interviews, to find out about their habits and expectations. At a more advanced stage of the visual and Ux design, to confirm that the visual language and the functional focus were as expected. By listening to the real thing, we were able to confirm that we were going in the right direction, and were able to correct and modify some issues as a result of their suggestions.'};
-const sectioin2 = { num: '02', title: 'Bringing it to Life', text: 'Users are at the centre of our work. Our main focus is their expeestions.'};
-const sectioin3 = { num: '03', title: 'Site Installation', text: ' so thsfying and fulfilncluded users in the development process, reaching to them in two key stages of the project: At the beginning, through interviews, to find out about their habits and expectations. At a more advanced stage of the visual and Ux design, to confirm that the visual language and the functional focus were as expected. By listening to the real thing, we were able to confirm that we were going in the right direction, and were able to correct and modify some issues as a result of their suggestions.'};
+const introtitle = { title: 'PayPal', subtitle: 'Rebooting PayPal', imageurl: Hero };
+const introText = { brief: 'Pivot PayPal from an engineering driven company to a  product based company that fits better in its customers lives.', intro: 'Founded in 1998 during the dot-com boom, PayPal was the first online payments company. However, with the change in landscape of how people use technology, PayPal lagged behind in providing a good experience for its customers. In 2013, I was involved in the complete overhaul of the Website and the App to make it customer-centric again.', when: 'July 2013 - June 2014', client: 'Company', company: 'PayPal', what: 'I worked as a software engineer in the customer team which was responsbile for the overhaul of the website and the mobile app.', imageurl: Hero };
+const sectioin1 = { num: '01', title: 'The website.', text: ' To try it out, we included users in the development process, reaching to them in two key stages of the project: At the beginning, through interviews, to find out about their habits and expectations. At a more advanced stage of the visual and Ux design, to confirm that the visual language and the functional focus were as expected. By listening to the real thing, we were able to confirm that we were going in the right direction, and were able to correct and modify some issues as a result of their suggestions.' };
+const sectioin2 = { num: '', title: 'Focusing on Customer Engagement', text: 'The redesign offers multiple avenues to increase customer engagement and comprehension to help build long-last relationships with customers' };
+const sectioin3 = { num: '', title: 'A simple way to manage settings', text: ' so thsfying and fulfilncluded users in the development process, reaching to them in two key stages of the project: At the beginning, through interviews, to find out about their habits and expectations. At a more advanced stage of the visual and Ux design, to confirm that the visual language and the functional focus were as expected. By listening to the real thing, we were able to confirm that we were going in the right direction, and were able to correct and modify some issues as a result of their suggestions.' };
+const sectioin4 = { num: '', title: 'Responsive and Mobile first.', text: 'From the small screen to the big, the new redesigned PayPal website  works and play everywhere.', imageurl: Responsive };
+const sectioin5 = { num: '', title: 'A simple way to track your activity', text: ' so thsfying and fulfilncluded users in the development process, reaching to them in two key stages of the project: At the beginning, through interviews, to find out about their habits and expectations. At a more advanced stage of the visual and Ux design, to confirm that the visual language and the functional focus were as expected. By listening to the real thing, we were able to confirm that we were going in the right direction, and were able to correct and modify some issues as a result of their suggestions.' };
+const sectioin6 = { num: '', title: 'Support and maintenance', text: ' We provided round the clock technical support for countries during the roll out. Post launch, continual monitoring of five key sites helps identify any issues and schedule updates.' };
+const sectioin7 = { num: '', title: 'Monitoring and user testing', text: ' so thsfying and fulfilncluded users in the development process, reaching to them in two key stages of the project: At the beginning, through interviews, to find out about their habits and expectations. At a more advanced stage of the visual and Ux design, to confirm that the visual language and the functional focus were as expected. By listening to the real thing, we were able to confirm that we were going in the right direction, and were able to correct and modify some issues as a result of their suggestions.' };
 
 let tl = gsap.timeline();
 
 const homeAnimation = completeAnimation => {
   tl.to(".overlay-top", 1, {
-      height: 0,
-      ease: "expo.inOut"    })
+    height: 0,
+    ease: "expo.inOut"
+  })
 
-   
+
 };
 
 const PayPal = ({ dimensions }) => {
@@ -54,21 +75,79 @@ const PayPal = ({ dimensions }) => {
 
   return (
     <>
-     {animationComplete === false ? <IntroOverlay /> : ""}
+      {animationComplete === false ? <IntroOverlay /> : ""}
       <ProjectTitle intro={introtitle} />
-      <div></div>
-      <ProjectIntro introText = {introText} />
-    
+      <ProjectIntro introText={introText} />
+      <FullWidthImage path={Ball} />
+      <div className="sectionBold">
+        <div className="sectionTitleNumber" > 01.</div>
 
-        <SectionPara section={sectioin1} />
-        <WideImage path={Path}  />
+        <div className="sectionTitleBold" > The website.</div>
+        <div className="sectionTitleText" >  The redesign focused on simplifying the customer interface, responsive web design, and incorporating mobile first methodology. Significant improvements includes responsive web pages, mobile first design, simplified user experiences, multiple added features, and a modern interface design.</div>
+      </div>
+      <div className="paypal-website-images">
+        <div className="sectionBeforeAfter">
+          Before and After
+      </div>
+        <div className="CaptionPayPal">
+          The redesigned Summary page focused on putting Activity, balance and linked accounts in the forefront.
+        </div>
+        <FullWidthImage path={Web1} />
+        <div className="CaptionPayPal">
+        The redesigned Activity page groups transactions within pending or completed sections for easier scannability.        </div>
+        <FullWidthImage path={Web2} />
+        <div className="CaptionPayPal">
+        The redesigned transaction details groups the information in logical sections, uses friendly language in a  simplified layout.        </div>
+        <FullWidthImage path={Web3} />
+        <div className="CaptionPayPal">
+        The redesigned wallet page provides a quick snapshot of their PayPal balance and linked accounts.        </div>
+        <FullWidthImage path={Web4} />
+      </div>
+      <Sticky content={sectioin4} />
+
       {/* <WideImage path={Dataflow}  /> */}
-        <SectionParaLeft section={sectioin2}/>
-        <WideImage path={Path}  />
-        <SectionPara section={sectioin3}/>
-        <WideImage path={Path}  />
+      <SectionPara section={sectioin2} />
+      <WideImage path={Space}  />
 
-        <Footer />
+        <div className="CaptionPayPal">
+        A module that encourages customers to complete their account setup and  gamification to increase customer engagement. </div>
+        <FullWidthImage path={Web5} />
+        <div className="CaptionPayPal">
+       A prominent space for marketing to promote new products and educate customers. The 3 circles  frequently switch out based on various marketing campaigns and product testing.        </div>
+        <FullWidthImage path={Web6} />
+    
+   
+
+      <div className="sectionBoldSecond">
+        <div className="sectionTitleNumber" > 02.</div>
+
+        <div className="sectionTitleBold" > The App.</div>
+        <div className="sectionTitleText" >  Led the design of the Activity section of the new Consumer PayPal app, which launched to 4.8 million customers in February 2016. Responsible for designing and overseeing the entire Activity app experience while working in partnership with stakeholders, product, design and engineering.</div>
+      </div>
+      <div className="sectionBeforeAfter">
+        Before and After
+      </div>
+      <div className="CaptionPayPal">
+        The redesigned Summary page focused on putting Activity, balance and linked accounts in the forefront.
+        </div>
+      <FullWidthImage path={Web1} />
+      <SectionParaLeft section={sectioin3} />
+      <WideImage path={mob1} />
+      <SectionPara section={sectioin5} />
+      <WideImage path={mob2} />
+      <div className="sectionBold">
+        <div className="sectionTitleNumber" > 03.</div>
+
+        <div className="sectionTitleBold" > Global rollout.</div>
+        <div className="sectionTitleText" > launched globally to 24 countries and 154 million customers in May 2014.</div>
+      </div>
+      <SectionPara section={sectioin6} />
+      <TallImage path={Path} />
+
+      <SectionParaLeft section={sectioin7} />
+      <TallImage path={Path} />
+
+      <Footer />
 
     </>
   );

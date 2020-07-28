@@ -11,7 +11,7 @@
      
       .hero-content {
         // min-width: 100vw;
-        height: 70vh;
+        height: 60vh;
 
         .hero-content-inner {
           color: #323232;
@@ -26,6 +26,14 @@
               color: #000000;
               line-height: 5vw;
               overflow: hidden;
+              @include media("<=tablet") {
+                font-size: 7vw;
+                line-height: 8vw;
+              }
+              @include media("<=phone") {
+                font-size: 7vw;
+                line-height: 8vw;
+              }
               .hero-content-line-inner {
               }
             }
@@ -35,7 +43,17 @@
 
               overflow: hidden;
               font-family: "TT Commons Thin";
+              @include media("<=tablet") {
+                font-size: 5vw;
+                line-height: 6vw;
+                max-width: 70vw;
 
+              }
+              @include media("<=phone") {
+                font-size: 5vw;
+                line-height: 7vw;
+                max-width: 70vw;
+              }
               
             }
           }

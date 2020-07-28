@@ -16,12 +16,6 @@
 @import "./components/video.scss";
 @import "./components/sticky.scss";
 
-
-
-
-
-
-
 @font-face {
   font-family: "TT Commons Bold";
   src: url('../assets/TTCommons-Bold.ttf'); /* IE9 Compat Modes */
@@ -164,8 +158,66 @@ html {
     align-items: center;
   }
 }
+.sectionBold{
+  padding-left: 15vw;
+  padding-top: 20vh;
+  padding-bottom: 18vh;
+  width: 55vw;
 
+}
+.sectionBoldSecond{
+  padding-left: 35vw;
+  padding-top: 20vh;
+  width: 50vw;
+  padding-bottom: 18vh;
 
+}
+.sectionTitleNumber {
+  font-size: 0.8vw;
+  font-family: "TT Commons Medium";
+  padding-bottom: 1vw;
+}
+.sectionTitleBold {
+  font-size: 4.5vw;
+  font-family: "TT Commons Semibold";
+  padding-bottom: 1vw;
+
+}
+.sectionTitleText {
+  width:80%;
+  font-size: 1.2vw;
+  letter-spacing: 0.01vw;
+
+  padding-left: 0.8vw;
+  font-family: "TT Commons Light";
+  @include media("<=tablet") {
+    width: 100%;
+  }
+
+}
+
+.sectionBeforeAfter {
+  background-color: #F8FAFB;
+  font-size: 2vw;
+  font-family: "TT Commons Medium";
+  padding-left: 15vw;
+  padding-top: 5vh;
+
+}
+.CaptionPayPal{
+  padding-left: 15vw;
+  font-size: 1.2vw;
+  color: #3a3a3a;
+  padding-top: 5vh;
+  width: 30%;
+  padding-bottom: 4vh;
+
+}
+
+.paypal-website-images{
+  background-color: #F8FAFB;
+
+}
 
 .sectionFirst {
   background: $yell;
