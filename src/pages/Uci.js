@@ -50,7 +50,7 @@ const homeAnimation = completeAnimation => {
    
 };
 
-const Uci = ({ dimensions }) => {
+const Uci = () => {
   const intro = { title: 'abc', subtitle: 'new' };
 
   console.log(intro);
@@ -66,10 +66,10 @@ const Uci = ({ dimensions }) => {
     homeAnimation(completeAnimation);
   }, []);
 
-  useEffect(() => {
-    let vh = dimensions.height * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-  }, [dimensions.width]);
+  // useEffect(() => {
+  //   let vh = dimensions.height * 0.01;
+  //   document.documentElement.style.setProperty("--vh", `${vh}px`);
+  // }, [dimensions.width]);
 
   return (
     <>

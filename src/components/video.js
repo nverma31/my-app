@@ -8,7 +8,7 @@ const Video = ({ path}) => {
       <div className='player-wrapper'>
         <ReactPlayer
           loop
-          url={Path}
+          url={path}
           className='react-player'
           width='100%'
           height='100%'

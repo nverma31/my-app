@@ -185,11 +185,11 @@ html {
 }
 .sectionTitleText {
   width:80%;
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   letter-spacing: 0.01vw;
 
   padding-left: 0.8vw;
-  font-family: "TT Commons Light";
+  font-family: "TT Commons Regular";
   @include media("<=tablet") {
     width: 100%;
   }
@@ -199,18 +199,19 @@ html {
 .sectionBeforeAfter {
   background-color: #F8FAFB;
   font-size: 2vw;
-  font-family: "TT Commons Medium";
+  font-family: "TT Commons Semibold";
   padding-left: 15vw;
-  padding-top: 5vh;
+  padding-top: 7vh;
 
 }
 .CaptionPayPal{
   padding-left: 15vw;
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   color: #3a3a3a;
-  padding-top: 5vh;
+  padding-top: 2vh;
   width: 30%;
-  padding-bottom: 4vh;
+  font-family: "TT Commons Regular";
+  padding-bottom: 7vh;
 
 }
 
@@ -245,6 +246,27 @@ html {
   }
 }
 
+.nemo-interaction-wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;	
+}
+
+// demo & defaults
+.nemo-box {
+		color: #fff;
+		padding: 1em;
+}
+.nemo-box img{
+  width:40vw;
+  height: auto;
+  padding-left: 5vw;
+}
+
+
+hr {
+  width: 60vw;
+  border-top: #8f8f8f;
+}
 .sectionSecond {
   background: $purp;
   height: 700px;

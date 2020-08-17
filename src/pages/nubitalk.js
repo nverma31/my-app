@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import IntroOverlay from "../components/introOverlay";
 import SectionPara from "../components/sectionPara";
 import SectionParaLeft from "../components/sectionParaLeft";
-import Path from "../assets/audi.webp";
 
 import gsap from "gsap";
 import ProjectTitle from "../components/projectTitle";

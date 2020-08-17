@@ -1,11 +1,13 @@
 import React from "react";
 import Case from "./case";
 import Audi from "../assets/home/audi.png";
-import Collab from "../assets/home/collab.png";
+import Collab from "../assets/home/collab.jpg";
 import Crowded from "../assets/home/crowded.png";
 import Trickle from "../assets/home/trickle.png";
 import Paypal from "../assets/home/paypal.png";
 import Uci from "../assets/home/uci.png";
+import Quinta from "../assets/home/quinta.png";
+
 
 
 
@@ -71,7 +73,7 @@ const titles = [
     id: 8,
     subtitle: "App development",
     title: "Community Festival App",
-    img: Paypal,
+    img: Quinta,
     link: 'quinta'
 
   }

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import IntroOverlay from "../components/introOverlay";
 import SectionPara from "../components/sectionPara";
 import SectionParaLeft from "../components/sectionParaLeft";
-import Path from "../assets/audi.webp";
 
 import gsap from "gsap";
 import ProjectTitle from "../components/projectTitle";
@@ -27,12 +26,15 @@ let tl = gsap.timeline();
 
 
 const intro = { title: 'Quinta Annual Festival', subtitle: 'Celebrate with the community', imageurl: Hero};
-const introText = { brief: 'Quinta Da sa Luzia is an old Quinta(a country estate) at Maderia, which organises an annual festival for the local community with local traditional events. Here, our challenge was to create a service experience for the festival.', intro: 'A service Experience for the annual festival of a local Quinta(a country estate) in Madeira, Portugal where the members of the local community gathers to get involve in traditional cultural events and workshops.', imageurl: Hero};
-const sectioin1 = { num: '01', title: 'Understanding to the community.', text: ' To try it out, we included users in the development process, reaching to them in two key stages of the project: At the beginning, through interviews, to find out about their habits and expectations. At a more advanced stage of the visual and Ux design, to confirm that the visual language and the functional focus were as expected. By listening to the real thing, we were able to confirm that we were going in the right direction, and were able to correct and modify some issues as a result of their suggestions.'};
-const sectioin2 = { num: '01', title: 'Event creation', text: 'Users are at the centre of our work. Our main focus is their expeestions.'};
-const sectioin3 = { num: '02', title: 'Showing intent', text: ' so thsfying and fulfilncluded users in the development process, reaching to them in two key stages of the project: At the beginning, through interviews, to find out about their habits and expectations. At a more advanced stage of the visual and Ux design, to confirm that the visual language and the functional focus were as expected. By listening to the real thing, we were able to confirm that we were going in the right direction, and were able to correct and modify some issues as a result of their suggestions.'};
-const sectioin4 = { num: '03', title: 'Co-creation chatbot', text: 'Users are at the centre of our work. Our main focus is their expeestions.'};
-const sectioin5 = { num: '04', title: 'Event finalise', text: 'Users are at the centre of our work. Our main focus is their expeestions.'};
+const introText = { brief: 'Quinta Da sa Luzia is an old Quinta(a country estate) at Maderia, which organises an annual festival for the local community with local traditional events. Here, our challenge was to create a service experience for the festival.', intro: 'A service Experience for the annual festival of a local Quinta(a country estate) in Madeira, Portugal, where the members of the local community gathers to get involve in traditional cultural events and workshops.', imageurl: Hero};
+const sectioin1 = { num: '', title: 'Understanding the community.', text: 'We interviewed various stakeholders including the organisers, event performers, workshop organizers, and attendees, which enabled us to understand stakeholders roles and interactions. Importantly, we were able to attend that year’s festival and talk to some attendees there, and that service safari enabled us to outline the attendees journey map. '};
+const sectioin2 = { num: '01', title: 'Organiser proposes an Event ', text: 'The  website allows the event hosts to submit their event proposals to be reviewed by Quinta Organising committee.'};
+const sectioin3 = { num: '02', title: 'Attendees shows intent', text: 'Attendees can show interest to events. Afterwards, they are invited for a group chat with the host which is facilitated by the chatbot.'};
+const sectioin4 = { num: '03', title: 'Co-creation chatbot faciilitate communication', text: 'The chatbot prompts both the host and attendees to have a discussion about their goals for the events and moderates the conversation.'};
+const sectioin5 = { num: '04', title: 'Finalised festival schedule', text: 'The chatbot creates a poll for attendees to choose the time that suits all of them and subsequently, sets up calendar events and updates the website with the date and time.'};
+const sectioin6 = { num: '02', title: 'A new experience based on service design principles', text: 'Our proposed service tackles the issues identified in the research, builds on the current relationship between the stakeholders. It focuses on two main things: First, facilitate co-creation between organisers and attendees, and second, improve attendees experience. We designed a new festival website, an App, and a co-creation chatbot in order to realise our vision of the festival.'};
+const sectioin7 = { num: '01', title: 'Plan and attend events of your choice', text: 'The responsive website has the festival schedule and also provides more information about all events.Users can save the certain events as favorite and they get notified when those event are about to start.'};
+const sectioin8 = { num: '01', title: 'Navigating within festival', text: 'The app has a local map of the quinta premises and allows users to navigate during the festival where they can see which event is being held at a particular location at any specific time.'};
 
 const homeAnimation = completeAnimation => {
   tl.to(".overlay-top", 1, {
@@ -69,6 +71,7 @@ const Quinta = ({ dimensions }) => {
 
         <SectionPara section={sectioin1} />
         <WideImage path={stakeholder}  />
+        <SectionPara section={sectioin6} />
 
         <WideImage path={sb1}  />
         <WideImage path={sb2}  />
@@ -78,7 +81,7 @@ const Quinta = ({ dimensions }) => {
         <div className="sectionBold">
 
 <div className ="sectionTitleBold" > Facilitating co-creation b/w organisers & attendees</div>
-<div className ="sectionTitleText" >  The redesign focused on simplifying the customer interface, responsive web design, and incorporating mobile first methodology. Significant improvements including responsive web pages, mobile first design, simplified user experiences, multiple added features, and a modern interface design.</div>
+<div className ="sectionTitleText" >Being a community run festival, the events and workshop are finalised at the last moments, and with both the organisers and attendees often don’t know each others expectations. Our proposed solution poses on co-creatiion of various events by facilitation communication between organisers and attendees before the festival using the website and the chatbot. </div> 
 </div>
 <SectionPara section={sectioin2} />
         <WideImage path={Test}  />
@@ -89,14 +92,13 @@ const Quinta = ({ dimensions }) => {
         <SectionParaLeft section={sectioin5}/>
         <WideImage path={Test}  />
         <div className="sectionBoldSecond">
-        <div className ="sectionTitleNumber" > 02.</div>
 
         <div className ="sectionTitleBold" > Improving attendees experience.</div>
-        <div className ="sectionTitleText" >  Led the design of the Activity section of the new Consumer PayPal app, which launched to 4.8 million customers in February 2016. Responsible for designing and overseeing the entire Activity app experience while working in partnership with stakeholders, product, design and engineering.</div>
+        <div className ="sectionTitleText" >  We also designed the festival app that improves the attending experience. Now only does it informs attendees about the festival, it also helps them in planning and attending the events of their choice. Moreover, it orients people during the festival.</div>
       </div>
-      <SectionPara section={sectioin4} />
+      <SectionPara section={sectioin7} />
         <WideImage path={Test}  />
-        <SectionParaLeft section={sectioin5}/>
+        <SectionParaLeft section={sectioin8}/>
         <WideImage path={Test}  />
         <Footer />
 

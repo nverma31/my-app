@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import IntroOverlay from "../components/introOverlay";
 import SectionPara from "../components/sectionPara";
 import SectionParaLeft from "../components/sectionParaLeft";
-import Path from "../assets/audi.webp";
+import Path from "../assets/crowded/hero.jpg";
 
 import gsap from "gsap";
 import ProjectTitle from "../components/projectTitle";
@@ -12,7 +12,9 @@ import Footer from "../components/footer";
 import Hero from "../assets/crowded/hero.jpg";
 import Field from "../assets/crowded/field.png";
 import Synthesis1 from "../assets/crowded/syn.png";
+import Secondary from "../assets/crowded/second.png";
 
+import FieldInsights from "../assets/crowded/fieldinsights.png";
 
 import WideImage from "../components/wideImage";
 import TallImage from "../components/tallImage";
@@ -57,13 +59,16 @@ const Crowded = ({ dimensions }) => {
       {animationComplete === false ? <IntroOverlay /> : ""}
       <ProjectTitle intro={intro} />
       <ProjectIntro introText = {introText} />
+      <hr></hr>
         <SectionPara section={sectioin1} />
-        <WideImage path={Path}  />
+        <FullWidthImage  path={Secondary}  />
         <SectionParaLeft section={sectioin2}/>
         <WideImage path={Field}  />
         <SectionPara section={sectioin3} />
         <TallImage path={Synthesis1}  />
-        <WideImage path={Path}  />
+        <SectionParaLeft section={sectioin2}/>
+
+        <FullWidthImage  path={FieldInsights}  />
 
         <Footer />
 

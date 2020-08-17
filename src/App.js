@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Route } from "react-router-dom";
+import React, { useEffect, Component } from "react";
+import { BrowserRouter, Route, Link, Redirect, withRouter } from 'react-router-dom';
 import { gsap } from "gsap";
 import "./styles/App.scss";
 import Header from "./components/header";
@@ -27,18 +27,10 @@ const routes = [
   { path: "/about-us", name: "about", Component: About },
   { path: "/nubitalk", name: "nubitalk", Component: Nubitalk },
   { path: "/paypal", name: "paypal", Component: PayPal },
-  { path: "/nemo", name: "nemo", Component: Nemo },
   { path: "/trickle", name: "about", Component: Trickle },
   { path: "/crowded", name: "crowded", Component: Crowded },
   { path: "/ewe", name: "ewe", Component: Ewe },
   { path: "/quinta", name: "quinta", Component: Quinta },
-  { path: "/uci", name: "uci", Component: Uci }
-
-
-
-
-
-
 
 ];
 
@@ -52,6 +44,103 @@ function debounce(fn, ms) {
     }, ms);
   };
 }
+
+const fakeAuthCentralState = {
+  isAuthenticated: false,
+  authenticate(callback) {
+    this.isAuthenticated = true;
+    setTimeout(callback, 300);
+  },
+  signout(callback) {
+    this.isAuthenticated = false;
+    setTimeout(callback, 300);
+  }
+};
+
+const Public = () => <h3>Public Content</h3>;
+const Protected = () => <h3>Protected Content</h3>;
+
+class Login extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      redirectToReferrer: false,
+      value:''
+    };
+
+    this.login = this.login.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+
+  }
+  
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+  login = (event) => {
+    // alert('A name was submitted: ' + this.state.value);
+    event.preventDefault();
+    if (this.state.value === "PortfolioPassword") {
+
+    fakeAuthCentralState.authenticate(() => {
+      this.setState(() => ({
+        redirectToReferrer: true
+      }));
+    });
+  }
+  }
+
+  render() {
+    const { from } = this.props.location.state || { from: { pathname: '/' } };
+    const { redirectToReferrer } = this.state;
+
+    if (redirectToReferrer === true) {
+      this.props.history.push(from.pathname);
+    }
+
+    return (
+      <div>
+        <AuthButton/>
+            <ul>
+              <li><Link to="/public">Public Content</Link></li>
+              <li><Link to="/protected">Protected Content</Link></li>
+            </ul>
+        <p>Please, you need to be authenticated to to view this content</p>
+        <form onSubmit={this.login}>
+        <label>
+          Name:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
+      </div>
+    )
+  }
+}
+
+const ProtectedRoute = ({ component: Component, ...rest }) => (
+  <Route {...rest} render={(props) => (
+    fakeAuthCentralState.isAuthenticated === true
+      ? <Component {...props} />
+      : <Redirect to={{
+          pathname: '/login',
+          state: { from: props.location }
+        }} />
+  )} />
+);
+
+const AuthButton = withRouter(({ history }) => (
+  fakeAuthCentralState.isAuthenticated ? (
+    <p>
+      Welcome to this amazing content! <button onClick={() => {
+        fakeAuthCentralState.signout(() => history.push('/'))
+      }}>Sign out</button>
+    </p>
+  ) : (
+    <p>You are not logged in.</p>
+  )
+));
 
 function App() {
   const [dimensions, setDimensions] = React.useState({
@@ -78,11 +167,23 @@ function App() {
     <>
       <Header dimensions={dimensions} />
       <div className='App'>
-        {routes.map(({ path, Component }) => (
+
+     <BrowserRouter>
+          <div>
+            
+            <Route path="/public" component={Public}/>
+            {routes.map(({ path, Component }) => (
           <Route key={path} exact path={path}>
             <Component dimensions={dimensions} />
           </Route>
         ))}
+            <Route path="/login" component={withRouter(Login)}/>
+            <ProtectedRoute path='/protected' component={Protected} />
+            <ProtectedRoute path='/nemo' component={Nemo} />
+            <ProtectedRoute path='/uci' component={Uci} />
+
+          </div>
+      </BrowserRouter>
       </div>
       <Navigation />
     </>

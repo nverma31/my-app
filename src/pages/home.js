@@ -3,6 +3,7 @@ import IntroOverlay from "../components/introOverlay";
 import Banner from "../components/banner";
 import Cases from "../components/cases";
 import Contact from "../components/contact";
+import SocialIcons from '../components/social'
 
 import gsap from "gsap";
 import Footer from "../components/footer";
@@ -53,7 +54,9 @@ const Home = ({ dimensions }) => {
       {animationComplete === false ? <IntroOverlay /> : ""}
       <Banner />
       <Cases/>
-      <Footer />
+
+      <SocialIcons/>
+
     </>
   );
 };

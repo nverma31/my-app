@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as RightArrow } from "../assets/arrow-right.svg";
+import { ReactComponent as RightArrow } from "../assets/quinta.png";
 
 const Banner = () => {
   return (
@@ -16,7 +16,7 @@ const Banner = () => {
           </h2>
           <div className='btn-row'>
             <a href='/'>
-              More about me <RightArrow />
+              {/* More about me <RightArrow /> */}
             </a>
           </div>
         </div>

@@ -1,4 +1,3 @@
-import People from "../assets/audi.webp";
 import React, { useRef, useEffect } from "react";
 import { useInView } from "react-intersection-observer"
 import { TimelineLite, Power2 } from "gsap";

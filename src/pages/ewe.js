@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import IntroOverlay from "../components/introOverlay";
 import SectionPara from "../components/sectionPara";
 import SectionParaLeft from "../components/sectionParaLeft";
-import Path from "../assets/audi.webp";
+import Path from "../assets/crowded/hero.jpg";
+import HeroVideo from "../assets/ewe/home.mp4";
 
 import gsap from "gsap";
 import ProjectTitle from "../components/projectTitle";
@@ -68,7 +69,7 @@ const Ewe = ({ dimensions }) => {
       <ProjectTitle intro={intro} />
 
       <ProjectIntro introText = {introText} />
-      <Video />
+      <Video path={HeroVideo} />
       <SectionPara section={sectioin0} />
       <div className='ewe-wide-image'>
         <img className ="normal-image"
