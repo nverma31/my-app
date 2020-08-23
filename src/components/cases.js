@@ -1,13 +1,12 @@
 import React from "react";
 import Case from "./case";
-import Audi from "../assets/home/audi.png";
+import Audi from "../assets/home/audi.jpg";
 import Collab from "../assets/home/collab.jpg";
-import Crowded from "../assets/home/crowded.png";
-import Trickle from "../assets/home/trickle.png";
+import Crowded from "../assets/home/crowded.jpg";
+import Trickle from "../assets/home/trickle.jpg";
 import Paypal from "../assets/home/paypal.jpg";
-import Uci from "../assets/home/uci.png";
-import Quinta from "../assets/home/quinta.png";
-import ImageReveal from "./imageReveal";
+import Uci from "../assets/home/uci.jpg";
+import Quinta from "../assets/home/quinta.jpg";
 import Ewe from "../assets/home/ewe.jpg";
 
 
@@ -97,7 +96,7 @@ const Cases = () => {
         <div className='row'>
           <div className='spaceXXL'/>
           <div className='upperoffset'>
-          <Case titles={titles[2]} ></Case>  
+          <Case titles={titles[4]} ></Case>  
           </div>
           <div className='spaceXL'/>
           <Case titles={titles[0]} ></Case>  
@@ -107,7 +106,7 @@ const Cases = () => {
           <div className='spaceL'/>
 
           <div className='upperoffset'>
-          <Case titles={titles[4]} ></Case>  
+          <Case titles={titles[2]} ></Case>  
           </div>
           <div className='spaceXL'/>
           <Case titles={titles[5]} ></Case>  

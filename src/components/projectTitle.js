@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from "react";
 import {TimelineLite ,TweenMax, Power3} from 'gsap';
-import arrow from '../assets/arrow-right.svg'
+import arrow from '../assets/arrow-right.svg';
 
 import People from "../assets/trickle/hero.png";
 

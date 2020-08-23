@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactComponent as RightArrow } from "../assets/right-arrow.svg";
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 
 const Gradient = styled.span`

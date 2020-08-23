@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import IntroOverlay from "../components/introOverlay"
+import IntroOverlay from "../components/introOverlay";
 
 import gsap from "gsap";
 

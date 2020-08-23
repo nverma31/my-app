@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import Audi from "../assets/home/audi.png";
+import Audi from "../assets/home/audi.jpg";
 import { TimelineLite, Power2 } from "gsap";
 import CSSRulePlugin from "gsap/CSSRulePlugin";
 

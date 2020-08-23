@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import { useInView } from "react-intersection-observer"
+import { useInView } from "react-intersection-observer";
 
 import gsap from "gsap";
 
@@ -17,7 +17,6 @@ const SectionPara = ({section}) => {
   tl.from(".para-line span", 1, {
   y: 100,
   ease: "power4.out",
-  delay: 0.1,
   stagger: {
     amount: 0.3
   }

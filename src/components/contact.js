@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
-import { TimelineLite, Expo } from 'gsap'
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import { TimelineLite, Expo } from 'gsap';
 
 const Title = styled.h1`
   bottom: -4rem;

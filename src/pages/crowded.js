@@ -25,10 +25,11 @@ let tl = gsap.timeline();
 
 
 const intro = { title: 'Crowded Context Research', subtitle: 'Understanding People in Crowded Environments ', imageurl: Hero};
-const introText = { what: 'worked as a UX designer', when: '2017', client: 'Vodafone', brief: 'Design a interactive installation which raises awareness about Privacy Issues', intro: 'Every day, mobile users can easily fall victim to another new method of tracking, stalking or privacy abuse. Stolen personal information has become a valuable product on the black market. It includes not just financial or medical information, but and kind of PII that can be used as a key to your other assets.', imageurl: Hero};
+const introText = { what: 'I was an User Research Intern.', when: 'May 2017 - Aug 2017', company:'Vodafone',client: 'Client', brief: 'Generate insights regarding behaviour and needs of people at crowded environments that can be leveraged to build a platform for the attendees and businesses present in those environments.', intro: 'An exploratory research project to understand the attitudes, behaviour, needs of attendees and businesses at crowded environment like music festivals, conferences, sporting events etc.', imageurl: Hero};
 const sectioin1 = { num: '01', title: 'Starting off with Secondary Research', text: 'I conducted secondary research to understand the events domains, stakeholders involved, market and technology trends. It also helped in learning more about the domain and context, and eventually ask the right questions during our field research.'};
-const sectioin2 = { num: '02', title: 'Learning on the Field', text: 'I conducted secondary research to understand the events domains, stakeholders involved, market and technology trends. It also helped in learning more about the domain and context, and eventually ask the right questions during our field research.'};
-const sectioin3 = { num: '03', title: 'Generating and Sharing Insights', text: 'I conducted secondary research to understand the events domains, stakeholders involved, market and technology trends. It also helped in learning more about the domain and context, and eventually ask the right questions during our field research.'};
+const sectioin2 = { num: '02', title: 'Learning on the Field', text: 'Me and another researcher attended four week-long music festivals. We observed and interviewed  both attendees and people representing different businesses at these festivals.'};
+const sectioin3 = { num: '03', title: 'Generating and Sharing Insights', text: 'We gathered tons of data during our feild visits. We consolidated and analysed all our data to identify people\'s behaviour, needs, and opportuniity areas in crowded environments.'};
+const sectioin4 = { num: '04', title: 'Sharing our Insights with the client ', text: 'Following are some key-insights that we shared with our client.'};
 
 const homeAnimation = completeAnimation => {
   tl.to(".overlay-top", 1, {
@@ -64,9 +65,12 @@ const Crowded = ({ dimensions }) => {
         <FullWidthImage  path={Secondary}  />
         <SectionParaLeft section={sectioin2}/>
         <WideImage path={Field}  />
-        <SectionPara section={sectioin3} />
+        <div className="sectiom-with-tall-image">
         <TallImage path={Synthesis1}  />
-        <SectionParaLeft section={sectioin2}/>
+
+        <SectionPara section={sectioin3} />
+        </div>
+        <SectionParaLeft section={sectioin4}/>
 
         <FullWidthImage  path={FieldInsights}  />
 

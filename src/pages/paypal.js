@@ -41,9 +41,9 @@ const introtitle = { title: 'PayPal', subtitle: 'Rebooting PayPal', imageurl: He
 const introText = { brief: 'Pivot PayPal from an engineering driven company to a  product based company that fits better in its customers lives.', intro: 'Founded in 1998, PayPal was the first online payments company. However, with the change in landscape of how people use technology, PayPal lagged behind in providing a good experience for its customers. In 2013, I was involved in the complete overhaul of the Website and the App that better serves its customers.', when: 'July 2013 - June 2014', client: 'Company', company: 'PayPal', what: 'I worked as a software engineer in the customer team which was responsbile for the overhaul of the website and the mobile app.', imageurl: Hero };
 const sectioin1 = { num: '01', title: 'The website.', text: ' To try it out, we included users in the development process, reaching to them in two key stages of the project: At the beginning, through interviews, to find out about their habits and expectations. At a more advanced stage of the visual and Ux design, to confirm that the visual language and the functional focus were as expected. By listening to the real thing, we were able to confirm that we were going in the right direction, and were able to correct and modify some issues as a result of their suggestions.' };
 const sectioin2 = { num: '', title: 'Focusing on Customer Engagement', text: 'The redesign offers multiple avenues to increase customer engagement and comprehension to help build long-last relationships with customers' };
-const sectioin3 = { num: '', title: 'A simple acivity tracker', text: 'From the small screen to the big, the new redesigned PayPal website  works and play everywhere.', imageurl:activity };
+const sectioin3 = { num: '', title: 'A simple acivity tracker', text: 'Simplified how users can track thier activity and be up-to-date with their account. Significant improvements include a simplified design, new merchant and customer avatars for increased scannability, enhanced filter capabilities, globally friendly design, ability to take actions on transactions, and a more robust transaction details.', imageurl:activity };
 const sectioin4 = { num: '', title: 'Responsive and Mobile first.', text: 'From the small screen to the big, the new redesigned PayPal website  works and play everywhere.', imageurl: Responsive };
-const sectioin5 = { num: '', title: 'An easier way to manage settings', text: 'From the small screen to the big, the new redesigned PayPal website  works and play everywhere.', imageurl:activity };
+const sectioin5 = { num: '', title: 'An easier way to manage settings', text: ' Completely redefine how users can manage their settings. Significant improvements included a simplified profile menu and additional functionalities for modifying your profile.', imageurl:activity };
 const sectioin8 = { num: '', title: 'Phased roll out', text: 'The launch of the website was planned in many phases. Starting with throttling  1% of live-traffic in some markets and then moving progressively to full traffic in all markets '};
 const sectioin7 = { num: '', title: 'Monitoring and user testing', text: 'From the small screen to the big, the new redesigned PayPal website  works and play everywhere.' };
 const sectioin6 = { num: '', title: 'Support and maintenance', text: 'I was involved in providing round the clock technical support for countries during the roll out. Post launch, there was continual monitoring of key services which helps identify any issues and schedule updates. We were  pushing out global updates and maintained an ongoing programme of improvements.'};
@@ -136,18 +136,16 @@ const PayPal = ({ dimensions }) => {
           Before and After
       </div>
         <div className="CaptionPayPal">
-          The redesigned Summary page focused highlighted activity, balance, and linked accounts.
+        Added ability to filter by money coming in vs. out and increased scannability and visual hierarchy with date groupings and pictures. 
         </div>
         <FullWidthImage path={mob4} />
         <div className="CaptionPayPal">
-        The redesigned Activity page groups transactions within pending or completed sections for easier scannability.        </div>
+        Reduced  unnecessary redundancy and increased scannability, and visual hierarchy with logical grouping and segmentation of profile data. </div>
         <FullWidthImage path={mob2} />
         <div className="CaptionPayPal">
-        The redesigned transaction details groups information in logical sections, uses clear language in a  simple layout.        </div>
-        <FullWidthImage path={mob3} />
-        <div className="CaptionPayPal">
-        The redesigned wallet page provides a quick snapshot of their PayPal balance and linked accounts.        </div>
-        <FullWidthImage path={mob4} />
+        Optimized layout and added ability to take action including contacting the seller, added essential transactional information such as payment breakdown.    </div>
+            <FullWidthImage path={mob3} />
+
       </div>
            <Sticky content={sectioin3} />
 

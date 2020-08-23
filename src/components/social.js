@@ -1,16 +1,7 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
-import { TimelineLite } from 'gsap'
-import {
-  faDribbble,
-  faGithub,
-  faLinkedin,
-  faInstagram,
-} from '@fortawesome/free-brands-svg-icons'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import { TimelineLite } from 'gsap';
 
-library.add(faDribbble, faGithub, faLinkedin, faInstagram)
 
 const SocialLinks = styled.div`
   margin-top: 50px;
@@ -69,15 +60,6 @@ const SocialLinks = styled.div`
   }
 `
 
-const socialsArray = [
-  { url: 'https://dribbble.com/Arxaa', icon: 'dribbble' },
-  { url: 'https://github.com/wrongakram', icon: 'github' },
-  {
-    url: 'https://www.linkedin.com/in/akram-khalid-12b977142/',
-    icon: 'linkedin',
-  },
-  { url: 'https://www.instagram.com/wrongakram', icon: 'instagram' },
-]
 
 class SocialIcons extends Component {
   constructor(props) {

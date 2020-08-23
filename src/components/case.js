@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import { useInView } from "react-intersection-observer"
+import { useInView } from "react-intersection-observer";
 import { TimelineLite, Power2 } from "gsap";
 import { NavLink } from "react-router-dom";
 

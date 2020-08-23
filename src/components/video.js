@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player';
 import Path from "../assets/ewe/home.mp4";
 
 const Video = ({ path}) => {

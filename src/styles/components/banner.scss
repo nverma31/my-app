@@ -69,10 +69,10 @@
         align-items: center;
         font-family: "TT Commons DemiBold";
         @include media("<=tablet") {
-          font-size: 1vw;
+          font-size: 2vw;
         }
         @include media("<=phone") {
-          font-size: 1vw;
+          font-size: 2vw;
         }
         
       }
@@ -84,6 +84,17 @@
       transform-origin: 0 0;
 
       top: 80vh;
+      @include media("<=tablet") {
+          
+        top: 83vh;
+      }
+      @include media("<=1024px") {
+          
+        top: 86vh;
+      }
+      @include media("<=phone") {
+        top: 86vh;
+      }
       right: 0vw; 
       z-index: 2;
       a {
@@ -96,10 +107,11 @@
         align-items: center;
         font-family: "TT Commons DemiBold";
         @include media("<=tablet") {
-          font-size: 1.3rem;
+          
+          font-size: 2vw;
         }
         @include media("<=phone") {
-          font-size: 1.1rem;
+          font-size: 2vw;
         }
         svg {
           margin-left: 1vw;
@@ -108,13 +120,13 @@
           transition: 0.4s ease-in-out;
           @include media("<=tablet") {
             padding: 6px;
-            width: 20px;
-            height: 20px;
+            height: 2vw;
+          width: 3.5vw;
           }
           @include media("<=phone") {
             padding: 4px;
-            width: 16px;
-            height: 16px;
+            height: 2vw;
+          width: 3.5vw;
           }
         }
         &:hover {
