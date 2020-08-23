@@ -4,10 +4,11 @@ import Audi from "../assets/home/audi.png";
 import Collab from "../assets/home/collab.jpg";
 import Crowded from "../assets/home/crowded.png";
 import Trickle from "../assets/home/trickle.png";
-import Paypal from "../assets/home/paypal.png";
+import Paypal from "../assets/home/paypal.jpg";
 import Uci from "../assets/home/uci.png";
 import Quinta from "../assets/home/quinta.png";
-
+import ImageReveal from "./imageReveal";
+import Ewe from "../assets/home/ewe.jpg";
 
 
 
@@ -33,8 +34,8 @@ const titles = [
   {
     id: 3,
     subtitle: "Internet of things",
-    title: "EWE IOT concept App.",
-    img: Paypal,
+    title: "EWE IOT Concept App.",
+    img: Ewe,
     link: 'ewe'
 
   },
@@ -55,8 +56,8 @@ const titles = [
   },
   {
     id: 6,
-    subtitle: "Cloud",
-    title: "Collab Cloud Call center.",
+    subtitle: "Cloud software",
+    title: "Collab Cloud Call Center.",
     img: Collab,
     link: 'nubitalk'
 
@@ -71,8 +72,8 @@ const titles = [
   },
   {
     id: 8,
-    subtitle: "App development",
-    title: "Community Festival App",
+    subtitle: "Service design",
+    title: "Quinta Community Festival.",
     img: Quinta,
     link: 'quinta'
 
@@ -81,7 +82,9 @@ const titles = [
 
 const Cases = () => {
   return (
+    <>
     <section className='cases'>
+
       <div className='container-fluid'>
         <div className='row'>
           <div className='spaceXXL'/>
@@ -120,6 +123,7 @@ const Cases = () => {
         
       </div>
     </section>
+    </>
   );
 };
 

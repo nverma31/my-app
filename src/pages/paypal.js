@@ -4,6 +4,7 @@ import SectionPara from "../components/sectionPara";
 import SectionParaLeft from "../components/sectionParaLeft";
 import Ball from "../assets/paypal/8ball.jpg";
 import Space from "../assets/Nemo/space.png";
+import SocialIcons from '../components/social'
 
 import gsap from "gsap";
 import ProjectTitle from "../components/projectTitle";
@@ -160,11 +161,13 @@ const PayPal = ({ dimensions }) => {
       </div>
       <SectionParaLeft section={sectioin8} />
       <TallImage path={rollout} />
-      <SectionPara section={sectioin6} />
+      <div className="sectiom-with-tall-image">
       <TallImage path={support} />
+      <SectionPara section={sectioin6} />
 
+      </div>
 
-      <Footer />
+      <SocialIcons/>
 
     </>
   );

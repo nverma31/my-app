@@ -3,19 +3,38 @@
   z-index: 4;
   padding-top: 15vh;
   .row {
-    padding-bottom: 30vh;
+    padding-bottom: 7vw;
     margin-left: 4vw;
+    @include media("<=phone") {
+      padding-bottom: 0;
+      padding-left: 10vw;
+
+    }
+   
     .upperoffset {
       margin-top: 10vh;
+      @include media("<=phone") {
+        margin-top: 0;
+      }
     }
     .spaceXXL {
       margin-left: 15vw;
+      @include media("<=phone") {
+        margin-left: 0;
+      }
     }
     .spaceL {
       margin-left: 5vw;
+      @include media("<=phone") {
+        margin-left: 0;
+      }
     }
     .spaceXL {
       margin-left: 10vw;
+      @include media("<=phone") {
+        margin-left: 0;
+      }
     }
   }
+  
 }

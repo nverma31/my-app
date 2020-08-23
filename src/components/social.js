@@ -103,27 +103,21 @@ class SocialIcons extends Component {
           Like what you see? 
       </div>   
           <div class="footer-text-section">
-             Get in 
+             Let's talk.
       </div>
-          <div class="footer-text-second-section">
+          {/* <div class="footer-text-second-section">
               touch
 
-      </div>
+      </div> */}
     </div>
-        <ul>
-          {socialsArray.map((social, index) => {
-            return (
-              <li
-                key={`social-${index}`}
-                ref={li => (this.socials[index] = li)}
-              >
-                <a href={social.url}>
-                  <FontAwesomeIcon icon={['fab', `${social.icon}`]} />
-                </a>
-              </li>
-            )
-          })}
-        </ul>
+    <div class="nav">
+      <ul>
+        <li class="home"><a href="#">Linkedin</a></li>
+        <li class="tutorials"><a class="active" href="#">Xing</a></li>
+        <li class="about"><a href="#">Github</a></li>
+        <li class="news"><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
       </SocialLinks>
     )
   }

@@ -1,9 +1,12 @@
 import React, { useEffect, Component } from "react";
-import { BrowserRouter, Route, Link, Redirect, withRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Link, Redirect, withRouter, Switch } from 'react-router-dom';
+import ReactDOM from 'react-dom';
 import { gsap } from "gsap";
 import "./styles/App.scss";
 import Header from "./components/header";
 import Navigation from "./components/navigation";
+import Heade from "./components/Heade";
+import AnimatedCursor from "react-animated-cursor"
 
 import CaseStudies from "./pages/caseStudies";
 import Approach from "./pages/approach";
@@ -29,7 +32,6 @@ const routes = [
   { path: "/paypal", name: "paypal", Component: PayPal },
   { path: "/trickle", name: "about", Component: Trickle },
   { path: "/crowded", name: "crowded", Component: Crowded },
-  { path: "/ewe", name: "ewe", Component: Ewe },
   { path: "/quinta", name: "quinta", Component: Quinta },
 
 ];
@@ -89,6 +91,9 @@ class Login extends React.Component {
       }));
     });
   }
+  else {
+    alert("wrong password");
+  }
   }
 
   render() {
@@ -102,18 +107,16 @@ class Login extends React.Component {
     return (
       <div>
         <AuthButton/>
-            <ul>
-              <li><Link to="/public">Public Content</Link></li>
-              <li><Link to="/protected">Protected Content</Link></li>
-            </ul>
-        <p>Please, you need to be authenticated to to view this content</p>
+        <div class="password-form">
+        <p class="form-text">You need to a password to view this content.</p>
         <form onSubmit={this.login}>
-        <label>
-          Name:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        <label class="password-text">
+          Enter password:
+          <input type="text" class="form-textbox" value={this.state.value} onChange={this.handleChange} />
         </label>
-        <input type="submit" value="Submit" />
+        <input type="submit" class="form-button" value="Submit" />
       </form>
+      </div>
       </div>
     )
   }
@@ -133,12 +136,12 @@ const ProtectedRoute = ({ component: Component, ...rest }) => (
 const AuthButton = withRouter(({ history }) => (
   fakeAuthCentralState.isAuthenticated ? (
     <p>
-      Welcome to this amazing content! <button onClick={() => {
+      <form onSubmit={() => {
         fakeAuthCentralState.signout(() => history.push('/'))
-      }}>Sign out</button>
+      }}></form>
     </p>
   ) : (
-    <p>You are not logged in.</p>
+    <p></p>
   )
 ));
 
@@ -164,13 +167,24 @@ function App() {
     };
   });
   return (
-    <>
-      <Header dimensions={dimensions} />
-      <div className='App'>
+    <> 
+    <AnimatedCursor
+    innerSize={10}
+    outerSize={25}
+    outerAlpha={0.2}
+    innerScale={0.7}
+    outerScale={2}
+    color='58,44,86'
+  />
 
-     <BrowserRouter>
+      <BrowserRouter>
+      <div className='App'>
+      <Heade />
+
+     
+     
           <div>
-            
+
             <Route path="/public" component={Public}/>
             {routes.map(({ path, Component }) => (
           <Route key={path} exact path={path}>
@@ -181,12 +195,13 @@ function App() {
             <ProtectedRoute path='/protected' component={Protected} />
             <ProtectedRoute path='/nemo' component={Nemo} />
             <ProtectedRoute path='/uci' component={Uci} />
+            <ProtectedRoute path='/ewe' component={Ewe} />
 
           </div>
-      </BrowserRouter>
+    
       </div>
-      <Navigation />
-    </>
+      </BrowserRouter>
+          </>
   );
 }
 

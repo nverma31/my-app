@@ -73,13 +73,21 @@ const Nubitalk = ({ dimensions }) => {
       <ProjectTitle intro={introtitle} />
       <div></div>
       <ProjectIntro introText = {introText} />
-      <FullWidthImage path={Test}  />
+      <hr/>
+      {/* <FullWidthImage path={Test}  /> */}
+      
       <SectionPara section={sectioin1} />
         <WideImage path={Research}  />
         <SectionParaLeft section={sectioin2}/>
         <WideImage path={Synthesis}  />
-        <SectionPara section={sectioin3} />
+        <div className="sectiom-with-tall-image">
+        <div className="sectiom-with-tall-image-firrst">
         <TallImage path={ideation}  />
+        </div>
+        <div className="sectiom-with-tall-image-second">
+        <SectionPara section={sectioin3} />
+        </div>
+        </div>
         <SectionParaLeft section={sectioin4}/>
         <WideImage path={Synthesis}  />
         <div className="sectionBold">
@@ -91,7 +99,7 @@ const Nubitalk = ({ dimensions }) => {
       <Sticky content={sectioin8} />
 
         <SectionParaLeft section={sectioin7}/>
-        <WideImage path={concept2}  />
+        <FullWidthImage path={concept2}  />
         <SectionPara section={sectioin6} />
         <WideImage path={concept3}  />
         <SectionParaLeft section={sectioin9}/>

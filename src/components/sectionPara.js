@@ -18,7 +18,6 @@ const SectionPara = ({section}) => {
   y: 100,
   ease: "power4.out",
   delay: 0.1,
-  skewY: 7,
   stagger: {
     amount: 0.3
   }
@@ -42,10 +41,7 @@ tl.from(".description", 1 , {
               <span class="para-line-title">{section.title}</span>
 
             </div>
-            <div className='para-line'>
-              <span class="para-line-title">{section.title1}</span>
-
-            </div>
+          
           
           </h2>
           <p className="description">

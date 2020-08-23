@@ -32,17 +32,24 @@
       }
       .para-line {
         font-family: "TT Commons Regular";
-        height: 2rem;
+        
         position: relative;
         overflow: hidden;
+        width: 25vw;
+        height: auto;
+        padding-bottom: 1vh;
         @include media("<=tablet") {
           height: 2rem;
+          width: 50vw;
+
         }
         @include media("<=phone") {
           height: 2rem;
+          width: 60vw;
+
         }
         span {
-          position: absolute;
+          position: relative;
         }
         .para-line-numbering{
           font-size: 0.9rem;

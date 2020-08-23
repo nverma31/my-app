@@ -1,60 +1,217 @@
-.header {
-  position: fixed;
-  width: 100%;
-  height: 128px;
-  margin: 0 0;
-  z-index: 4;
-  // background-color: $white;
 
-  @include media("<=phone") {
-    height: 96px;
-  }
-  .logo {
-    a {
-      font-size: 1.2rem;
-      letter-spacing: 0.5rem;
-      color: $black;
-      text-decoration: none;
-      font-weight: 700;
-    }
-  }
-  .nav-toggle {
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include media("<=tablet") {
-      margin-right: 24px;
-    }
-    @include media("<=phone") {
-      width: 20px;
-      margin-right: 16px;
-    }
+.header-container {
+  z-index: 10;
 
-    .hamburger-menu {
-      width: 25px;
-      span {
-        text-align: center;
-        margin-bottom: 0.3rem;
-        background: $black;
-        height: 2px;
-        width: 100%;
-        display: block;
+  width: 100vw;
+  min-width: 100vw;
+  margin: 0 auto;
+  .wrapper {
+    padding: 0 5vw;
+    .home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      p {
+        font-size: 0.75rem;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+      h5 {
+        margin-top: 260px;
+        font-size: 24px;
+        font-weight: 600;
+        padding-right: 360px;
       }
     }
-    .hamburger-menu-close {
-      position: absolute;
-      display: none;
+  }
+}
 
-      svg {
+header {
+  position: absolute;
+  height: 100px;
+  top:0!important;
+  .inner-header {
+    position: relative;
+    z-index: 101;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo a {
+      font-size: 1.1vw;
+      @include media("<=tablet") {
+        font-size: 2.2vw;
+
+      }
+      @include media("<=ipadPro") {
+        font-size: 2.2vw;
+
+      }
+      @include media("<=phone") {
+        font-size: 3.4vw;
+
+      }
+      text-decoration: none;
+      color: $black;
+      font-family: "TT Commons SemiBold";
+
+    }
+    .menu {
+      button {
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 1vw;
         @include media("<=tablet") {
-          width: 56px;
+          font-size: 2vw;
+
+        }
+        @include media("<=ipadPro") {
+          font-size: 2vw;
+
         }
         @include media("<=phone") {
-          width: 48px;
+          font-size: 3vw;
+
+        }
+        mix-blend-mode: difference;
+        font-family: "TT Commons SemiBold";
+
+      }
+    }
+  }
+  .hamburger-menu {
+    display: none;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    .menu-secondary-background-color {
+      background: $black;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+    .menu-layer {
+      position: relative;
+      background: $red;
+      height: 100%;
+      overflow: hidden;
+      .menu-city-background {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation-name: backgroundEffect;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+      }
+      .wrapper {
+        position: relative;
+        .menu-links {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          position: relative;
+          top: 200px;
+          nav {
+            display: block;
+            ul {
+              margin: 0;
+              padding: 0;
+              li {
+                list-style: none;
+                font-size: 6rem;
+                font-weight: 700;
+                cursor: pointer;
+                height: 135px;
+                overflow: hidden;
+                position: relative;
+                width: 700px;
+                a {
+                  position: absolute;
+                  color: #000;
+                  text-decoration: none;
+                  &:hover {
+                    color: $black;
+                  }
+                }
+              }
+            }
+          }
+          .info {
+            color: #000;
+            width: 300px;
+            h3 {
+              font-size: 1.2rem;
+              margin: 8px auto;
+            }
+            p {
+              margin: 0 auto;
+              font-size: 0.8rem;
+            }
+          }
+        }
+        .locations {
+          position: absolute;
+          bottom: -8vh;
+          color: #000;
+          margin-top: 16px;
+          font-size: 0.8rem;
+          font-weight: 600;
+          span {
+            cursor: pointer;
+            &:first-child {
+              margin-left: 0.1vw;
+            }
+            font-weight: 400;
+            margin: 0 32px;
+            transition: 0.3s ease-in-out;
+            &:hover {
+              color: #fff;
+              background: $black;
+              padding: 8px 24px;
+              border-radius: 4px;
+            }
+          }
         }
       }
     }
+  }
+}
+
+@keyframes backgroundEffect {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 40% 10%;
+  }
+  50% {
+    background-position: 0 10%;
+  }
+  75% {
+    background-position: 10% 40%;
+  }
+  100% {
+    background-position: 0% 0%;
   }
 }

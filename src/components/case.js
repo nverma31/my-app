@@ -17,10 +17,10 @@ const Case = ({titles}) => {
 
     useEffect(() => {
         if (inView) {
-        tl.to(image, 1.4, {clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)",ease: Power2.easeInOut });
-        tl.from(image, 1.4, {
+        tl.to(image, 1.3, {clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)",ease: Power2.easeInOut });
+        tl.from(image, 2, {
             scale: 1.3,
-            ease: Power2.easeInOut,
+            ease: "power3.inOut",
             delay: -1.4
           });
     }
@@ -29,7 +29,7 @@ const Case = ({titles}) => {
 
   return (
     <section className='case' ref={contentRef}>
-        <div className="case-image">
+        <div className="case-image" >
         <a href={titles.link} exact>
            
         <img
