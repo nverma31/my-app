@@ -56,7 +56,7 @@ const Heade = ({ history }) => {
         <div className="wrapper">
           <div className="inner-header">
             <div className="logo">
-              <a href ="/my-app">neeraj verma.</a>
+              <a href ="/">neeraj verma.</a>
             </div>
             <div className="menu">
               <button disabled={disabled} onClick={handleMenu}>

@@ -23,7 +23,7 @@ import Quinta from "./pages/quinta";
 import Uci from "./pages/Uci";
 
 const routes = [
-  { path: "/my-app", name: "Home", Component: Home },
+  { path: "/", name: "Home", Component: Home },
   { path: "/case-studies", name: "caseStudies", Component: CaseStudies },
   { path: "/approach", name: "approach", Component: Approach },
   { path: "/services", name: "services", Component: Services },
