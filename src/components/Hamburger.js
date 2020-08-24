@@ -100,7 +100,7 @@ const Hamburger = ({ state }) => {
                       onMouseEnter={e => handleHover(e)}
                       onMouseOut={e => handleHoverExit(e)}
                       ref={el => (line3 = el)}
-                      to='/quinta'>
+                      to='/'>
                       Resume
                     </Link>
                   </li>
