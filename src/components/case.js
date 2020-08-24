@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { TimelineLite, Power2 } from "gsap";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 
@@ -30,7 +30,7 @@ const Case = ({titles}) => {
   return (
     <section className='case' ref={contentRef}>
         <div className="case-image" >
-        <a href={titles.link} exact>
+        <Link to={titles.link} >
            
         <img
               ref={el => {
@@ -38,7 +38,7 @@ const Case = ({titles}) => {
               }}
               src={titles.img}
               />
-             </a>
+             </Link>
             </div>       
               <div className='case-details'>
                 <span>{titles.subtitle}</span>
