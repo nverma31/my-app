@@ -1,17 +1,47 @@
-import React from "react";
-import Cases from "../components/case";
-import Case from "../components/case";
-const CaseStudies = () => {
+import React, { useEffect, useState } from "react";
+import IntroOverlay from "../components/introOverlay";
+import Cases from "../components/cases";
+import SocialIcons from '../components/social'
+
+import gsap from "gsap";
+
+
+
+
+let tl = gsap.timeline();
+
+
+const homeAnimation = completeAnimation => {
+  tl.to(".overlay-top", 1, {
+      height: 0,
+      ease: "expo.inOut"    })
+
+   
+};
+
+const CaseStudies = ({ dimensions }) => {
+  const [animationComplete, setAnimationComplete] = useState(false);
+
+  const completeAnimation = () => {
+    setAnimationComplete(true);
+  };
+
+  useEffect(() => {
+    homeAnimation(completeAnimation);
+  }, []);
+
+  useEffect(() => {
+    let vh = dimensions.height * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  }, [dimensions.width]);
+
   return (
     <>
-  <Case />
-    <div className='page'>
-      <div className='container'>
-        <div className='row'>
-          <h3>This is the case studies page</h3>
-        </div>
-      </div>
-    </div>
+      
+      <Cases/>
+      <SocialIcons/>
+
+
     </>
   );
 };

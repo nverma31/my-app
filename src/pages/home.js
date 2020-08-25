@@ -7,6 +7,8 @@ import SocialIcons from '../components/social'
 
 import gsap from "gsap";
 import Footer from "../components/footer";
+const footerpath = { title: 'next project', text: 'Nubitalk', link:'/nubitalk' };
+
 
 let tl = gsap.timeline();
 
@@ -55,7 +57,7 @@ const Home = ({ dimensions }) => {
       <Banner />
       <Cases/>
 
-      <Footer/>
+      <SocialIcons/>
 
     </>
   );

@@ -41,6 +41,7 @@ const sectioin1 = { num: '01', title: 'The Home Pulse.', text: ' The home pulse 
 const sectioin2 = { num: '02', title: 'Users stay in Control', text: 'The dashboard is dynamic which informs the  .'};
 const sectioin3 = { num: '03', title: 'Investigate and Act', text: ' so thsfying and fulfilncluded users in the development process, reaching to them in two key stages of the project: At the beginning, through interviews, to find out about their habits and expectations. At a more advanced stage of the visual and Ux design, to confirm that the visual language and the functional focus were as expected. By listening to the real thing, we were able to confirm that we were going in the right direction, and were able to correct and modify some issues as a result of their suggestions.'};
 const sectioin4 = { num: '04', title: 'Share Data When You Gain Insights', text: ' so thsfying and fulfilncluded users in the development process, reaching to them in two key stages of the project: At the beginning, through interviews, to find out about their habits and expectations. At a more advanced stage of the visual and Ux design, to confirm that the visual language and the functional focus were as expected. By listening to the real thing, we were able to confirm that we were going in the right direction, and were able to correct and modify some issues as a result of their suggestions.'};
+const footerpath = { title: 'next project', text: 'Nubitalk', link:'/nubitalk' };
 
 const homeAnimation = completeAnimation => {
   tl.to(".overlay-top", 1, {
@@ -116,7 +117,7 @@ const Ewe = ({ dimensions }) => {
 
 
 
-        <Footer />
+      <Footer path = {footerpath}/>
 
 
     </>

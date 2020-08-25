@@ -39,6 +39,7 @@ const sectioin5 = { num: '', title:'The Landing Page', text: 'The design reflect
 const sectioin6 = { num: 'STEP 1', title:'Easy evaluation', text: 'Fully responsive'};
 const sectioin7 = { num: 'STEP 2', title:'Publish your car to Audi dealer network', text: 'Fully responsive'};
 const sectioin8 = { num: 'STEP 3', title:'Hassle free inspection and handover', text: 'Fully responsive'};
+const footerpath = { title: 'next project', text: 'Nubitalk', link:'/nubitalk' };
 
 let tl = gsap.timeline();
 
@@ -99,7 +100,7 @@ const Uci = () => {
       <SectionPara section={sectioin8} />
       <WideImage path={Show3}  />
 
-
+      <Footer path = {footerpath}/>
     </>
   );
 };

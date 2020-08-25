@@ -37,6 +37,7 @@ const sectioin4 = { num: '03', title:'Visual Design', text: 'The design reflects
 const sectioin5 = { num: '04', title:'The new Model Page', text: 'The design reflects the premium aspect of Audi. The spacious and lightweight feel help avoid the information overload that competitor sites often suffer from. The colour also helps differentiate it. We predominately used black and white for its elegance and boldness. A clean, purposeful line-graphic style and smooth animations reflect the elegance an Audi Car. A new set of icons helps Audi users quickly understand where they are and what it’s all about.', imageurl:FullPage};
 const sectioin6 = { num: '04', title:'Take it with you', text: 'Fully responsive'};
 const sectioin7 = { num: '04', title:'Immersion with interaction design', text: 'Fully responsive'};
+const footerpath = { title: 'next project', text: 'Nubitalk', link:'/nubitalk' };
 
 let tl = gsap.timeline();
 
@@ -102,7 +103,7 @@ const Nemo = () => {
       <FullWidthImage path={Responsive}  />
       
 
-
+      <Footer path = {footerpath}/>
     </>
   );
 };

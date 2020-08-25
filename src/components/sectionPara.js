@@ -7,30 +7,10 @@ const SectionPara = ({section}) => {
   let tl = gsap.timeline();
   // let contentRef = useRef(null);
 
-  const [contentRef, inView] = useInView({
-    triggerOnce:true,
-    rootMargin: "-200px", 
-
-  });
-  useEffect(() => {
-    if (inView) {
-  tl.from(".para-line span", 1, {
-  y: 100,
-  ease: "power4.out",
-  stagger: {
-    amount: 0.3
-  }
-});
-tl.from(".description", 1 , {
-  y: 20,
-  opacity:0,
-  ease: "power4.out"
-}, "-=1");
-    }
- }, [inView] )
+  
   return (
     <section className='para-main'>
-      <div className='para-container' ref={contentRef} >
+      <div className='para-container'  >
         <div className='para-row'>
           <h2>
             <div className='para-line'>

@@ -56,7 +56,7 @@ header {
       }
       text-decoration: none;
       color: $black;
-      font-family: "TT Commons SemiBold";
+      font-family: "TT Commons DemiBold";
 
     }
     .menu {
@@ -79,7 +79,7 @@ header {
 
         }
         mix-blend-mode: difference;
-        font-family: "TT Commons SemiBold";
+        font-family: "TT Commons DemiBold";
 
       }
     }
@@ -140,10 +140,10 @@ header {
               padding: 0;
               li {
                 list-style: none;
-                font-size: 6rem;
+                font-size: 6vw;
                 font-weight: 700;
                 cursor: pointer;
-                height: 135px;
+                height: 9vw;
                 overflow: hidden;
                 position: relative;
                 width: 700px;
@@ -178,8 +178,22 @@ header {
           margin-top: 16px;
           font-size: 0.8rem;
           font-weight: 600;
+
           span {
             cursor: pointer;
+            a{
+              text-decoration: none;
+              color: #000;
+
+              transition: 0.3s ease-in-out;
+
+            }
+            a:hover{
+              color: #fff;
+              background: $black;
+              padding: 8px 24px;
+              border-radius: 4px;
+            }
             &:first-child {
               margin-left: 0.1vw;
             }
@@ -187,10 +201,7 @@ header {
             margin: 0 32px;
             transition: 0.3s ease-in-out;
             &:hover {
-              color: #fff;
-              background: $black;
-              padding: 8px 24px;
-              border-radius: 4px;
+             
             }
           }
         }

@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Footer = ({path}) => {
    
@@ -6,12 +7,15 @@ const Footer = ({path}) => {
       <>
     <section id="contacts">
           <div class="contact-details">
-              <p>Like what you see?</p>
-              <a href="mailto:nverma31@gmail.com"> 
-                  <div class="footer-text-section">
-             Let's talk.
+              <p>{path.title}</p>
+              <Link
+                      to={{ pathname: path.link }} target="_blank">
+                      <div class="footer-text-section">
+             {path.text}
                 </div>
-              </a>  
+                      
+                    </Link>
+              
           </div>
            
           </section>

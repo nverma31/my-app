@@ -7,7 +7,6 @@ import Header from "./components/header";
 import Navigation from "./components/navigation";
 import Heade from "./components/Heade";
 import AnimatedCursor from "react-animated-cursor";
-import DynamicScrollToTop from "./components/dynamicScrollToTop";
 
 import CaseStudies from "./pages/caseStudies";
 import Approach from "./pages/approach";
@@ -22,6 +21,7 @@ import Crowded from "./pages/crowded";
 import Ewe from "./pages/ewe";
 import Quinta from "./pages/quinta";
 import Uci from "./pages/Uci";
+import ScrollToTop from "./styles/components/ScrollToTop";
 
 
 
@@ -40,14 +40,7 @@ const routes = [
 
 ];
 
-function _ScrollToTop(props) {
-  const { pathname } = useLocation();
-  useEffect(() => {
-      window.scrollTo(0, 0);
-  }, [pathname]);
-  return props.children
-}
-const ScrollToTop = withRouter(_ScrollToTop)
+
 
 function debounce(fn, ms) {
   let timer;
@@ -181,17 +174,11 @@ function App() {
   });
   return (
     <> 
-    <AnimatedCursor
-    innerSize={10}
-    outerSize={25}
-    outerAlpha={0.2}
-    innerScale={0.7}
-    outerScale={2}
-    color='58,44,86'
-  />
+ 
 
       <BrowserRouter>
-      <ScrollToTop>
+      <ScrollToTop />
+
          <div className='App'>
       <Heade />
             <Route path="/public" component={Public}/>
@@ -209,7 +196,7 @@ function App() {
    
     
       </div>
-      </ScrollToTop>
+    
       </BrowserRouter>
           </>
   );

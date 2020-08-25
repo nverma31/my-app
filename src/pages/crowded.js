@@ -30,6 +30,7 @@ const sectioin1 = { num: '01', title: 'Starting off with Secondary Research', te
 const sectioin2 = { num: '02', title: 'Learning on the Field', text: 'Me and another researcher attended four week-long music festivals. We observed and interviewed  both attendees and people representing different businesses at these festivals.'};
 const sectioin3 = { num: '03', title: 'Generating and Sharing Insights', text: 'We gathered tons of data during our feild visits. We consolidated and analysed all our data to identify people\'s behaviour, needs, and opportuniity areas in crowded environments.'};
 const sectioin4 = { num: '04', title: 'Sharing our Insights with the client ', text: 'Following are some key-insights that we shared with our client.'};
+const footerpath = { title: 'next project', text: 'Nubitalk', link:'/nubitalk' };
 
 const homeAnimation = completeAnimation => {
   tl.to(".overlay-top", 1, {
@@ -74,7 +75,7 @@ const Crowded = ({ dimensions }) => {
 
         <FullWidthImage  path={FieldInsights}  />
 
-        <Footer />
+        <Footer path = {footerpath}/>
 
 
     </>

@@ -70,19 +70,19 @@ const Banner = () => {
               <span>Hi, I'm a product designer based in Hamburg, currently</span>
             </div>
             <div className='line'>
-              <span> Working at&nbsp;<a href="https://sinnerschrader.com/"><Gradient>SinnerSchrader.</Gradient></a></span>
+              <span> working at&nbsp;<a href="https://sinnerschrader.com/"><Gradient>SinnerSchrader.</Gradient></a></span>
             </div>
             <div className='line'>
               <span> </span>
             </div>
             <div className='line'>
-              <span>I bridge  gap between behavioural science, product </span>
+              <span>I bridge the gap between  product design and tangible  </span>
             </div>
             <div className='line'>
-              <span>  design and tangible business outcomes to create</span>
+              <span> business outcomes to create meaningful experiences </span>
             </div>
             <div className='line'>
-              <span>  meaningful human Experiences. </span>
+              <span> that enrich people's lives. </span>
             </div>
           </h2>
           <div className='hello-btn'>

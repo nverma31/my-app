@@ -22,7 +22,7 @@ import beijing from "../assets/beijing.webp";
 const cities = [
   { name: "Linkedin", path: "https://www.linkedin.com/in/neeraj-verma-2753a519/" },
   { name: "Github", path: "https://github.com/nverma31" },
-  { name: "Xing", image: newyork },
+  { name: "Xing", path: "https://www.xing.com/profile/Neeraj_Verma3/" },
   { name: "Privacy Policy", image: sanfrancisco }];
 
 const Hamburger = ({ state }) => {
@@ -81,18 +81,17 @@ const Hamburger = ({ state }) => {
                       onMouseEnter={e => handleHover(e)}
                       onMouseOut={e => handleHoverExit(e)}
                       ref={el => (line1 = el)}
-                      to="/paypal">
+                      to="/case-studies">
                       Case Studies
                     </Link>
-                    <a href= "/nemo"></a>
                   </li>
                   <li>
                     <Link
                       onMouseEnter={e => handleHover(e)}
                       onMouseOut={e => handleHoverExit(e)}
                       ref={el => (line2 = el)}
-                      to='/nemo'>
-                      About
+                      to={{ pathname: "mailto:nverma31@gmail.com" }} target="_blank">
+                      Contact
                     </Link>
                   </li>
                   <li>
@@ -100,7 +99,7 @@ const Hamburger = ({ state }) => {
                       onMouseEnter={e => handleHover(e)}
                       onMouseOut={e => handleHoverExit(e)}
                       ref={el => (line3 = el)}
-                      to='/'>
+                      to={{ pathname: "https://drive.google.com/file/d/0B39OhBWpu64oZ1h0X2R5cGFSQks5dWZVcDBGd2JjN05oUjJn/view" }} target="_blank">
                       Resume
                     </Link>
                   </li>
@@ -120,9 +119,11 @@ const Hamburger = ({ state }) => {
                 {cities.map(el => (
                   <span
                     key={el.name}>
-                    {el.name}
+                    
                     <Link
-                    to={el.path}></Link>
+                      to={{ pathname: el.path }} target="_blank">
+                      {el.name}
+                    </Link>
                   </span>
                 ))}
               </div>

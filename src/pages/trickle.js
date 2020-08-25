@@ -29,6 +29,7 @@ const introText = { brief: 'Design an interactive installation that raises aware
 const sectioin1 = { num: '01', title: 'The Concept.', text: 'When someone connects to our fake public Wi-Fi network, their online activity is tracked and our installation shows a trickling down pattern using lights. The installation gets activated as it identifies when a person who has been compromised passes near the installation. The installation uses different colors of lights and sounds that relate to different apps and websites that are identified in the person\'s online activity.'};
 const sectioin2 = { num: '02', title: 'Bringing it to Life', text: 'Our project had two major components: a twin wifi network so that we could track data of people connected to it and a responsive light installation that behaves based on their tracked data.'};
 const sectioin3 = { num: '03', title: 'Site Installation', text: 'We wanted to position our installation in a public Wi-Fi environment and we chose a nearby Starbucks. It was rewarding to see the lighting installation work based on the stolen data of the people that connected to our fake-twin wifi.'};
+const footerpath = { title: 'next project', text: 'Nubitalk', link:'/nubitalk' };
 
 const homeAnimation = completeAnimation => {
   tl.to(".overlay-top", 1, {
@@ -60,7 +61,7 @@ const Trickle = ({ dimensions }) => {
       <ProjectTitle intro={intro} />
       <div></div>
       <ProjectIntro introText = {introText} />
-      <Video />
+      <Video path="https://vimeo.com/191292269" />
     
 
         <SectionPara section={sectioin1} />
@@ -74,7 +75,7 @@ const Trickle = ({ dimensions }) => {
         <SectionPara section={sectioin3}/>
         <WideImage path={Installation}  />
 
-        <Footer />
+        <Footer path = {footerpath}/>
 
 
     </>

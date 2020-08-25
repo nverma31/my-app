@@ -48,6 +48,7 @@ const sectioin5 = { num: '', title: 'An easier way to manage settings', text: ' 
 const sectioin8 = { num: '', title: 'Phased roll out', text: 'The launch of the website was planned in many phases. Starting with throttling  1% of live-traffic in some markets and then moving progressively to full traffic in all markets '};
 const sectioin7 = { num: '', title: 'Monitoring and user testing', text: 'From the small screen to the big, the new redesigned PayPal website  works and play everywhere.' };
 const sectioin6 = { num: '', title: 'Support and maintenance', text: 'I was involved in providing round the clock technical support for countries during the roll out. Post launch, there was continual monitoring of key services which helps identify any issues and schedule updates. We were  pushing out global updates and maintained an ongoing programme of improvements.'};
+const footerpath = { title: 'next project', text: 'Nubitalk', link:'/nubitalk' };
 
 let tl = gsap.timeline();
 
@@ -167,7 +168,7 @@ const PayPal = ({ dimensions }) => {
 
       </div>
 
-      <SocialIcons/>
+      <Footer path = {footerpath}/>
 
     </div>
   );

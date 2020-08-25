@@ -41,6 +41,7 @@ const sectioin5 = { num: '04', title: 'Finalised festival schedule', text: 'The 
 const sectioin6 = { num: '02', title: 'A new experience based on service design principles', text: 'Our proposed service tackles the issues identified in the research, builds on the current relationship between the stakeholders. It focuses on two main things: First, facilitate co-creation between organisers and attendees, and second, improve attendees experience. We designed a new festival website, an App, and a co-creation chatbot in order to realise our vision of the festival.'};
 const sectioin7 = { num: '01', title: 'Plan and attend events of your choice', text: 'The responsive website has the festival schedule and also provides more information about all events. Users can save the certain events as favorite and they get notified for those events.'};
 const sectioin8 = { num: '02', title: 'Navigating within festival', text: 'The app has a local map of the quinta premises and allows users to navigate during the festival where they can also see which event is being held at a particular location at any specific time.'};
+const footerpath = { title: 'next project', text: 'Nubitalk', link:'/nubitalk' };
 
 const homeAnimation = completeAnimation => {
   tl.to(".overlay-top", 1, {
@@ -104,7 +105,7 @@ const Quinta = ({ dimensions }) => {
         <FullWidthImage path={app1}  />
         <SectionParaLeft section={sectioin8}/>
         <FullWidthImage path={app2}  />
-        <Footer />
+        <Footer path = {footerpath}/>
 
 
     </>

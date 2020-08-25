@@ -35,6 +35,7 @@ const sectioin6 = { num: '', title: 'Always in touch with the team', text: 'Agen
 const sectioin7 = { num: '', title: 'Live transcription and suggestions for Next-Best-Actions', text: 'Nubitalk transcribes every call and using advanced machine learnings helps agents in serving the call in best possible way.'};
 const sectioin8 = { num: '', title: 'All communications in one place,', text: 'Nubitalk consolidate all the channels that Agents have to use in one viewport with a tabbed menu that shows notifications for each channel.', imageurl:concept1};
 const sectioin9 = { num: '', title: 'Empowering Agents by rating the callers', text: 'Nubitalk allows Agents and customers to rate each other and the call quality.   '};
+const footerpath = { title: 'next project', text: 'PayPal', link:'/paypal' };
 
 let tl = gsap.timeline();
 
@@ -105,7 +106,7 @@ const Nubitalk = ({ dimensions }) => {
       
        
 
-        <Footer />
+        <Footer path = {footerpath}/>
 
 
 

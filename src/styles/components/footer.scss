@@ -33,6 +33,7 @@
   #contacts a:after {    
     background: none repeat scroll 0 0 transparent;
     bottom: -30px;
+    
     content: "";
     display: block;
     height: 4px;
@@ -67,7 +68,9 @@ padding-left: 8vw;
  }
 .nav a {
   text-decoration: none;
-  color: #000;
+  color: rgb(87, 87, 87);
+  font-size: 1vw;
+
   display: block;
   transition: .3s ease-in-out;
 }
@@ -75,8 +78,8 @@ padding-left: 8vw;
 .nav a:hover {
   color: #fff;
   background: $black;
-  padding: 4px 4px;
-  border-radius: 2px;
+  padding: 8px 24px;
+  border-radius: 4px;
 }
 .nav ul {
   margin: 0;
