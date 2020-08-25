@@ -176,8 +176,19 @@ header {
           bottom: -8vh;
           color: #000;
           margin-top: 16px;
-          font-size: 0.8rem;
-          font-weight: 600;
+          font-size: 1vw;
+
+          @include media("<=tablet") {
+            font-size: 2vw;
+          }
+          @include media("<=ipadPro") {
+            font-size: 2vw;
+        
+          }
+          @include media("<=phone") {
+            font-size: 2.5vw;
+        
+          }
 
           span {
             cursor: pointer;
@@ -198,7 +209,7 @@ header {
               margin-left: 0.1vw;
             }
             font-weight: 400;
-            margin: 0 32px;
+            margin: 0 3vw;
             transition: 0.3s ease-in-out;
             &:hover {
              

@@ -14,7 +14,17 @@
   font-style: normal;
   font-family: "TT Commons Regular";
   font-size: 1.2vw;
+  @include media("<=tablet") {
+    font-size: 2.2vw;
+  }
+  @include media("<=ipadPro") {
+    font-size: 2vw;
 
+  }
+  @include media("<=phone") {
+    font-size: 3vw;
+
+  }
 }
 
 
@@ -22,6 +32,17 @@
 #contacts a{
   text-decoration: none;
   font-size: 7vw;
+  @include media("<=tablet") {
+    font-size: 9vw;
+  }
+  @include media("<=ipadPro") {
+    font-size: 8vw;
+
+  }
+  @include media("<=phone") {
+    font-size: 10vw;
+
+  }
   line-height: 5vw;
   color: #000;
   font-family: "TT Commons DemiBold";
@@ -73,6 +94,17 @@ padding-left: 8vw;
 
   display: block;
   transition: .3s ease-in-out;
+  @include media("<=tablet") {
+    font-size: 2vw;
+  }
+  @include media("<=ipadPro") {
+    font-size: 1.5vw;
+
+  }
+  @include media("<=phone") {
+    font-size: 3vw;
+
+  }
 }
  
 .nav a:hover {
