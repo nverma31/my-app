@@ -3,14 +3,14 @@ import IntroOverlay from "../components/introOverlay";
 import SectionPara from "../components/sectionPara";
 import SectionParaLeft from "../components/sectionParaLeft";
 import Path from "../assets/Nemo/users.png";
-import IAone from "../assets/Nemo/ia.png";
+import IAone from "../assets/Nemo/ia.jpg";
 import Interaction1 from "../assets/Nemo/interaction1.gif";
 import Interaction2 from "../assets/Nemo/interaction2.gif";
 import Space from "../assets/Nemo/space.png";
 import Variations from "../assets/Nemo/variations.jpg";
 
 import Tease from "../assets/Nemo/teaser.gif";
-import Uselab from "../assets/Nemo/test.png";
+import Uselab from "../assets/Nemo/test.jpg";
 
 import gsap from "gsap";
 import ProjectTitle from "../components/projectTitle";

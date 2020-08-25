@@ -13,10 +13,14 @@ import Footer from "../components/footer";
 import Hero from "../assets/trickle/hero.png";
 import States from "../assets/ewe/states.png";
 import Statesgif from "../assets/ewe/states.gif";
+import Controlgif from "../assets/ewe/control.gif";
 
-import Logistics from "../assets/ewe/logistics.png";
+import Share from "../assets/ewe/sharer.jpg";
+import Investigate from "../assets/ewe/investigate.jpg";
+
+import Logistics from "../assets/ewe/logistics.jpg";
 import Amundsen from "../assets/ewe/Amundsen.png";
-import Marketing from "../assets/ewe/marketing.png";
+import Marketing from "../assets/ewe/marketing.jpg";
 
 
 import WideImage from "../components/wideImage";
@@ -33,9 +37,8 @@ const sectioin0 = { num: '', title: 'Clean lines, vibrant colours and ',title1:'
 const sectioin5 = { num: 'USECASE 01', title: 'targeted Marketing.', text: ' To try it out, we included users in the development process, reaching to them in two key stages of the project: At the beginning, through interviews, to find out about their habits and expectations. At a more advanced stage of the visual and Ux design, to confirm that the visual language and the functional focus were as expected. By listening to the real thing, we were able to confirm that we were going in the right direction, and were able to correct and modify some issues as a result of their suggestions.', imageurl:Marketing};
 const sectioin6 = { num: 'USECASE 02', title: 'Logistics.', text: ' To try it out, we included users in the development process, reaching to them in two key stages of the project: At the beginning, through interviews, to find out about their habits and expectations. At a more advanced stage of the visual and Ux design, to confirm that the visual language and the functional focus were as expected. By listening to the real thing, we were able to confirm that we were going in the right direction, and were able to correct and modify some issues as a result of their suggestions.', imageurl:Marketing};
 const sectioin7 = { num: 'USECASE 03', title: 'Elderly Care.', text: ' To try it out, we included users in the development process, reaching to them in two key stages of the project: At the beginning, through interviews, to find out about their habits and expectations. At a more advanced stage of the visual and Ux design, to confirm that the visual language and the functional focus were as expected. By listening to the real thing, we were able to confirm that we were going in the right direction, and were able to correct and modify some issues as a result of their suggestions.', imageurl:Marketing};
-
-const sectioin1 = { num: '01', title: 'The Home Pulse.', text: ' To try it out, we included users in the development process, reaching to them in two key stages of the project: At the beginning, through interviews, to find out about their habits and expectations. At a more advanced stage of the visual and Ux design, to confirm that the visual language and the functional focus were as expected. By listening to the real thing, we were able to confirm that we were going in the right direction, and were able to correct and modify some issues as a result of their suggestions.'};
-const sectioin2 = { num: '02', title: 'Stay in Control', text: 'Users are at the centre of our work. Our main focus is their expeestions.'};
+const sectioin1 = { num: '01', title: 'The Home Pulse.', text: ' The home pulse informs the users the status of their different appliances in an intuitive way. Using a intuitive colour scheme user knows whether everything is fine or if there is anything that requires their attention.'};
+const sectioin2 = { num: '02', title: 'Users stay in Control', text: 'The dashboard is dynamic which informs the  .'};
 const sectioin3 = { num: '03', title: 'Investigate and Act', text: ' so thsfying and fulfilncluded users in the development process, reaching to them in two key stages of the project: At the beginning, through interviews, to find out about their habits and expectations. At a more advanced stage of the visual and Ux design, to confirm that the visual language and the functional focus were as expected. By listening to the real thing, we were able to confirm that we were going in the right direction, and were able to correct and modify some issues as a result of their suggestions.'};
 const sectioin4 = { num: '04', title: 'Share Data When You Gain Insights', text: ' so thsfying and fulfilncluded users in the development process, reaching to them in two key stages of the project: At the beginning, through interviews, to find out about their habits and expectations. At a more advanced stage of the visual and Ux design, to confirm that the visual language and the functional focus were as expected. By listening to the real thing, we were able to confirm that we were going in the right direction, and were able to correct and modify some issues as a result of their suggestions.'};
 
@@ -58,10 +61,6 @@ const Ewe = ({ dimensions }) => {
     homeAnimation(completeAnimation);
   }, []);
 
-  useEffect(() => {
-    let vh = dimensions.height * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-  }, [dimensions.width]);
 
   return (
     <>
@@ -70,51 +69,51 @@ const Ewe = ({ dimensions }) => {
 
       <ProjectIntro introText = {introText} />
       <Video path={HeroVideo} />
-      <SectionPara section={sectioin0} />
-      <div className='ewe-wide-image'>
-        <img className ="normal-image"
-              src={States}
-            />
-            <img className ="gif-image"
-              src={Statesgif}
-            />
-      </div>
+    
 
-      <div className="CaptionPayPal">
-      The redesigned Summary page focused on putting Activity, balance and linked accounts in the forefront.    
-        </div>
+      <SectionPara section={sectioin0}/>
+        <FullWidthImage path={Investigate}  />
+      
+
+      
         <div className="sectionBold">
 
         <div className ="sectionTitleBold" > Simplifying management of electrical appliances.</div>
         <div className ="sectionTitleText" > Amundsen acts as a hub for users to manage all his electrical appliances and stay on top of their energy usage.</div>
       </div>
       
-        <SectionPara section={sectioin1} />
+      <TallImage path={Controlgif}  />
+
+        <SectionPara section={sectioin2} />
+
+        <div className="sectiom-with-tall-image">
+        <div className="sectiom-with-tall-image-firrst">
+        <SectionParaLeft section={sectioin1} />
+
+        </div>
+        <div className="sectiom-with-tall-image-second">
         <TallImage path={Statesgif}  />
 
+        </div>
+        </div>
 
-      <SectionParaLeft section={sectioin2}/>
-        
-      <WideImage path={States}  />
+
 
        
         <SectionPara section={sectioin3}/>
-        <WideImage path={States}  />
+        <FullWidthImage path={Investigate}  />
 
         <SectionParaLeft section={sectioin4}/>
-        <WideImage path={States}  />
+        <WideImage path={Share}  />
 
-        <SectionPara section={sectioin5} />
-        <TallImage path={Statesgif}  />
+        <Sticky content={sectioin5} />
+
 
 
       <SectionParaLeft section={sectioin6}/>
         
-      <WideImage path={States}  />
+      <FullWidthImage path={Logistics}  />
 
-       
-        <SectionPara section={sectioin7}/>
-        <WideImage path={States}  />
 
 
         <Footer />

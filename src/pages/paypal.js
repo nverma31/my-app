@@ -5,6 +5,7 @@ import SectionParaLeft from "../components/sectionParaLeft";
 import Ball from "../assets/paypal/8ball.jpg";
 import Space from "../assets/Nemo/space.png";
 import SocialIcons from '../components/social'
+import DynamicScrollToTop from "../components/dynamicScrollToTop";
 
 import gsap from "gsap";
 import ProjectTitle from "../components/projectTitle";
@@ -81,7 +82,8 @@ const PayPal = ({ dimensions }) => {
   }, [dimensions.width]);
 
   return (
-    <>
+    <div>
+    <DynamicScrollToTop></DynamicScrollToTop>
       {animationComplete === false ? <IntroOverlay /> : ""}
       <ProjectTitle intro={introtitle} />
       <ProjectIntro introText={introText} />
@@ -167,7 +169,7 @@ const PayPal = ({ dimensions }) => {
 
       <SocialIcons/>
 
-    </>
+    </div>
   );
 };
 

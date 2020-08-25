@@ -1,5 +1,5 @@
 import React, { useEffect, Component } from "react";
-import { BrowserRouter, Route, Link, Redirect, withRouter, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Link,useLocation, Redirect, withRouter, Switch } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import { gsap } from "gsap";
 import "./styles/App.scss";
@@ -7,6 +7,7 @@ import Header from "./components/header";
 import Navigation from "./components/navigation";
 import Heade from "./components/Heade";
 import AnimatedCursor from "react-animated-cursor";
+import DynamicScrollToTop from "./components/dynamicScrollToTop";
 
 import CaseStudies from "./pages/caseStudies";
 import Approach from "./pages/approach";
@@ -22,6 +23,9 @@ import Ewe from "./pages/ewe";
 import Quinta from "./pages/quinta";
 import Uci from "./pages/Uci";
 
+
+
+
 const routes = [
   { path: "/", name: "Home", Component: Home },
   { path: "/case-studies", name: "caseStudies", Component: CaseStudies },
@@ -35,6 +39,15 @@ const routes = [
   { path: "/quinta", name: "quinta", Component: Quinta },
 
 ];
+
+function _ScrollToTop(props) {
+  const { pathname } = useLocation();
+  useEffect(() => {
+      window.scrollTo(0, 0);
+  }, [pathname]);
+  return props.children
+}
+const ScrollToTop = withRouter(_ScrollToTop)
 
 function debounce(fn, ms) {
   let timer;
@@ -178,7 +191,8 @@ function App() {
   />
 
       <BrowserRouter>
-      <div className='App'>
+      <ScrollToTop>
+         <div className='App'>
       <Heade />
             <Route path="/public" component={Public}/>
             {routes.map(({ path, Component }) => (
@@ -195,6 +209,7 @@ function App() {
    
     
       </div>
+      </ScrollToTop>
       </BrowserRouter>
           </>
   );

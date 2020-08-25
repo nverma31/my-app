@@ -1,5 +1,4 @@
 import React from "react";
-import Path from "../assets/ewe/marketing.png";
 
 const Sticky = ({content}) => {
   return (

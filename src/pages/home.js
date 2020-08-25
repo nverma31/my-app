@@ -11,7 +11,7 @@ import Footer from "../components/footer";
 let tl = gsap.timeline();
 
 const homeAnimation = completeAnimation => {
-  tl.from(".line span", 1.5, {
+  tl.from(".line span", 2, {
     y: 100,
     ease: "power4.out",
     delay: 0.1,
