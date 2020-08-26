@@ -145,9 +145,16 @@ html {
   padding-bottom: 1vw;
 }
 .sectionTitleBold {
-  font-size: 4.5vw;
+  font-size: 7.5vw;
   font-family: "TT Commons Demibold";
   padding-bottom: 1vw;
+  @include media("<=tablet") {
+    font-size: 5.5vw;
+  }
+  @include media("<=phone") {
+    font-size: 7.5vw;
+  }
+
 
 }
 .sectionTitleText {
@@ -159,6 +166,12 @@ html {
   font-family: "TT Commons Regular";
   @include media("<=tablet") {
     width: 100%;
+    font-size: 2vw;
+
+  }
+  
+  @include media("<=phone") {
+    font-size: 3.3vw;
   }
 
 }
@@ -169,6 +182,13 @@ html {
   font-family: "TT Commons Demibold";
   padding-left: 15vw;
   padding-top: 7vh;
+  @include media("<=tablet") {
+    font-size: 2.3vw;
+  }
+  @include media("<=phone") {
+    font-size: 3.5vw;
+  }
+
 
 }
 .CaptionPayPal{
@@ -179,6 +199,12 @@ html {
   width: 30%;
   font-family: "TT Commons Regular";
   padding-bottom: 7vh;
+    @include media("<=tablet") {
+      font-size: 1.5vw;
+    }
+    @include media("<=phone") {
+      font-size: 2.5vw;
+    }
 
 }
 

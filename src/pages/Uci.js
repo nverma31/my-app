@@ -3,11 +3,11 @@ import IntroOverlay from "../components/introOverlay";
 import SectionPara from "../components/sectionPara";
 import SectionParaLeft from "../components/sectionParaLeft";
 import Path from "../assets/Nemo/users.png";
-import IAone from "../assets/uci/ia.png";
+import IAone from "../assets/uci/ia.jpg";
 import IAtwo from "../assets/Nemo/ia-two.png";
 import IAthree from "../assets/Nemo/ia-three.png";
 import Tease from "../assets/Nemo/teaser.gif";
-import Styles from "../assets/uci/styles.png";
+import Styles from "../assets/uci/styles.jpg";
 import Interviews from "../assets/uci/interviews.jpg";
 
 import gsap from "gsap";

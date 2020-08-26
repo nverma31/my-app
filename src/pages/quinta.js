@@ -18,7 +18,7 @@ import Test from "../assets/quinta/hero.jpg";
 import web1 from "../assets/quinta/web1.jpg";
 import web2 from "../assets/quinta/web2.jpg";
 import Chatbot from "../assets/quinta/chatbot.jpg";
-import app1 from "../assets/quinta/app1.png";
+import app1 from "../assets/quinta/app1.jpg";
 import app2 from "../assets/quinta/app2.png";
 
 

@@ -11,7 +11,7 @@ import Footer from "../components/footer";
 import Hero from "../assets/trickle/concept1.jpg";
 import Ideate from "../assets/trickle/ideate.jpg";
 import Userflow from "../assets/trickle/trickle-userflow.png";
-import Concept from "../assets/trickle/concept.png";
+import Concept from "../assets/trickle/concept.jpg";
 import Making from "../assets/trickle/making.jpg";
 import Installation from "../assets/trickle/installation.png";
 

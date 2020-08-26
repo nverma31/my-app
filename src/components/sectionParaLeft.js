@@ -14,7 +14,7 @@ const SectionParaLeft = ({section}) => {
               <span class= "leftpara-line-numbering">{section.num} </span>
             </div>
             <div className='leftpara-line'>
-              <span>{section.title}</span>
+              <div>{section.title}</div>
             </div>
           </h2>
           <p className="leftdescription">

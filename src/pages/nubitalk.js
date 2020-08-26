@@ -15,10 +15,10 @@ import Synthesis from "../assets/nubitalk/Synthesis.jpg";
 import Test from "../assets/nubitalk/test.png";
 import Research from "../assets/nubitalk/researchprocess.png";
 import ideation from "../assets/nubitalk/ideation.png";
-import concept1 from "../assets/nubitalk/concept1.png";
-import concept2 from "../assets/nubitalk/concept2.png";
-import concept3 from "../assets/nubitalk/concept3.png";
-import concept4 from "../assets/nubitalk/concept4.png";
+import concept1 from "../assets/nubitalk/concept1.jpg";
+import concept2 from "../assets/nubitalk/concept2.jpg";
+import concept3 from "../assets/nubitalk/concept3.jpg";
+import concept4 from "../assets/nubitalk/concept4.jpg";
 
 import WideImage from "../components/wideImage";
 import TallImage from "../components/tallImage";
@@ -98,9 +98,9 @@ const Nubitalk = ({ dimensions }) => {
       <Sticky content={sectioin8} />
 
         <SectionParaLeft section={sectioin7}/>
-        <FullWidthImage path={concept2}  />
+        <WideImage path={concept2}  />
         <SectionPara section={sectioin6} />
-        <WideImage path={concept3}  />
+        <FullWidthImage path={concept3}  />
         <SectionParaLeft section={sectioin9}/>
         <WideImage path={concept4}  />
       

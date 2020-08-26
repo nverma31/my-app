@@ -19,7 +19,6 @@ import FullWidthImage from "../components/fullWidthImage";
 import Footer from "../components/footer";
 import Video from "../components/video";
 import Hero from "../assets/Nemo/hero.png";
-import Web1 from "../assets/paypal/weeb1.png";
 import Styles from "../assets/Nemo/styles.png";
 import Colors from "../assets/Nemo/colors.png";
 import FullPage from "../assets/Nemo/fullpage.jpg";

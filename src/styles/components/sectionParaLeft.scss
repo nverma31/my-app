@@ -24,28 +24,30 @@
         // line-height: 4.2rem;
         // font-weight: medium;
         @include media("<=tablet") {
-          font-size: 1.5rem;
+          font-size: 1.3rem;
         }
         @include media("<=phone") {
-          font-size: 1.5rem;
+          font-size: 0.9rem;
         }
         .leftpara-line {
           font-family: "TT Commons Regular";
-          height: 2rem;
           position: relative;
+          width: 25vw;
+
           overflow: hidden;
           @include media("<=tablet") {
-            height: 2rem;
           }
           @include media("<=phone") {
-            height: 2rem;
+            width: 60vw;
+
           }
           span {
-            position: absolute;
+            position: relative;
           }
           .leftpara-line-numbering{
             font-size: 0.9rem;
             letter-spacing: 0.09rem;
+            font-family: "TT Commons Regular";
 
   
           }
@@ -58,9 +60,13 @@
         width: 25vw;
         @include media("<=phone") {
           width: 70vw;
+          font-size: 0.8rem;
+
         }
         @include media("<=tablet") {
           width: 70vw;
+          font-size: 0.8rem;
+
         }
       }
     }

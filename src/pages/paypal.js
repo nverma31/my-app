@@ -15,21 +15,21 @@ import Sticky from "../components/sticky";
 
 import Footer from "../components/footer";
 import Video from "../components/video";
-import Hero from "../assets/paypal/hero.png";
-import Web1 from "../assets/paypal/web1.png";
-import Web2 from "../assets/paypal/web2.png";
-import Web3 from "../assets/paypal/web3.png";
-import Web4 from "../assets/paypal/web4.png";
-import Web5 from "../assets/paypal/web5.png";
-import Web6 from "../assets/paypal/web6.png";
-import mob1 from "../assets/paypal/mob1.png";
-import mob2 from "../assets/paypal/mobilebf2.png";
-import mob3 from "../assets/paypal/mobilebf3.png";
-import mob4 from "../assets/paypal/mobilebf1.png";
+import Hero from "../assets/paypal/hero.jpg";
+import Web1 from "../assets/paypal/web1.jpg";
+import Web2 from "../assets/paypal/web2.jpg";
+import Web3 from "../assets/paypal/web3.jpg";
+import Web4 from "../assets/paypal/web4.jpg";
+import Web5 from "../assets/paypal/web5.jpg";
+import Web6 from "../assets/paypal/web6.jpg";
+import mob1 from "../assets/paypal/mob1.jpg";
+import mob2 from "../assets/paypal/mobilebf2.jpg";
+import mob3 from "../assets/paypal/mobilebf3.jpg";
+import mob4 from "../assets/paypal/mobilebf1.jpg";
 import rollout from "../assets/paypal/rollout.png";
 import support from "../assets/paypal/support.png";
 
-import activity from "../assets/paypal/activity.png";
+import activity from "../assets/paypal/activity.jpg";
 import settings from "../assets/paypal/settings.png";
 
 import Responsive from "../assets/paypal/responsive.png";

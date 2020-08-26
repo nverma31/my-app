@@ -9,7 +9,7 @@ const Footer = ({path}) => {
           <div class="contact-details">
               <p>{path.title}</p>
               <Link
-                      to={{ pathname: path.link }} target="_blank">
+                      to={path.link }>
                       <div class="footer-text-section">
              {path.text}
                 </div>
