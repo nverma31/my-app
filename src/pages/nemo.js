@@ -30,12 +30,14 @@ import Sticky from "../components/sticky";
 
 const introtitle = { title: 'Audi Model Pages Website', subtitle: 'An Immersive online experience of Audi Cars' , imageurl: Hero};
 const introText = { brief: 'Design an immersive online experience for Audi Models.', intro: 'I have been working closely with Audi on a major rebrand and on their new digital approach. As part of that, they asked us to redesign and roll out their models website — both new and old models — following a user centered approach.', client:'Client',company:'Audi',what:'I am a product designer in the project and my responsibilities includes user research and UX.',when:'March 2020 - Ongoing',imageurl: Hero};
-const sectioin1 = { num: '01', title: 'Learning from the users.', text: 'Users are at the centre of everything we did. Our main focus is their experience, so that the interaction with our digital products is enriching, satisfying and fulfilling their expectations. We included users in the development process, reaching to them in two key stages of the project: At the beginning, through interviews, to find out about their habits and expectations. At a more advanced stage of the visual and UX design, to confirm that the visual language and the functional focus were as expected.'};
-const sectioin2 = { num: '02', title:'Access to the Information', text: 'We simplified the Information Architecture and kept it relatively flat which focused on the user\’s main needs identified during the research. We reduced the header navigation to focus on the vehicles. Moreover, as Audi has more than 60 different models we grouped them according to model types such as SUV, Sedan, etc.'};
+const sectioin1 = { num: '01', title: 'Learning from the users.', text: 'Users were at the centre of everything we did. Our main focus is their experience, so that their interaction  is enriching, satisfying and fulfilling their expectations. We included users in two key stages of the project: At the beginning, through interviews, to find out about their habits and expectations. And at a more advanced stage of the visual and UX design, to confirm that the visual language and the functional focus were as expected.'};
+const sectioin2 = { num: '02', title:'Access to the Information', text: 'We simplified the Information Architecture and kept it relatively flat which focused on the user\’s main needs identified during the research. We reduced the header navigation to focus on the vehicles and as Audi has more than 60 different models we grouped them according to model types such as SUV, Sedan, etc.'};
 const sectioin4 = { num: '03', title:'Visual Design', text: 'The design reflects the premium aspect of Audi. The spacious and lightweight feel help avoid the information overload that competitor sites often suffer from. The colour also helps differentiate it. We predominately used black and white for its elegance and boldness. A clean, purposeful line-graphic style and smooth animations reflect the elegance an Audi Car. A new set of icons helps Audi users quickly understand where they are and what it’s all about.'};
-const sectioin5 = { num: '04', title:'The new Model Page', text: 'The design reflects the premium aspect of Audi. The spacious and lightweight feel help avoid the information overload that competitor sites often suffer from. The colour also helps differentiate it. We predominately used black and white for its elegance and boldness. A clean, purposeful line-graphic style and smooth animations reflect the elegance an Audi Car. A new set of icons helps Audi users quickly understand where they are and what it’s all about.', imageurl:FullPage};
-const sectioin6 = { num: '04', title:'Take it with you', text: 'Fully responsive'};
-const sectioin7 = { num: '04', title:'Immersion with interaction design', text: 'Fully responsive'};
+const sectioin5 = { num: '04', title:'The new Model Page', text: 'The new Model page allows users to not only get an overview of the car, but also any details if they are interested. Also, the focus was to offer an immersive experience so the users can get a feel of the actual car.', imageurl:FullPage};
+const sectioin6 = { num: '05', title:'Reflects every Models essense ', text: 'We creates modules that were felxible and modular, which allows to create a different composition and feel for different models ranging for basic sedans to sports cars. '};
+const sectioin8 = { num: '07', title:'Take it with you', text: 'Everything we designed was responsive and we strive to acheive a consitency in feel and visual on all viewports.'};
+
+const sectioin7 = { num: '06', title:'Immersion with interaction design', text: 'In line with acheiving a feel of the actual cars, we used motion design to immerse the users in the models and get a feel of the actual car.'};
 const footerpath = { title: 'next project', text: 'PayPal Website & App', link:'/paypal' };
 
 let tl = gsap.timeline();
@@ -98,7 +100,7 @@ const Nemo = () => {
     <img src={Interaction2}></img>
     </div>
 	  </div>
-    <SectionPara section={sectioin6} />
+    <SectionPara section={sectioin8} />
       <FullWidthImage path={Responsive}  />
       
 
