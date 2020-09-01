@@ -23,7 +23,11 @@ import Quinta from "./pages/quinta";
 import Uci from "./pages/Uci";
 import ScrollToTop from "./styles/components/ScrollToTop";
 
+import ReactGA from 'react-ga';
 
+const trackingId = "UA-90982863-1"; // Replace with your Google Analytics tracking ID
+ReactGA.initialize(trackingId);
+ReactGA.pageview('/');
 
 
 const routes = [
