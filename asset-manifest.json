@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.79100dd6.chunk.css",
-    "main.js": "/static/js/main.8bcb59f7.chunk.js",
-    "main.js.map": "/static/js/main.8bcb59f7.chunk.js.map",
+    "main.js": "/static/js/main.d47ff994.chunk.js",
+    "main.js.map": "/static/js/main.d47ff994.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7c0ae09a.js",
     "runtime-main.js.map": "/static/js/runtime-main.7c0ae09a.js.map",
     "static/js/2.c3c8dffd.chunk.js": "/static/js/2.c3c8dffd.chunk.js",
     "static/js/2.c3c8dffd.chunk.js.map": "/static/js/2.c3c8dffd.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1e914c40ffbc05d76430469ce67801aa.js": "/precache-manifest.1e914c40ffbc05d76430469ce67801aa.js",
+    "precache-manifest.c039181216f2722e49f5a2a7ff48f7de.js": "/precache-manifest.c039181216f2722e49f5a2a7ff48f7de.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.79100dd6.chunk.css.map": "/static/css/main.79100dd6.chunk.css.map",
     "static/js/2.c3c8dffd.chunk.js.LICENSE.txt": "/static/js/2.c3c8dffd.chunk.js.LICENSE.txt",
@@ -37,7 +37,7 @@
     "static/media/dallas.webp": "/static/media/dallas.2bc38187.webp",
     "static/media/ewe.jpg": "/static/media/ewe.3e2f4d9d.jpg",
     "static/media/field.png": "/static/media/field.7b7095e4.png",
-    "static/media/fieldinsights.png": "/static/media/fieldinsights.61c23287.png",
+    "static/media/fieldinsights.png": "/static/media/fieldinsights.f1a584df.png",
     "static/media/fullpage.jpg": "/static/media/fullpage.9495f76c.jpg",
     "static/media/hero.png": "/static/media/hero.f619ecd6.png",
     "static/media/hero.jpg": "/static/media/hero.fdd1f329.jpg",
@@ -64,7 +64,7 @@
     "static/media/newyork.webp": "/static/media/newyork.ebb81965.webp",
     "static/media/paypal.jpg": "/static/media/paypal.04d50a49.jpg",
     "static/media/quinta.jpg": "/static/media/quinta.e7817de9.jpg",
-    "static/media/researchprocess.png": "/static/media/researchprocess.3eb8f6ba.png",
+    "static/media/researchprocess.png": "/static/media/researchprocess.a08ef8ce.png",
     "static/media/responsive.jpg": "/static/media/responsive.12c70525.jpg",
     "static/media/responsive.png": "/static/media/responsive.f2e20977.png",
     "static/media/right-arrow.6f7972ed.svg": "/static/media/right-arrow.6f7972ed.svg",
@@ -107,6 +107,6 @@
     "static/js/runtime-main.7c0ae09a.js",
     "static/js/2.c3c8dffd.chunk.js",
     "static/css/main.79100dd6.chunk.css",
-    "static/js/main.8bcb59f7.chunk.js"
+    "static/js/main.d47ff994.chunk.js"
   ]
 }

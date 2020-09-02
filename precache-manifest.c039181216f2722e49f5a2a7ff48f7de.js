@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f5f5f691fe10ab2a079835b602aa67c9",
+    "revision": "9b1bafcc319b476d418ba009aec672e0",
     "url": "/index.html"
   },
   {
-    "revision": "5e7a83496b7b2fb58a45",
+    "revision": "0c900432b28005716c2d",
     "url": "/static/css/main.79100dd6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.c3c8dffd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5e7a83496b7b2fb58a45",
-    "url": "/static/js/main.8bcb59f7.chunk.js"
+    "revision": "0c900432b28005716c2d",
+    "url": "/static/js/main.d47ff994.chunk.js"
   },
   {
     "revision": "216563cf50e7c35b2f13",
@@ -148,8 +148,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/field.7b7095e4.png"
   },
   {
-    "revision": "61c2328704a8e3101b9fafec0f7200d8",
-    "url": "/static/media/fieldinsights.61c23287.png"
+    "revision": "f1a584df9a334c37f20fe6f8658de0c6",
+    "url": "/static/media/fieldinsights.f1a584df.png"
   },
   {
     "revision": "9495f76c29e118aba9975a55bd04d770",
@@ -284,8 +284,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/quinta.e7817de9.jpg"
   },
   {
-    "revision": "3eb8f6ba69480e23af8cd4ee1b9332d6",
-    "url": "/static/media/researchprocess.3eb8f6ba.png"
+    "revision": "a08ef8ce0890532927eb52d73d2626c1",
+    "url": "/static/media/researchprocess.a08ef8ce.png"
   },
   {
     "revision": "12c70525df5ee2a8b0df8d60587e93a8",
