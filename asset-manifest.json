@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.79100dd6.chunk.css",
-    "main.js": "/static/js/main.d47ff994.chunk.js",
-    "main.js.map": "/static/js/main.d47ff994.chunk.js.map",
+    "main.js": "/static/js/main.4a064a46.chunk.js",
+    "main.js.map": "/static/js/main.4a064a46.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7c0ae09a.js",
     "runtime-main.js.map": "/static/js/runtime-main.7c0ae09a.js.map",
-    "static/js/2.c3c8dffd.chunk.js": "/static/js/2.c3c8dffd.chunk.js",
-    "static/js/2.c3c8dffd.chunk.js.map": "/static/js/2.c3c8dffd.chunk.js.map",
+    "static/js/2.764900ee.chunk.js": "/static/js/2.764900ee.chunk.js",
+    "static/js/2.764900ee.chunk.js.map": "/static/js/2.764900ee.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c039181216f2722e49f5a2a7ff48f7de.js": "/precache-manifest.c039181216f2722e49f5a2a7ff48f7de.js",
+    "precache-manifest.5cbb55d1d6cfa21e2d9da2948c38b977.js": "/precache-manifest.5cbb55d1d6cfa21e2d9da2948c38b977.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.79100dd6.chunk.css.map": "/static/css/main.79100dd6.chunk.css.map",
-    "static/js/2.c3c8dffd.chunk.js.LICENSE.txt": "/static/js/2.c3c8dffd.chunk.js.LICENSE.txt",
+    "static/js/2.764900ee.chunk.js.LICENSE.txt": "/static/js/2.764900ee.chunk.js.LICENSE.txt",
     "static/media/8ball.jpg": "/static/media/8ball.17f2afb1.jpg",
     "static/media/Amundsen.png": "/static/media/Amundsen.eb90336f.png",
     "static/media/Interview1.jpg": "/static/media/Interview1.9a546a0b.jpg",
@@ -45,7 +45,8 @@
     "static/media/home.mp4": "/static/media/home.297026ae.mp4",
     "static/media/ia-three.png": "/static/media/ia-three.4c8330e9.png",
     "static/media/ia-two.png": "/static/media/ia-two.c460e5db.png",
-    "static/media/ia.jpg": "/static/media/ia.b652cf48.jpg",
+    "static/media/ia.jpg": "/static/media/ia.02d175e7.jpg",
+    "static/media/ia.png": "/static/media/ia.325cf397.png",
     "static/media/ideate.jpg": "/static/media/ideate.57916ed0.jpg",
     "static/media/ideation.png": "/static/media/ideation.0d383c18.png",
     "static/media/installation.png": "/static/media/installation.7196120d.png",
@@ -61,6 +62,8 @@
     "static/media/mobilebf1.jpg": "/static/media/mobilebf1.d2d70ef3.jpg",
     "static/media/mobilebf2.jpg": "/static/media/mobilebf2.1040d980.jpg",
     "static/media/mobilebf3.jpg": "/static/media/mobilebf3.159a3a31.jpg",
+    "static/media/modularIA.png": "/static/media/modularIA.d2a118d7.png",
+    "static/media/modules.png": "/static/media/modules.54d4b9ab.png",
     "static/media/newyork.webp": "/static/media/newyork.ebb81965.webp",
     "static/media/paypal.jpg": "/static/media/paypal.04d50a49.jpg",
     "static/media/quinta.jpg": "/static/media/quinta.e7817de9.jpg",
@@ -88,8 +91,8 @@
     "static/media/support.png": "/static/media/support.a1d389cb.png",
     "static/media/syn.png": "/static/media/syn.2805851c.png",
     "static/media/teaser.gif": "/static/media/teaser.87e94468.gif",
+    "static/media/test.jpg": "/static/media/test.47721ab4.jpg",
     "static/media/test.png": "/static/media/test.77c8220a.png",
-    "static/media/test.jpg": "/static/media/test.b080a082.jpg",
     "static/media/trickle-userflow.png": "/static/media/trickle-userflow.12f4b88f.png",
     "static/media/trickle.jpg": "/static/media/trickle.2fdba1d9.jpg",
     "static/media/uci.jpg": "/static/media/uci.df76511d.jpg",
@@ -105,8 +108,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7c0ae09a.js",
-    "static/js/2.c3c8dffd.chunk.js",
+    "static/js/2.764900ee.chunk.js",
     "static/css/main.79100dd6.chunk.css",
-    "static/js/main.d47ff994.chunk.js"
+    "static/js/main.4a064a46.chunk.js"
   ]
 }
