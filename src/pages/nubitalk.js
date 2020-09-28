@@ -10,6 +10,8 @@ import FullWidthImage from "../components/fullWidthImage";
 import Footer from "../components/footer";
 import Video from "../components/video";
 import Hero from "../assets/nubitalk/hero.jpg";
+import Uselab from "../assets/nubitalk/uselabs.jpg";
+
 import Interview1 from "../assets/nubitalk/Interview1.jpg";
 import Synthesis from "../assets/nubitalk/Synthesis.jpg";
 import Test from "../assets/nubitalk/test.png";
@@ -30,7 +32,8 @@ const sectioin1 = { num: '01', title: 'Understanding our users.', text: 'At the 
 const sectioin2 = { num: '02', title: 'Finding the human story.', text: 'We used different modelling techniques to make sense of data from sequence flow diagramming, stakeholder mapping to affinity diagramming which lead us to the key into the human story behind contact centers. Administrators and managers want their agents to work as efficiently and effectively as possible without supporting them with the right tools and processes. A lot of the work in contact centers we visited was done by third-party tools such as skype, emails, and manual task-list etc.'};
 const sectioin3 = { num: '03', title: 'Ideation', text: 'We took themes from our Affinity diagram and came up with How-Might-We\'s. We generated many concepts and were in constant touch with the users and the client to refine and iterate on our concepts. Importantly, we decided to create the \'tomorrow\' than fixing today.'};
 const sectioin4 = { num: '04', title: 'Information Architecture', text: 'To simplify agents jobs, we wanted to focus on the current tasks and not overwhelm them with details.  To achieve this we developed a relatively flat architecture that gives a focuses on the current communication of the agents with the callers, while allowing them to reach out to the managers, and administrators at a single click incase of an issue.'};
-const sectioin5 = { num: '05', title: 'Visual design', text: 'Users are at the centre of our work. Our main focus is their experience, so that the interaction with our digital products is enriching, satisfying and fulfilling their expectations. To try it out, we included users in the development process, reaching to them in two key stages of the project: At the beginning, through interviews, to find out about their habits and expectations. At a more advanced stage of the visual and Ux design, to confirm that the visual language and the functional focus were as expected. By listening to the real thing, we were able to confirm that we were going in the right direction, and were able to correct and modify some issues as a result of their suggestions.'};
+const sectioin5 = { num: '04', title: 'Iterative design and testing', text: 'We continuously  refined our design and concept by regularly user testing our designs with  different contact centers employees. By incorporating the learnings with every user tests we moved progressively closer to our final designs.'};
+
 const sectioin6 = { num: '', title: 'Always in touch with the team', text: 'Agents are always in touch with the team and can see thier availability at all times. They can either transfer the call to other team members or ping them forr different queries.'};
 const sectioin7 = { num: '', title: 'Live transcription and suggestions for Next-Best-Actions', text: 'Nubitalk transcribes every call and using advanced machine learnings helps agents in serving the call in best possible way.'};
 const sectioin8 = { num: '', title: 'All communications in one place,', text: 'Nubitalk consolidate all the channels that Agents have to use in one viewport with a tabbed menu that shows notifications for each channel.', imageurl:concept1};
@@ -87,9 +90,11 @@ const Nubitalk = ({ dimensions }) => {
         </div>
         <div className="sectiom-with-tall-image-second">
         <SectionPara section={sectioin3} />
+       
         </div>
         </div>
-    
+        <SectionParaLeft section={sectioin5}/>
+        <WideImage path={Uselab}  />
         <div className="sectionBold">
 
         <div className ="sectionTitleBold" > The Concept.</div>

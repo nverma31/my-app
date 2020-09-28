@@ -13,6 +13,8 @@ import sb1 from "../assets/quinta/sb1.png";
 import sb2 from "../assets/quinta/sb2.png";
 import sb3 from "../assets/quinta/sb3.png";
 import sb4 from "../assets/quinta/sb4.png";
+import UserTest from "../assets/quinta/tests.png";
+
 import stakeholder from "../assets/quinta/stakeholder.png";
 import Test from "../assets/quinta/hero.jpg";
 import web1 from "../assets/quinta/web1.jpg";
@@ -42,6 +44,7 @@ const sectioin6 = { num: '02', title: 'A new experience based on service design 
 const sectioin7 = { num: '01', title: 'Plan and attend events of your choice', text: 'The responsive website has the festival schedule and also provides more information about all events. Users can save the certain events as favorite and they get notified for those events.'};
 const sectioin8 = { num: '02', title: 'Navigating within festival', text: 'The app has a local map of the quinta premises and allows users to navigate during the festival where they can also see which event is being held at a particular location at any specific time.'};
 const footerpath = { title: 'next project', text: 'Nubitalk', link:'/nubitalk' };
+const sectioin9 = { num: '03', title: 'Iterative wireframing and testing', text: 'Due to the time constraints, we decided to focus on the design of the website and the chatbot. We wireframed the website and tested it with some regular visitors and event organisors of the festival. I also tested the chatbot interactions and script by inviting the event hosts on a group chat and acting as the bot and incorporated the learnings in our final design. '};
 
 const homeAnimation = completeAnimation => {
   tl.to(".overlay-top", 1, {
@@ -85,6 +88,9 @@ const Quinta = ({ dimensions }) => {
         <WideImage path={sb3}  />
         <WideImage path={sb4}  />
 
+        <SectionPara section={sectioin9} />
+
+<FullWidthImage path={UserTest}  />
         <div className="sectionBold">
 
 <div className ="sectionTitleBold" > Facilitating co-creation b/w organisers & attendees</div>

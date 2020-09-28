@@ -16,6 +16,8 @@ import Sticky from "../components/sticky";
 import Footer from "../components/footer";
 import Video from "../components/video";
 import Hero from "../assets/paypal/hero.jpg";
+import Rectangle from "../assets/paypal/Rectangle.png";
+
 import Web1 from "../assets/paypal/web1.jpg";
 import Web2 from "../assets/paypal/web2.jpg";
 import Web3 from "../assets/paypal/web3.jpg";
@@ -47,6 +49,8 @@ const sectioin4 = { num: '', title: 'Responsive and Mobile first.', text: 'From 
 const sectioin5 = { num: '', title: 'An easier way to manage settings', text: ' Completely redefine how users can manage their settings. Significant improvements included a simplified profile menu and additional functionalities for modifying your profile.', imageurl:activity };
 const sectioin8 = { num: '', title: 'Phased roll out', text: 'The launch of the website was planned in many phases. Starting with throttling  1% of live-traffic in some markets and then moving progressively to full traffic in all markets '};
 const sectioin7 = { num: '', title: 'Monitoring and user testing', text: 'From the small screen to the big, the new redesigned PayPal website  works and play everywhere.' };
+const sectioin9 = { num: '', title: 'Process', text: 'It was a truly cross-discipinary collaborative effort. The POs, were workinig very closely with the designers, researchers to translate the business and user needs into a new experience for Paypal customers, while involving us developers at every stage to build the micro-services that would support the reimagined experience. The process we followed was highly iterative and agile, where we were building incremently based on the learnings from the user tests.'};
+
 const sectioin6 = { num: '', title: 'Support and maintenance', text: 'I was involved in providing round the clock technical support for countries during the roll out. Post launch, there was continual monitoring of key services which helps identify any issues and schedule updates. We were  pushing out global updates and maintained an ongoing programme of improvements.'};
 const footerpath = { title: 'next project', text: 'Audi Used Cars Platform', link:'/uci' };
 
@@ -89,6 +93,9 @@ const PayPal = ({ dimensions }) => {
       <ProjectTitle intro={introtitle} />
       <ProjectIntro introText={introText} />
       <FullWidthImage path={Ball} />
+      <SectionPara section={sectioin9}/>
+      <FullWidthImage path={Rectangle} />
+
       <div className="sectionBold">
         <div className="sectionTitleNumber" > 01.</div>
 
