@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "388162f109431cdda662d5571eaa8c73",
+    "revision": "534f73c7df7df457f5ce859a8ef61ce1",
     "url": "/index.html"
   },
   {
-    "revision": "aba3f093ba9ebc1dedc1",
-    "url": "/static/css/main.e99aef8a.chunk.css"
+    "revision": "75be1db7b1d666b3e5d0",
+    "url": "/static/css/main.3b9c4a77.chunk.css"
   },
   {
     "revision": "e42acaa484500795be91",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.5ea37ad4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "aba3f093ba9ebc1dedc1",
+    "revision": "75be1db7b1d666b3e5d0",
     "url": "/static/js/main.4aec0d7b.chunk.js"
   },
   {
@@ -36,32 +36,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Interview1.9a546a0b.jpg"
   },
   {
+    "revision": "a3e0b5f427803a187c1b62c5919196aa",
+    "url": "/static/media/Poppins-Bold.a3e0b5f4.ttf"
+  },
+  {
+    "revision": "f6ea751e936ade6edcd03a26b8153b4a",
+    "url": "/static/media/Poppins-Light.f6ea751e.ttf"
+  },
+  {
+    "revision": "f61a4eb27371b7453bf5b12ab3648b9e",
+    "url": "/static/media/Poppins-Medium.f61a4eb2.ttf"
+  },
+  {
+    "revision": "8b6af8e5e8324edfd77af8b3b35d7f9c",
+    "url": "/static/media/Poppins-Regular.8b6af8e5.ttf"
+  },
+  {
+    "revision": "4cdacb8f89d588d69e8570edcbe49507",
+    "url": "/static/media/Poppins-SemiBold.4cdacb8f.ttf"
+  },
+  {
+    "revision": "25cd0f688f815bc4f6ac2b71eb6278ba",
+    "url": "/static/media/Poppins-Thin.25cd0f68.ttf"
+  },
+  {
     "revision": "c1966b60beebfa24a4a8ab96f6cfa07c",
     "url": "/static/media/Synthesis.c1966b60.jpg"
-  },
-  {
-    "revision": "2aaf931ee67608f54be21b06a994f485",
-    "url": "/static/media/TTCommons-Bold.2aaf931e.ttf"
-  },
-  {
-    "revision": "5731d97f4d8465089961a0902dd67f5d",
-    "url": "/static/media/TTCommons-DemiBold.5731d97f.ttf"
-  },
-  {
-    "revision": "263de624d1be95b48a2369cbfbff00bf",
-    "url": "/static/media/TTCommons-Light.263de624.ttf"
-  },
-  {
-    "revision": "a7d226cc9d9a7936e3b57ab9f303b8ca",
-    "url": "/static/media/TTCommons-Medium.a7d226cc.ttf"
-  },
-  {
-    "revision": "64f3f998447493fc2bf1019fd0bebdc2",
-    "url": "/static/media/TTCommons-Regular.64f3f998.ttf"
-  },
-  {
-    "revision": "81d5257af2591d981840a0ed61bef613",
-    "url": "/static/media/TTCommons-Thin.81d5257a.ttf"
   },
   {
     "revision": "49b9530daea3018e7768205c4b8c160a",
