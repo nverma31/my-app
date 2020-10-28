@@ -17,35 +17,35 @@
 @import "./components/sticky.scss";
 
 @font-face {
-  font-family: "TT Commons Bold";
-  src: url('../assets/TTCommons-Bold.ttf'); /* IE9 Compat Modes */
+  font-family: "Poppins Bold";
+  src: url('../assets/Poppins-Bold.ttf'); /* IE9 Compat Modes */
 }
 
 @font-face {
-  font-family: "TT Commons Light";
-  src: url('../assets/TTCommons-Light.ttf'); /* IE9 Compat Modes */
+  font-family: "Poppins Light";
+  src: url('../assets/Poppins-Light.ttf'); /* IE9 Compat Modes */
 }
 @font-face {
-  font-family: "TT Commons Thin";
-  src: url('../assets/TTCommons-Thin.ttf'); /* IE9 Compat Modes */
-}
-
-@font-face {
-  font-family: "TT Commons Medium";
-  src: url('../assets/TTCommons-Medium.ttf'); /* IE9 Compat Modes */
-}
-@font-face {
-  font-family: "TT Commons DemiBold";
-  src: url('../assets/TTCommons-DemiBold.ttf'); /* IE9 Compat Modes */
-}
-@font-face {
-  font-family: "TT Commons Regular";
-  src: url('../assets/TTCommons-Regular.ttf'); /* IE9 Compat Modes */
+  font-family: "Poppins Thin";
+  src: url('../assets/Poppins-Thin.ttf'); /* IE9 Compat Modes */
 }
 
 @font-face {
-  font-family: "TT Commons Thin";
-  src: url('../assets/TTCommons-Thin.ttf'); /* IE9 Compat Modes */
+  font-family: "Poppins Medium";
+  src: url('../assets/Poppins-Medium.ttf'); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: "Poppins DemiBold";
+  src: url('../assets/Poppins-SemiBold.ttf'); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: "Poppins Regular";
+  src: url('../assets/Poppins-Regular.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: "Poppins Thin";
+  src: url('../assets/Poppins-Thin.ttf'); /* IE9 Compat Modes */
 }
 
 
@@ -59,11 +59,12 @@ html {
   background: $white;
   overscroll-behavior: none;
   margin: 0;
-  font-family: "TT Commons", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size:12px;
 }
 
 .container {
@@ -140,70 +141,70 @@ html {
 
 }
 .sectionTitleNumber {
-  font-size: 1.5vw;
-  font-family: "TT Commons Medium";
+  font-size: 1vw;
+  font-family: "Poppins Medium";
   padding-bottom: 1vw;
 }
 .sectionTitleBold {
-  font-size: 7.5vw;
-  font-family: "TT Commons Demibold";
+  font-size: 5.5vw;
+  font-family: "Poppins Demibold";
   padding-bottom: 1vw;
   @include media("<=tablet") {
-    font-size: 5.5vw;
+    font-size: 4.5vw;
   }
   @include media("<=phone") {
-    font-size: 7.5vw;
+    font-size: 5.5vw;
   }
 
 
 }
 .sectionTitleText {
   width:80%;
-  font-size: 1.3vw;
+  font-size: 1vw;
   letter-spacing: 0.01vw;
 
   padding-left: 0.8vw;
-  font-family: "TT Commons Regular";
+  font-family: "Poppins Regular";
   @include media("<=tablet") {
     width: 100%;
-    font-size: 2vw;
+    font-size: 1.7vw;
 
   }
   
   @include media("<=phone") {
-    font-size: 3.3vw;
+    font-size: 3vw;
   }
 
 }
 
 .sectionBeforeAfter {
   background-color: #F8FAFB;
-  font-size: 2vw;
-  font-family: "TT Commons Demibold";
+  font-size: 1.5vw;
+  font-family: "Poppins Demibold";
   padding-left: 15vw;
   padding-top: 7vh;
   @include media("<=tablet") {
-    font-size: 2.3vw;
+    font-size: 2.0vw;
   }
   @include media("<=phone") {
-    font-size: 3.5vw;
+    font-size: 3.1vw;
   }
 
 
 }
 .CaptionPayPal{
   padding-left: 15vw;
-  font-size: 1.3vw;
+  font-size: 0.9vw;
   color: #3a3a3a;
   padding-top: 2vh;
   width: 30%;
-  font-family: "TT Commons Regular";
+  font-family: "Poppins Regular";
   padding-bottom: 7vh;
     @include media("<=tablet") {
-      font-size: 1.5vw;
+      font-size: 1vw;
     }
     @include media("<=phone") {
-      font-size: 2.5vw;
+      font-size: 1.9vw;
     }
 
 }
@@ -297,12 +298,12 @@ html {
 }
 .password-text{
   font-size: 1.5vw;
-  font-family: "TT Commons regular";
+  font-family: "Poppins regular";
   padding-right: 1.5vw;
 }
 .form-text{
   font-size: 2vw;
-  font-family: "TT Commons Demibold";
+  font-family: "Poppins Demibold";
 }
 .form-textbox{
   background:#ecf0f1;
@@ -318,7 +319,7 @@ html {
 .form-button {
   background:#131313;
   font-size: 1.2vw;
-  font-family: "TT Commons Regular";
+  font-family: "Poppins Regular";
   width:11vw;
   padding-top:1.0vw;
   padding-bottom:0.7vw;

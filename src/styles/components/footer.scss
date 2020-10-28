@@ -12,17 +12,17 @@
 
 #contacts p{
   font-style: normal;
-  font-family: "TT Commons Regular";
-  font-size: 1.2vw;
+  font-family: "Poppins Regular";
+  font-size: 1vw;
   @include media("<=tablet") {
-    font-size: 2.2vw;
+    font-size: 2vw;
   }
   @include media("<=ipadPro") {
-    font-size: 2vw;
+    font-size: 1.8vw;
 
   }
   @include media("<=phone") {
-    font-size: 3vw;
+    font-size: 2.7vw;
 
   }
 }
@@ -31,21 +31,21 @@
  
 #contacts a{
   text-decoration: none;
-  font-size: 7vw;
+  font-size: 5vw;
   @include media("<=tablet") {
-    font-size: 9vw;
+    font-size: 7vw;
   }
   @include media("<=ipadPro") {
-    font-size: 8vw;
+    font-size: 6vw;
 
   }
   @include media("<=phone") {
-    font-size: 10vw;
+    font-size: 8vw;
 
   }
-  line-height: 5vw;
+  line-height: 7vw;
   color: #000;
-  font-family: "TT Commons DemiBold";
+  font-family: "Poppins DemiBold";
     text-decoration: none;
     /* letter-spacing: 0.15em; */
 
@@ -72,7 +72,7 @@
 #contacts p{
 max-width: 100%;
 padding-bottom: 2vh;
-padding-left: 8vw;
+// padding-left: 8vw;
 
 
 
@@ -84,25 +84,25 @@ padding-left: 8vw;
 .nav {
   position: absolute;
   top:50%;
-  font-family: "TT Commons Regular";
+  font-family: "Poppins Regular";
 
  }
 .nav a {
   text-decoration: none;
   color: rgb(87, 87, 87);
-  font-size: 1vw;
+  font-size: 0.9vw;
 
   display: block;
   transition: .3s ease-in-out;
   @include media("<=tablet") {
-    font-size: 2vw;
+    font-size: 1.7vw;
   }
   @include media("<=ipadPro") {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 
   }
   @include media("<=phone") {
-    font-size: 3vw;
+    font-size: 2.7vw;
 
   }
 }

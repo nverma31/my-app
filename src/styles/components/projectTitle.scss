@@ -16,7 +16,7 @@
         .hero-content-inner {
           color: #323232;
           h1 {
-            font-family: "TT Commons Bold";
+            font-family: "Poppins Bold";
             padding-left: 10vw;
             padding-top: 30vh;
             margin-bottom: 24px;
@@ -42,7 +42,7 @@
               font-size: 3vw;
 
               overflow: hidden;
-              font-family: "TT Commons Thin";
+              font-family: "Poppins Thin";
               @include media("<=tablet") {
                 font-size: 5vw;
                 line-height: 6vw;

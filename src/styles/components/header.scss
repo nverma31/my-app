@@ -41,22 +41,22 @@ header {
     justify-content: space-between;
     align-items: center;
     .logo a {
-      font-size: 1.1vw;
+      font-size: 1vw;
       @include media("<=tablet") {
-        font-size: 2.2vw;
+        font-size: 1.4vw;
 
       }
       @include media("<=ipadPro") {
-        font-size: 2.2vw;
+        font-size: 1.4vw;
 
       }
       @include media("<=phone") {
-        font-size: 3.4vw;
+        font-size: 2.5vw;
 
       }
       text-decoration: none;
       color: $black;
-      font-family: "TT Commons DemiBold";
+      font-family: "Poppins DemiBold";
 
     }
     .menu {
@@ -67,19 +67,19 @@ header {
         cursor: pointer;
         font-size: 1vw;
         @include media("<=tablet") {
-          font-size: 2vw;
+          font-size: 1.5vw;
 
         }
         @include media("<=ipadPro") {
-          font-size: 2vw;
+          font-size: 1.5vw;
 
         }
         @include media("<=phone") {
-          font-size: 3vw;
+          font-size: 2.5vw;
 
         }
         mix-blend-mode: difference;
-        font-family: "TT Commons DemiBold";
+        font-family: "Poppins DemiBold";
 
       }
     }
