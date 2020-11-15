@@ -96,6 +96,16 @@ const Cases = () => {
         <div className='row'>
           <div className='spaceXXL'/>
           <div className='upperoffset'>
+          <Case titles={titles[7]} ></Case>  
+          </div>
+          <div className='spaceXL'/>
+          <Case titles={titles[5]} ></Case>  
+        </div>
+        <div className='row'>
+          <div className='spaceXXL'/>
+          <div className='spaceL'/>
+
+          <div className='upperoffset'>
           <Case titles={titles[4]} ></Case>  
           </div>
           <div className='spaceXL'/>
@@ -103,21 +113,11 @@ const Cases = () => {
         </div>
         <div className='row'>
           <div className='spaceXXL'/>
-          <div className='spaceL'/>
-
-          <div className='upperoffset'>
-          <Case titles={titles[2]} ></Case>  
-          </div>
-          <div className='spaceXL'/>
-          <Case titles={titles[5]} ></Case>  
-        </div>
-        <div className='row'>
-          <div className='spaceXXL'/>
           <div className='upperoffset'>
           <Case titles={titles[6]} ></Case>  
           </div>
           <div className='spaceXXL'/>
-          <Case titles={titles[7]} ></Case>  
+          <Case titles={titles[2]} ></Case>  
         </div>
         
       </div>
