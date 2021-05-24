@@ -21,6 +21,8 @@ import Crowded from "./pages/crowded";
 import Ewe from "./pages/ewe";
 import Quinta from "./pages/quinta";
 import Uci from "./pages/Uci";
+import CarCoins from "./pages/carcoins";
+
 import ScrollToTop from "./styles/components/ScrollToTop";
 
 import ReactGA from 'react-ga';
@@ -41,6 +43,7 @@ const routes = [
   { path: "/trickle", name: "about", Component: Trickle },
   { path: "/crowded", name: "crowded", Component: Crowded },
   { path: "/quinta", name: "quinta", Component: Quinta },
+
 
 ];
 
@@ -196,6 +199,8 @@ function App() {
             <ProtectedRoute path='/nemo' component={Nemo} />
             <ProtectedRoute path='/uci' component={Uci} />
             <ProtectedRoute path='/ewe' component={Ewe} />
+            <ProtectedRoute path='/carcoins' component={CarCoins} />
+
 
    
     
