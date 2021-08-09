@@ -67,7 +67,7 @@ const Banner = () => {
         <div className='row'>
           <h2>
             <div className='line'>
-              <span>Hi, I'm a product designer based in Hamburg, currently</span>
+              <span>Hi, I'm a product design researcher based in Hamburg, currently</span>
             </div>
             <div className='line'>
               <span> working at&nbsp;<a href="https://sinnerschrader.com/"><Gradient>SinnerSchrader.</Gradient></a></span>
