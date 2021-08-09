@@ -99,7 +99,7 @@ const Hamburger = ({ state }) => {
                       onMouseEnter={e => handleHover(e)}
                       onMouseOut={e => handleHoverExit(e)}
                       ref={el => (line3 = el)}
-                      to={{ pathname: "https://drive.google.com/file/d/0B39OhBWpu64oZ1h0X2R5cGFSQks5dWZVcDBGd2JjN05oUjJn/view" }} target="_blank">
+                      to={{ pathname: "https://drive.google.com/file/d/0B39OhBWpu64oZ1h0X2R5cGFSQks5dWZVcDBGd2JjN05oUjJn/view?usp=sharing&resourcekey=0-Phf8ylm3Ap_JrneQvvn7HQ" }} target="_blank">
                       Resume
                     </Link>
                   </li>
