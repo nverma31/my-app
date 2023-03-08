@@ -67,10 +67,10 @@ const Banner = () => {
         <div className='row'>
           <h2>
             <div className='line'>
-              <span>Hi, I'm a product design researcher based in Hamburg, currently</span>
+              <span>Hi, I'm a product design researcher based in Munich, currently</span>
             </div>
             <div className='line'>
-              <span> working at&nbsp;<a href="https://sinnerschrader.com/"><Gradient>SinnerSchrader.</Gradient></a></span>
+              <span> working at&nbsp;<a href="https://sinnerschrader.com/"><Gradient>Sixt Mobility.</Gradient></a></span>
             </div>
             <div className='line'>
               <span> </span>
