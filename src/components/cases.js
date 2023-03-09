@@ -9,6 +9,7 @@ import Uci from "../assets/home/uci.jpg";
 import Quinta from "../assets/home/quinta.jpg";
 import Ewe from "../assets/home/ewe.jpg";
 
+import Share from "../assets/home/sixt.jpg";
 
 
 
@@ -16,7 +17,7 @@ import Ewe from "../assets/home/ewe.jpg";
 const titles = [
   {
     id: 1,
-    subtitle: "E-commerce",
+    subtitle: "E-commerce website",
     title: "Audi User Cars Platform.",
     img: Uci,
     link: 'uci'
@@ -24,7 +25,7 @@ const titles = [
   },
   {
     id: 2,
-    subtitle: "PayPal relaunch",
+    subtitle: "Mobile App and Website",
     title: "PayPal Website & App.",
     img: Paypal,
     link: 'paypal'
@@ -55,7 +56,7 @@ const titles = [
   },
   {
     id: 6,
-    subtitle: "Cloud software",
+    subtitle: "B2B Cloud software",
     title: "Collab Cloud Call Center.",
     img: Collab,
     link: 'nubitalk'
@@ -76,6 +77,14 @@ const titles = [
     img: Quinta,
     link: 'quinta'
 
+  },
+  {
+    id: 9,
+    subtitle: "Mobility Provider App",
+    title: "SIXT Share.",
+    img: Share,
+    link: 'sixt'
+
   }
 ];
 
@@ -88,15 +97,15 @@ const Cases = () => {
         <div className='row'>
           <div className='spaceXXL'/>
           <div className='upperoffset'>
-          <Case titles={titles[3]}></Case>  
+          <Case titles={titles[8]}></Case>  
           </div>
           <div className='spaceXXL'/>
-          <Case titles={titles[1]} ></Case>  
+          <Case titles={titles[3]} ></Case>  
         </div>
         <div className='row'>
           <div className='spaceXXL'/>
           <div className='upperoffset'>
-          <Case titles={titles[7]} ></Case>  
+          <Case titles={titles[1]} ></Case>  
           </div>
           <div className='spaceXL'/>
           <Case titles={titles[5]} ></Case>  
@@ -106,7 +115,7 @@ const Cases = () => {
           <div className='spaceL'/>
 
           <div className='upperoffset'>
-          <Case titles={titles[4]} ></Case>  
+          <Case titles={titles[2]} ></Case>  
           </div>
           <div className='spaceXL'/>
           <Case titles={titles[0]} ></Case>  
@@ -117,7 +126,7 @@ const Cases = () => {
           <Case titles={titles[6]} ></Case>  
           </div>
           <div className='spaceXXL'/>
-          <Case titles={titles[2]} ></Case>  
+          <Case titles={titles[4]} ></Case>  
         </div>
         
       </div>

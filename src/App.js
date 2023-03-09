@@ -26,6 +26,7 @@ import CarCoins from "./pages/carcoins";
 import ScrollToTop from "./styles/components/ScrollToTop";
 
 import ReactGA from 'react-ga';
+import Sixt from "./pages/sixt";
 
 const trackingId = "UA-90982863-1"; // Replace with your Google Analytics tracking ID
 ReactGA.initialize(trackingId);
@@ -43,6 +44,8 @@ const routes = [
   { path: "/trickle", name: "about", Component: Trickle },
   { path: "/crowded", name: "crowded", Component: Crowded },
   { path: "/quinta", name: "quinta", Component: Quinta },
+  { path: "/sixt", name: "quinta", Component: Sixt },
+
 
 
 ];
@@ -200,6 +203,7 @@ function App() {
             <ProtectedRoute path='/uci' component={Uci} />
             <ProtectedRoute path='/ewe' component={Ewe} />
             <ProtectedRoute path='/carcoins' component={CarCoins} />
+            <ProtectedRoute path='/sixt' component={Sixt} />
 
 
    
