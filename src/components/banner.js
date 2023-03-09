@@ -70,7 +70,7 @@ const Banner = () => {
               <span>Hi, I'm a product design researcher based in Munich, currently</span>
             </div>
             <div className='line'>
-              <span> working at&nbsp;<a href="https://sinnerschrader.com/"><Gradient>Sixt Mobility.</Gradient></a></span>
+              <span> working at&nbsp;<a href="https://www.sixt.com/betahome/#/"><Gradient>SIXT.</Gradient></a></span>
             </div>
             <div className='line'>
               <span> </span>
