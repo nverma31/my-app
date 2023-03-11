@@ -11,7 +11,6 @@ const Case = ({titles}) => {
     let image = useRef(null);
     let tl = new TimelineLite();
     const [contentRef, inView] = useInView({
-      rootMargin: "-200px", 
       triggerOnce:true
     });
 

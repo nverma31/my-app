@@ -51,7 +51,7 @@ const homeAnimation = completeAnimation => {
    
 };
 
-const Uci = () => {
+const Uci = ({ dimensions }) => {
   const intro = { title: 'abc', subtitle: 'new' };
 
   console.log(intro);

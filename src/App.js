@@ -44,7 +44,11 @@ const routes = [
   { path: "/trickle", name: "about", Component: Trickle },
   { path: "/crowded", name: "crowded", Component: Crowded },
   { path: "/quinta", name: "quinta", Component: Quinta },
-  { path: "/sixt", name: "quinta", Component: Sixt },
+  { path: "/sixt", name: "sixt", Component: Sixt },
+  { path: "/nemo", name: "nemo", Component: Nemo },
+  { path: "/uci", name: "uci", Component: Uci },
+
+
 
 
 
@@ -199,11 +203,10 @@ function App() {
         ))}
             <Route path="/login" component={withRouter(Login)}/>
             <ProtectedRoute path='/protected' component={Protected} />
-            <ProtectedRoute path='/nemo' component={Nemo} />
-            <ProtectedRoute path='/uci' component={Uci} />
             <ProtectedRoute path='/ewe' component={Ewe} />
             <ProtectedRoute path='/carcoins' component={CarCoins} />
             <ProtectedRoute path='/sixt' component={Sixt} />
+
 
 
    
