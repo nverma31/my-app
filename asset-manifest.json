@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.15f01d5e.chunk.css",
-    "main.js": "/static/js/main.c0a447e7.chunk.js",
-    "main.js.map": "/static/js/main.c0a447e7.chunk.js.map",
+    "main.css": "/static/css/main.373d417a.chunk.css",
+    "main.js": "/static/js/main.25256ca3.chunk.js",
+    "main.js.map": "/static/js/main.25256ca3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7c0ae09a.js",
     "runtime-main.js.map": "/static/js/runtime-main.7c0ae09a.js.map",
-    "static/js/2.cf944784.chunk.js": "/static/js/2.cf944784.chunk.js",
-    "static/js/2.cf944784.chunk.js.map": "/static/js/2.cf944784.chunk.js.map",
+    "static/js/2.1e2ed898.chunk.js": "/static/js/2.1e2ed898.chunk.js",
+    "static/js/2.1e2ed898.chunk.js.map": "/static/js/2.1e2ed898.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.92552a220f51261e257bb5195f4bcbba.js": "/precache-manifest.92552a220f51261e257bb5195f4bcbba.js",
+    "precache-manifest.53983abe50fb1176d311a8d167e67ddf.js": "/precache-manifest.53983abe50fb1176d311a8d167e67ddf.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.15f01d5e.chunk.css.map": "/static/css/main.15f01d5e.chunk.css.map",
-    "static/js/2.cf944784.chunk.js.LICENSE.txt": "/static/js/2.cf944784.chunk.js.LICENSE.txt",
+    "static/css/main.373d417a.chunk.css.map": "/static/css/main.373d417a.chunk.css.map",
+    "static/js/2.1e2ed898.chunk.js.LICENSE.txt": "/static/js/2.1e2ed898.chunk.js.LICENSE.txt",
     "static/media/8ball.jpg": "/static/media/8ball.17f2afb1.jpg",
     "static/media/Amundsen.png": "/static/media/Amundsen.eb90336f.png",
     "static/media/Interview1.jpg": "/static/media/Interview1.9a546a0b.jpg",
@@ -41,6 +41,7 @@
     "static/media/fullpage.jpg": "/static/media/fullpage.9495f76c.jpg",
     "static/media/hero.png": "/static/media/hero.f619ecd6.png",
     "static/media/hero.jpg": "/static/media/hero.fdd1f329.jpg",
+    "static/media/hero.jpeg": "/static/media/hero.99e496b4.jpeg",
     "static/media/hero2.jpg": "/static/media/hero2.a259749e.jpg",
     "static/media/home.mp4": "/static/media/home.297026ae.mp4",
     "static/media/ia-three.png": "/static/media/ia-three.4c8330e9.png",
@@ -111,8 +112,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7c0ae09a.js",
-    "static/js/2.cf944784.chunk.js",
-    "static/css/main.15f01d5e.chunk.css",
-    "static/js/main.c0a447e7.chunk.js"
+    "static/js/2.1e2ed898.chunk.js",
+    "static/css/main.373d417a.chunk.css",
+    "static/js/main.25256ca3.chunk.js"
   ]
 }
