@@ -82,9 +82,18 @@ const Hamburger = ({ state }) => {
                       onMouseOut={e => handleHoverExit(e)}
                       ref={el => (line1 = el)}
                       to="/case-studies">
-                      Case Studies
+                      Cases
                     </Link>
                   </li>
+                  {/* <li>
+                    <Link
+                      onMouseEnter={e => handleHover(e)}
+                      onMouseOut={e => handleHoverExit(e)}
+                      ref={el => (line1 = el)}
+                      to="/case-studies">
+                      About
+                    </Link>
+                  </li> */}
                   <li>
                     <Link
                       onMouseEnter={e => handleHover(e)}
@@ -105,6 +114,7 @@ const Hamburger = ({ state }) => {
                   </li>
                 </ul>
               </nav>
+              <hr/>
               <div ref={el => (info = el)} className='info'>
                 {/* <h3>Our Promise</h3>
                 <p>

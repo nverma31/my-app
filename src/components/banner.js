@@ -86,13 +86,13 @@ const Banner = () => {
             </div>
           </h2>
           <div className='hello-btn'>
-          <a href="mailto:nverma31@gmail.com">
-              Say Hello
+          <a href="https://drive.google.com/file/d/175BR-KYdM6q_lGjCnxNIqBzjSgiioKJ7/view?usp=sharing" target="_blank">
+              Resume
             </a>
           </div>
           <div className='Scroll-link'>
           <a href='/'>
-              Scroll <RightArrow />
+              Case studies <RightArrow />
             </a>
                       </div>
         </div>

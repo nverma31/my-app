@@ -1,11 +1,11 @@
 import React from "react";
 import Case from "./case";
-import Audi from "../assets/home/audi.jpg";
+import Audi from "../assets/home/responsive.jpg";
 import Collab from "../assets/home/collab.jpg";
 import Crowded from "../assets/home/crowded.jpg";
 import Trickle from "../assets/home/trickle.jpg";
 import Paypal from "../assets/home/paypal.jpg";
-import Uci from "../assets/home/uci.jpg";
+import Uci from "../assets/home/uci2.jpg";
 import Quinta from "../assets/home/quinta.jpg";
 import Ewe from "../assets/home/ewe.jpg";
 
@@ -17,7 +17,7 @@ import Share from "../assets/home/sixt.jpg";
 const titles = [
   {
     id: 1,
-    subtitle: "E-commerce website",
+    subtitle: "E-commerce website design",
     title: "Audi User Cars Platform.",
     img: Uci,
     link: 'uci'
@@ -25,30 +25,30 @@ const titles = [
   },
   {
     id: 2,
-    subtitle: "Mobile App and Website",
-    title: "PayPal Website & App.",
+    subtitle: "Mobile app and website development",
+    title: "PayPal Reboot.",
     img: Paypal,
     link: 'paypal'
 
   },
   {
     id: 3,
-    subtitle: "Internet of things",
-    title: "EWE IOT Concept App.",
+    subtitle: "IoT concept app design",
+    title: "EWE Amundsen.",
     img: Ewe,
     link: 'ewe'
 
   },
   {
     id: 4,
-    subtitle: "Immersive website",
-    title: "Audi Model Pages Website.",
+    subtitle: "Responsive website design",
+    title: "Audi Model Pages.",
     img: Audi,
     link: 'nemo'
   },
   {
     id: 5,
-    subtitle: "Ethnography",
+    subtitle: "Design Ethnography",
     title: "Vodafone Crowded Environment Research.",
     img: Crowded,
     link: 'crowded'
@@ -56,7 +56,7 @@ const titles = [
   },
   {
     id: 6,
-    subtitle: "B2B Cloud software",
+    subtitle: "SaaS design",
     title: "Collab Cloud Call Center.",
     img: Collab,
     link: 'nubitalk'
@@ -80,8 +80,8 @@ const titles = [
   },
   {
     id: 9,
-    subtitle: "Mobility Provider App",
-    title: "SIXT Share.",
+    subtitle: "Mobile app design",
+    title: "SIXT Share Micromobility.",
     img: Share,
     link: 'sixt'
 
