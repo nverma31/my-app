@@ -127,7 +127,7 @@ const PayPal = ({ dimensions }) => {
       <WideImage path={Space}  />
 
         <div className="CaptionPayPal">
-        A module that encourages customers to complete their account setup and  gamification to increase customer engagement. </div>
+        A module that encourages customers to complete their account setup and gamification to increase customer engagement. </div>
         <FullWidthImage path={Web5} />
         <div className="CaptionPayPal">
        A prominent space for marketing to promote new products and educate customers. The 3 circles  frequently switch out based on various marketing campaigns and product testing.        </div>

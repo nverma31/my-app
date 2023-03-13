@@ -1,7 +1,7 @@
 .parentContainer {
 	width: 100%;
 	max-width: 100vw;
-	padding-left: 5vw;
+	padding-left: 10vw;
 	padding-right: 5vw;
 
 	margin: 0 auto; /* horizontally center parentContainer */
@@ -16,9 +16,9 @@
   	position: -webkit-sticky; /* http://caniuse.com/#feat=css-sticky */
 	position: sticky;
 	top: 0; /* tell this element where to stick */
-	width: 25vw;
-	padding-left: 10vw;
-	
+	width: 50vw;
+	padding-left: 20vw;
+
 	padding-top: 15vh;
 
 	h3{
@@ -69,6 +69,58 @@
 		padding-top: 10vh;
 
 	width: 55%;
+}
+
+.stickyContainerreverse {
+	position: -webkit-sticky; /* http://caniuse.com/#feat=css-sticky */
+  position: sticky;
+  top: 0; /* tell this element where to stick */
+  width: 25vw;
+  padding-right: 5vw;
+  
+  padding-top: 15vh;
+
+  h3{
+	  font-family: "Poppins Regular";
+	  font-size: 1.5rem;
+
+	  letter-spacing: 0.04vw;
+	  @include media("<=tablet") {
+		  font-size: 2vw;
+
+	  }
+	  @include media("<=phone") {
+		  font-size: 3.1vw;
+
+	  }
+  }
+
+  h2 {
+	  font-family: "Poppins Regular";
+	  font-size: 0.9rem;
+	  letter-spacing: .1rem;
+
+	  @include media("<=tablet") {
+        font-size: 1.3rem;
+
+	  }
+	  @include media("<=phone") {
+        font-size: 0.9rem;
+
+	  }
+  }
+  p {
+	  font-size: 1.1rem;
+	font-family: "Poppins Regular";
+	letter-spacing: 0.01rem;
+	@include media("<=tablet") {
+        font-size: 0.8rem;
+  }
+  @include media("<=phone") {
+	font-size: 0.8rem;
+
+  }
+  }
 }
 
 }

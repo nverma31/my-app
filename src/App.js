@@ -205,7 +205,6 @@ function App() {
             <ProtectedRoute path='/protected' component={Protected} />
             <ProtectedRoute path='/ewe' component={Ewe} />
             <ProtectedRoute path='/carcoins' component={CarCoins} />
-            <ProtectedRoute path='/sixt' component={Sixt} />
 
 
 
