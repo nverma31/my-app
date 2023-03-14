@@ -53,7 +53,7 @@ const sectioin1 = { num: '01', title: 'Understand.', text: ' We started with und
 const sectioin2 = { num: '02', title:'Defining Success', text: 'As we were gaining a deeper understanding of both users and the micro-mobility business, we established certain guiding principles for our product, which determined the product requirements.'};
 const sectioin4 = { num: '03', title:'Explorations and key design decisions', text: 'Many aspects of the user journey required me to explore many possible design solutions. I always kept going to our goals, product requirements and principles we have defined earlier while finalising a design choice. Following are some important explorations and key design decisions. '};
 const sectioin5 = { num: '04', title:'Final Design', text: 'We first launched with TIER as our first partner and having all modes of micromobility— e-scooters, mopeds, and bikes —in our App. This increased our footprint from just Germany and Netherlands to all across Europe in many cities. Subsequently, we intergrated with Nextbike(shared bikes), Cooltra(shared mopeds) and MILES(shared cars) using the same design language and flow.', imageurl:FullPage};
-const sectioin6 = { num: '04', title:'Impact', text: 'We released the escooters, mopeds and bikes from TIER and future partners are being integrated as we speak. Due to condifentiality I am not disclosing the actual numbers but we saw huge jump in revenue and new customer acquisition.'};
+const sectioin6 = { num: '05', title:'Impact', text: 'I am not disclosing the actual numbers but with the release of the escooters, mopeds and bikes from TIER, Nextbike, and MILES we saw positive growth across all KPIS. There is significatnt increase in the total monthly active users, monthly transactions and hence revenue. SIXT Share has also been able to increase its footprint from just Germany and Netherlands to many countries across Europe with substantial increase in vehicles per kilomter square.'};
 const sectioin8 = { num: '08', title:'Map selection and Unlock', text: 'Everything we designed was responsive and we strive to acheive a consitency in feel and visual on all viewports.'};
 const sectioin9 = { num: '', title:'Moped Flow', text: 'Users can book a moped either via tapping the marker on the map or scanning QR code. Afterwards, they  see a onboarding tutorial and they can unlock using the pin. During driving, they can park and resume their journey. Finally they can end thier journey in the appropriate business area.',imageurl:Moped};
 const sectioin10 = { num: '', title:'E-Scooter Flow', text: 'As defined in the product requirements, we launched a e-scooter flow which works essentially the same as Mopeds. We highlight the key differences in locking, unlocking, parking, ending using in-context help with action-sheets.',imageurl:Escooter};
@@ -114,9 +114,8 @@ const Sixt = () => {
 
       <StickyReverse content={sectioin10} />
       <Sticky content={sectioin11} />
-      {/* <SectionPara section={sectioin6} />
+       <SectionPara section={sectioin6} />
 
-<hr/> */}
 <hr/>
       <Footer path = {footerpath}/>
     </>
