@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f17373bbe1502e999bc9bd719e6f701c",
+    "revision": "305231781e536ed0cb50c8201561d66f",
     "url": "/index.html"
   },
   {
-    "revision": "c9a6816a39dd6bb86b43",
+    "revision": "202dc549b12dcc42f3f6",
     "url": "/static/css/main.aaef5682.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.fcbff94d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c9a6816a39dd6bb86b43",
-    "url": "/static/js/main.786eccac.chunk.js"
+    "revision": "202dc549b12dcc42f3f6",
+    "url": "/static/js/main.18918351.chunk.js"
   },
   {
     "revision": "216563cf50e7c35b2f13",
@@ -92,8 +92,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/beijing.209dcd10.webp"
   },
   {
-    "revision": "9a6a8e3962e292b847c77361539d1935",
-    "url": "/static/media/bikes.9a6a8e39.png"
+    "revision": "0e51c6d8cde1551f035c99c967707169",
+    "url": "/static/media/bikes.0e51c6d8.png"
   },
   {
     "revision": "94e0c2abd452f1e736473788f817b8cc",

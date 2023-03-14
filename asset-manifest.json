@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.aaef5682.chunk.css",
-    "main.js": "/static/js/main.786eccac.chunk.js",
-    "main.js.map": "/static/js/main.786eccac.chunk.js.map",
+    "main.js": "/static/js/main.18918351.chunk.js",
+    "main.js.map": "/static/js/main.18918351.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7c0ae09a.js",
     "runtime-main.js.map": "/static/js/runtime-main.7c0ae09a.js.map",
     "static/js/2.fcbff94d.chunk.js": "/static/js/2.fcbff94d.chunk.js",
     "static/js/2.fcbff94d.chunk.js.map": "/static/js/2.fcbff94d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.00994b9b5c2334c02184eb09ebdf3016.js": "/precache-manifest.00994b9b5c2334c02184eb09ebdf3016.js",
+    "precache-manifest.d6362add4eb13cfacd97182c5e6a11c2.js": "/precache-manifest.d6362add4eb13cfacd97182c5e6a11c2.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.aaef5682.chunk.css.map": "/static/css/main.aaef5682.chunk.css.map",
     "static/js/2.fcbff94d.chunk.js.LICENSE.txt": "/static/js/2.fcbff94d.chunk.js.LICENSE.txt",
@@ -24,7 +24,7 @@
     "static/media/audi.jpg": "/static/media/audi.cc8c7cd2.jpg",
     "static/media/austin.webp": "/static/media/austin.a7aadf33.webp",
     "static/media/beijing.webp": "/static/media/beijing.209dcd10.webp",
-    "static/media/bikes.png": "/static/media/bikes.9a6a8e39.png",
+    "static/media/bikes.png": "/static/media/bikes.0e51c6d8.png",
     "static/media/chatbot.jpg": "/static/media/chatbot.94e0c2ab.jpg",
     "static/media/collab.jpg": "/static/media/collab.c5711d67.jpg",
     "static/media/colors.png": "/static/media/colors.2e045a75.png",
@@ -122,6 +122,6 @@
     "static/js/runtime-main.7c0ae09a.js",
     "static/js/2.fcbff94d.chunk.js",
     "static/css/main.aaef5682.chunk.css",
-    "static/js/main.786eccac.chunk.js"
+    "static/js/main.18918351.chunk.js"
   ]
 }
