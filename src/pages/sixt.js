@@ -50,8 +50,8 @@ const introtitle = { title: 'SIXT Share', subtitle: 'Adding Shared Micro-mobilit
 const introText = { brief: 'Integrate shared micro-mobility partners within SIXT share with a focus on increasing customer engagement and retention.', intro: 'SIXT share offers car sharing to its customers via the share tab in the SIXT app. Due to shortage of cars because of the semiconductor crisis after Corona, Sixt share could not meet the demands of its customers and had decling customers and revenue. It was decided that SIXT Share will now also offer share micro-mobility along with shared cars with a focus to increase it\'s customer base, market footprint, and revenue.', what:'I was the lead product designer and designed the entire flow and screens. Coordinated with Product managers, engineers, operations, marketing, research, and external partners.',when:'Dec 2021 - June 2022',imageurl: Hero, title:'Goal'};
 const sectioin0 = { num: '01', title: 'Understand.', text: ' We started with understanding the micro-mobility space by conducting a competitive benchmarking. With our improved understanding, we planned field research with users of our future micro-mobility partners to better understand their attitudes and behaviour.'};
 const sectioin1 = { num: '01', title: 'Understand.', text: ' We started with understanding the micro-mobility space by conducting a competitive benchmarking. With our improved understanding, we planned field research with users of our future micro-mobility partners to better understand their attitudes and behaviour.'};
-const sectioin2 = { num: '02', title:'Defining Success', text: 'As we were gaining a deeper understanding of both users and the micro-mobility business, we established certain guiding principles for our product, which determined the product requirements'};
-const sectioin4 = { num: '', title:'Explorations and key design decisions', text: 'Many aspects of the user journey required me to explore many possible design solutions. I always kept going to our goals, product requirements and principles we have defined earlier while finalising a design choice.'};
+const sectioin2 = { num: '02', title:'Defining Success', text: 'As we were gaining a deeper understanding of both users and the micro-mobility business, we established certain guiding principles for our product, which determined the product requirements.'};
+const sectioin4 = { num: '', title:'Explorations and key design decisions', text: 'Many aspects of the user journey required me to explore many possible design solutions. I always kept going to our goals, product requirements and principles we have defined earlier while finalising a design choice. Following are some important explorations and key design decisions. '};
 const sectioin5 = { num: '05', title:'Final Design', text: 'The new Model page  allows the user to make an informed decision during their buying journey and fascinates the user with immersive modules so they get the feel of the actual physical car.', imageurl:FullPage};
 const sectioin6 = { num: '05', title:'Impact', text: 'We released the escooters, mopeds and bikes from TIER and future partners are being integrated as we speak. Due to condifentiality I am not disclosing the actual numbers but we saw huge jump in revenue and new customer acquisition.'};
 const sectioin8 = { num: '08', title:'Map selection and Unlock', text: 'Everything we designed was responsive and we strive to acheive a consitency in feel and visual on all viewports.'};
@@ -106,8 +106,8 @@ const Sixt = () => {
       <SectionPara section={sectioin2} />
       <FullWidthImage path={Principles}  />
       <SectionParaLeft section={sectioin4} />
-      <FullWidthImage path={Exploration1}  />
-      <FullWidthImage path={Exploration2}  />
+      <WideImage path={Exploration1}  />
+      <WideImage path={Exploration2}  />
       <div className="sectionBoldSecond">
         <div className="sectionTitleNumber" > 04.</div>
 
