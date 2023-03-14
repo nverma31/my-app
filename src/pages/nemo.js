@@ -44,7 +44,7 @@ const sectioin8 = { num: '08', title:'Take it with you', text: 'Everything we de
 const sectioin9 = { num: '03', title:'Iterative development of scalable Modules', text: 'We then worked on the iterative development of different scalable modules(sections) which will be part of the different car models. The main challenges was satisfying the technical and content  constraints while providing a good editorial and end-user experience.'};
 
 const sectioin7 = { num: '07', title:'Immersion with interaction design', text: 'In line with acheiving a feel of the actual cars, we used motion design to immerse the users in the models and get a feel of the actual car.'};
-const footerpath = { title: 'next project', text: 'PayPal Website & App', link:'/paypal' };
+const footerpath = { title: 'next project', text: 'Audi Used Cars Sales Platform', link:'/uci' };
 
 let tl = gsap.timeline();
 
