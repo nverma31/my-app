@@ -1,0 +1,73 @@
+.dec-main-left {
+  height:100%;
+  background: $white;
+  padding-left: 17vw;
+  padding-right: 0vw;
+  width: 30vw;
+  padding-bottom: 10vh;
+  padding-top: 30vh;
+  float: left;
+
+  @include media("<=phone") {
+    width: 70vw;
+  }
+  @include media("<=tablet") {
+    width: 60vw;
+  }
+  .dec-row {
+    // flex-direction: column;
+    // justify-content: center;
+
+    h2 {
+      font-size: 1.2rem;
+      letter-spacing: 0.04rem;
+      // line-height: 4.2rem;
+      // font-weight: medium;
+      @include media("<=tablet") {
+        // font-size: 1.3rem;
+      }
+      @include media("<=phone") {
+        // font-size: 0.9rem;
+      }
+      .dec-line {
+        font-family: "Poppins Regular";
+        position: relative;
+        width: 25vw;
+
+        overflow: hidden;
+        @include media("<=tablet") {
+        }
+        @include media("<=phone") {
+          width: 60vw;
+
+        }
+        span {
+          position: relative;
+        }
+        .dec-line-numbering{
+          font-size: 0.8rem;
+          letter-spacing: 0.08rem;
+          font-family: "Poppins Regular";
+
+
+        }
+      }
+    }
+    .decdescription {
+      font-size: 1rem;
+      font-family: "Poppins Regular";
+
+      width: 25vw;
+      @include media("<=phone") {
+        width: 70vw;
+        font-size: 0.8rem;
+
+      }
+      @include media("<=tablet") {
+        width: 70vw;
+        font-size: 0.8rem;
+
+      }
+    }
+  }
+}

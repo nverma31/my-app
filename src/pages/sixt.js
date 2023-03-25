@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import IntroOverlay from "../components/introOverlay";
 import SectionPara from "../components/sectionPara";
 import SectionParaLeft from "../components/sectionParaLeft";
+import DecisionPara from "../components/decisionPara";
 import Path from "../assets/Nemo/users.png";
 import IAone from "../assets/Nemo/ia.png";
 import IAtwo from "../assets/Nemo/modularIA.png";
@@ -25,6 +26,17 @@ import Hero from "../assets/sixt/hero.jpeg";
 import Escooter from "../assets/sixt/scooters.png";
 import Moped from "../assets/sixt/mopeds.png";
 import Bikes from "../assets/sixt/bikes.png";
+
+import Exp1 from "../assets/sixt/exp1.png";
+import Exp2 from "../assets/sixt/exp2.png";
+import Exp3 from "../assets/sixt/exp3.png";
+import Exp4 from "../assets/sixt/exp4.png";
+import Exp5 from "../assets/sixt/exp5.png";
+import Exp6 from "../assets/sixt/exp6.png";
+import Exp7 from "../assets/sixt/exp7.png";
+
+import Filler from "../assets/sixt/filler.png";
+
 
 
 import Styles from "../assets/Nemo/styles.png";
@@ -58,6 +70,13 @@ const sectioin8 = { num: '08', title:'Map selection and Unlock', text: 'Everythi
 const sectioin9 = { num: '', title:'Moped Flow', text: 'Users can book a moped either via tapping the marker on the map or scanning QR code. Afterwards, they  see a onboarding tutorial and they can unlock using the pin. During driving, they can park and resume their journey. Finally they can end thier journey in the appropriate business area.',imageurl:Moped};
 const sectioin10 = { num: '', title:'E-Scooter Flow', text: 'As defined in the product requirements, we launched a e-scooter flow which works essentially the same as Mopeds. We highlight the key differences in locking, unlocking, parking, ending using in-context help with action-sheets.',imageurl:Escooter};
 const sectioin11 = { num: '', title:'Bike Flow', text: 'Similarly, we created a similar flow for bikes and highlighted key differences in locking, unlocking, parking, resume, ending via in-context help with action sheets.',imageurl:Bikes};
+const sectioin12 = { num: '03.01', title:'filter chips for mobility type selection.', text: 'I used filter chips that are expandable on selection and collpase on de-selection to allow user to filter the vehicles they are interested in.'};
+const sectioin13 = { num: '03.02', title:'vehicle clusters and city markers at higher zoom level. ', text: 'With too many partners and having many vehicles, I designed vehicle clusters and new city markers to declutter and simplify the map experience.'};
+const sectioin14 = { num: '03.03', title:'new vehicle markers.', text: 'I designed a  new visually distinct vehicle markers which highlights the particular mobility option to make it easier for users to identify the particular vehicle type.'};
+const sectioin15 = { num: '03.04', title:'communicating additional zones information.', text: 'With additional types of zones offered by the partners a new color scheme along with new snackbars were added to communicate the zones better.'};
+const sectioin16 = { num: '03.05', title:'redesigned floating action buttons for map actions.', text: 'We already have three FABs for key actions on the map, but with partners we need few more. Therefore, switched to a expandable FAB which expands to show all actions possible including QR scanner. '};
+const sectioin17 = { num: '03.06', title:'direct user’s attention to key journey steps.', text: 'Modal bottom sheets were used to direct the user’s attention at key places in the user journey such as parking, locking, unlocking, ending as they are different for different vehicle types and partners.'};
+const sectioin18 = { num: '03.07', title:'Interupting the flow in critical cases.', text: 'In order to be transparent regarding fees and penalties, modal dialogues were used to disrupt the user journey and demand user’s journey so they understand the additional fees involved.'};
 
 const sectioin7 = { num: '07', title:'Immersion with interaction design', text: 'In line with acheiving a feel of the actual cars, we used motion design to immerse the users in the models and get a feel of the actual car.'};
 const footerpath = { title: 'next project', text: 'Audi Model Pages Website', link:'/nemo' };
@@ -106,8 +125,25 @@ const Sixt = () => {
       <SectionPara section={sectioin2} />
       <FullWidthImage path={Principles}  />
       <SectionParaLeft section={sectioin4} />
-      <WideImage path={Exploration1}  />
-      <WideImage path={Exploration2}  />
+      <FullWidthImage path={Filler}  />
+
+      <DecisionPara section={sectioin12} />
+      <TallImage path={Exp1}  />
+      <DecisionPara section={sectioin13} />
+      <TallImage path={Exp2}  />
+      <DecisionPara section={sectioin14} />
+      <TallImage path={Exp3}  />
+      <DecisionPara section={sectioin15} />
+      <TallImage path={Exp4}  />
+      <DecisionPara section={sectioin16} />
+      <TallImage path={Exp5}  />
+      <DecisionPara section={sectioin17} />
+      <TallImage path={Exp6}  />
+      <DecisionPara section={sectioin18} />
+      <TallImage path={Exp7}  />
+      
+      <hr/>
+
       <SectionPara section={sectioin5} />
 
       <Sticky content={sectioin9} />
