@@ -24,10 +24,10 @@
         // line-height: 4.2rem;
         // font-weight: medium;
         @include media("<=tablet") {
-          font-size: 1.3rem;
+          // font-size: 1.3rem;
         }
         @include media("<=phone") {
-          font-size: 0.9rem;
+          // font-size: 0.9rem;
         }
         .leftpara-line {
           font-family: "Poppins Regular";
