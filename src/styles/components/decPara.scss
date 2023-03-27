@@ -9,7 +9,9 @@
   float: left;
 
   @include media("<=phone") {
-    width: 70vw;
+    float: none;
+    padding: 10%;
+
   }
   @include media("<=tablet") {
     width: 60vw;

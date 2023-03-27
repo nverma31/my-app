@@ -27,6 +27,14 @@
 
   width: 35vw;
   height: auto;
+  @include media("<=tablet") {
+  }
+  @include media("<=phone") {
+    width: 70%;
+    padding-left: 15%;
+
+
+  }
 }
 }
 
